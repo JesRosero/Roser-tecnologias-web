@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roser Tecnologías - Inicio</title>
+    <link rel="icon" type="image/x-icon" href="../Imagenes/Rosero.png">
+    <link rel="stylesheet" href="../styles.css">
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Floating WhatsApp css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rafaelbotazini/floating-whatsapp@latest/floating-wpp.min.css">
+    <link rel="stylesheet" href="index.css">
+    <!--Floating WhatsApp javascript-->
+    <script src="https://cdn.jsdelivr.net/gh/rafaelbotazini/floating-whatsapp@latest/floating-wpp.min.js"></script>
+</head>
+<body>
+    <!--Div donde estará el botón de WhatsApp-->
+    <div id="BotonWA"></div>
+    
+    <!-- Botón Flotante de Métodos de Pago -->
+    <div class="floating-payment-btn" onclick="openPaymentModal()" title="Métodos de Pago">
+        <img src="../Marketplace/metodos de pago/M.png" alt="Métodos de Pago">
+    </div>
+
+    <!-- Navbar y modales se generan automáticamente -->
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="logo-3d">
+                    <img src="../Imagenes/Rosero.png" alt="Roser Tecnologías" class="logo-hero">
+                </div>
+                <h1>Bienvenido a Roser Tecnologías</h1>
+                <p>Soluciones de ingeniería en diseño, desarrollo y fabricación de tecnología.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Slider Section -->
+    <section class="image-slider-section">
+        <!-- Image Slider Background -->
+        <div class="image-slider">
+            <div class="slide active" style="background-image: url('Welcome/1.jpeg')"></div>
+            <div class="slide" style="background-image: url('Welcome/2.jpg')"></div>
+            <div class="slide" style="background-image: url('Welcome/3.jpg')"></div>
+            <div class="slide" style="background-image: url('Welcome/4.jpg')"></div>
+            <div class="slide" style="background-image: url('Welcome/5.jpg')"></div>
+            <div class="slide" style="background-image: url('Welcome/6.jpg')"></div>
+            <div class="slide" style="background-image: url('Welcome/7.jpg')"></div>
+            <div class="slide" style="background-image: url('Welcome/8.jpg')"></div>
+            <div class="slide" style="background-image: url('Welcome/9.jpg')"></div>
+            <div class="slide" style="background-image: url('Welcome/10.jpg')"></div>
+            <div class="slide" style="background-image: url('Welcome/11.jpg')"></div>
+            <div class="slide" style="background-image: url('Welcome/12.jpg')"></div>
+            <div class="slide" style="background-image: url('Welcome/13.jpg')"></div>
+            <div class="slide" style="background-image: url('Welcome/14.jpg')"></div>
+            <div class="slide" style="background-image: url('Welcome/15.jpg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <!-- Navigation Arrows -->
+        <button class="slider-arrow prev-arrow" id="prevBtn">
+            <img src="../Imagenes/D.png" alt="Anterior" class="arrow-icon prev-icon">
+        </button>
+        <button class="slider-arrow next-arrow" id="nextBtn">
+            <img src="../Imagenes/D.png" alt="Siguiente" class="arrow-icon next-icon">
+        </button>
+        <!-- Progress Bars -->
+        <div class="progress-bars">
+            <button class="pause-btn" id="pauseBtn">
+                <span class="pause-icon">⏸</span>
+                <span class="play-icon" style="display: none;">▶</span>
+            </button>
+            <div class="progress-bar active" data-slide="0">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="1">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="2">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="3">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="4">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="5">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="6">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="7">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="8">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="9">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="10">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="11">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="12">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="13">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-bar" data-slide="14">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explora Productos Section -->
+    <section class="explore-products">
+        <div class="container">
+            <h2>EXPLORA NUESTROS PRODUCTOS</h2>
+            <div class="categories-slider">
+                <div class="categories-container">
+                    <div class="category-card" onclick="window.location.href='../Marketplace/Pagina Marketplace/marketplace.html'">
+                        <img src="../Imagenes/i3d.png" alt="Impresiones 3D" style="object-fit: contain; padding: 20px;">
+                        <h3>Impresiones 3D</h3>
+                    </div>
+                    <div class="category-card" onclick="window.location.href='../../Productos-Roser/Apps/3dcost/3dcost.html'">
+                        <img src="../Imagenes/3D.png" alt="3DCost">
+                        <h3>3DCost</h3>
+                    </div>
+                    <div class="category-card" onclick="window.location.href='../Productos-Roser/Prototipos/DePie/DePie.html'">
+                        <img src="../Imagenes/ceo.png" alt="DePie" style="object-fit: contain; padding: 20px;">
+                        <h3>DePie</h3>
+                    </div>
+                    <div class="category-card" onclick="window.location.href='../Servicios/Diseño mecanico/diseno-mecanico.html'">
+                        <img src="../Imagenes/D_mecanico.png" alt="Diseño Mecánico" style="object-fit: contain; padding: 20px;">
+                        <h3>Diseño Mecánico</h3>
+                    </div>
+                    <div class="category-card" onclick="window.location.href='../Servicios/Diseño Electrico/diseno-electrico.html'">
+                        <img src="../Imagenes/D_electrico.png" alt="Diseño Eléctrico" style="object-fit: contain; padding: 20px;">
+                        <h3>Diseño Eléctrico</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <a href="mailto:info@rosertecnologias.com" class="contact-link">info@rosertecnologias.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <a href="tel:+573113579437" class="contact-link">+57 311 3579437</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span class="contact-text">El Rosario, Nariño, Colombia</span>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Mensaje" rows="5" required></textarea>
+                    <button type="submit" class="contact-submit-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.516"/>
+                        </svg>
+                        Enviar por WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section class="location-section">
+        <div class="container">
+            <h2>Nuestra Ubicación</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6234567890!2d-77.3348548!3d1.7435793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2ef95775e1f8d9%3A0x6ecc57112a7de802!2sFerreteria%20JOHN'S!5e0!3m2!1ses!2sco!4v1642000000000!5m2!1ses!2sco" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3>Roser Tecnologías</h3>
+            <p>Innovación, diseño y tecnología para el futuro.</p>
+            <p>&copy; 2025 Roser Tecnologías. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../navbar-component.js"></script>
+    <script src="../payment-modal.js"></script>
+    <script src="../cart-component.js"></script>
+    <script src="../shared-components.js"></script>
+    <script src="../script.js"></script>
+    <script src="../product-routes.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

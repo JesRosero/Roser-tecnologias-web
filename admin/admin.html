@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Roser Tecnologías</title>
+    <link rel="icon" type="image/x-icon" href="../Imagenes/Rosero.png">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <header>
+        <img src="../Imagenes/Rosero.png" alt="Roser">
+        <h1>Panel de Productos</h1>
+        <a href="../Marketplace/Pagina Marketplace/marketplace.html" target="_blank">Ver Marketplace →</a>
+    </header>
+
+    <main>
+        <!-- Lista de productos -->
+        <section class="list-section">
+            <h2>Productos en la base de datos</h2>
+            <div id="productsList" class="products-list">
+                <p class="loading">Cargando productos...</p>
+            </div>
+        </section>
+
+        <!-- Formulario -->
+        <section class="form-section">
+            <h2 id="form-title">Nuevo Producto</h2>
+
+            <form id="productForm">
+                <input type="hidden" id="productId">
+
+                <!-- SECCIÓN 1: Info básica -->
+                <div class="section-label">Información básica</div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nombre completo</label>
+                        <input type="text" id="productName" placeholder="Nombre del producto" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Precio (COP)</label>
+                        <div class="price-input-wrapper">
+                            <span class="currency">$</span>
+                            <input type="text" id="productPrice" placeholder="61.069" required inputmode="numeric">
+                        </div>
+                        <div class="price-display" id="priceDisplay"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>ID del producto <span class="hint">(sin espacios, ej: soporte-qr)</span></label>
+                    <div class="id-input-row">
+                        <input type="text" id="productId2" placeholder="nombre-del-producto" required>
+                        <button type="button" id="generateIdBtn" class="btn-generate">&#x2B06; Generar</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Descripción corta <span class="hint">(para la tarjeta del marketplace)</span></label>
+                    <input type="text" id="productDescription" placeholder="Descripción breve" required>
+                </div>
+
+                <div class="section-label">Acerca de este producto <span class="hint">(bullets con ✓)</span></div>
+                <div id="featuresContainer"></div>
+                <button type="button" id="addFeatureBtn" class="btn-add-spec">+ Agregar punto</button>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Días de preparación</label>
+                        <input type="number" id="preparation_days" value="3" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Categorías</label>
+                        <div class="category-selector" id="categorySelectorWrapper">
+                            <div class="category-tags" id="categoryTags"></div>
+                            <div class="category-input-row">
+                                <input type="text" id="categorySearch" placeholder="Buscar categoría..." autocomplete="off">
+                            </div>
+                            <div class="category-dropdown" id="categoryDropdown"></div>
+                        </div>
+                        <input type="hidden" id="categories">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Mensaje WhatsApp <span class="hint">(opcional, personaliza el mensaje)</span></label>
+                    <input type="text" id="whatsapp_message" placeholder="¡Hola! Estoy interesado en...">
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="stock" checked>
+                        Producto disponible (en stock)
+                    </label>
+                </div>
+
+                <div class="section-label">Comprados juntos habitualmente <span class="hint">(opcional — hasta 3 productos)</span></div>
+
+                <div class="form-group">
+                    <div class="fbt-selector" id="fbtSelectorWrapper">
+                        <div class="fbt-selected-list" id="fbtSelectedList"></div>
+                        <div class="fbt-input-row">
+                            <input type="text" id="fbtSearch" placeholder="Buscar producto por nombre..." autocomplete="off">
+                        </div>
+                        <div class="category-dropdown" id="fbtDropdown"></div>
+                    </div>
+                    <input type="hidden" id="frequently_bought_ids">
+                </div>
+
+                <!-- SECCIÓN 2: Imagen del marketplace -->
+                <div class="section-label">Imagen principal <span class="hint">(tarjeta del marketplace)</span></div>
+
+                <div class="form-group">
+                    <div class="upload-area" id="uploadAreaMain">
+                        <input type="file" id="imageFileMain" accept="image/png, image/jpg, image/jpeg, image/webp">
+                        <div class="upload-placeholder" id="uploadPlaceholderMain">
+                            <span>📁 Imagen para el marketplace</span>
+                        </div>
+                        <img id="imagePreviewMain" class="image-preview hidden" alt="Preview">
+                    </div>
+                    <input type="text" id="image_url" placeholder="O pega una URL de imagen existente" style="margin-top:8px">
+                </div>
+
+                <!-- SECCIÓN 3: Colores -->
+                <div class="section-label">Colores <span class="hint">(opcional — si el producto tiene variantes de color)</span></div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="hasColors">
+                        Este producto tiene colores
+                    </label>
+                </div>
+
+                <div id="colorsSection" class="hidden">
+                    <div id="colorsContainer"></div>
+                    <button type="button" id="addColorBtn" class="btn-add-spec">+ Agregar color</button>
+                </div>
+
+                <!-- SECCIÓN 4: Galería general (sin colores) -->
+                <div class="section-label" id="galleryLabel">Galería de imágenes <span class="hint">(página de detalle del producto)</span></div>
+
+                <div id="gallerySection" class="form-group">
+                    <div class="upload-area" id="uploadAreaGallery">
+                        <input type="file" id="imageFileGallery" accept="image/png, image/jpg, image/jpeg, image/webp" multiple>
+                        <div class="upload-placeholder">
+                            <span>📁 Selecciona varias imágenes para la galería</span>
+                        </div>
+                    </div>
+                    <div id="galleryPreview" class="gallery-preview"></div>
+                </div>
+
+                <!-- SECCIÓN 4: Especificaciones -->
+                <div class="section-label">Especificaciones técnicas</div>
+
+                <div id="specsContainer">
+                    <div class="spec-row">
+                        <input type="text" placeholder="Ej: Material" class="spec-key">
+                        <input type="text" placeholder="Ej: PLA de alta calidad" class="spec-value">
+                        <button type="button" class="btn-remove-spec">✕</button>
+                    </div>
+                </div>
+                <button type="button" id="addSpecBtn" class="btn-add-spec">+ Agregar especificación</button>
+
+                <div class="form-actions" style="margin-top: 20px;">
+                    <button type="button" id="cancelBtn" class="btn-secondary hidden">Cancelar</button>
+                    <button type="submit" id="submitBtn" class="btn-primary">Guardar Producto</button>
+                </div>
+
+                <div id="formMessage" class="message hidden"></div>
+            </form>
+        </section>
+
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>

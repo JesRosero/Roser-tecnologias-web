@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - Roser Tecnologías</title>
+    <link rel="icon" type="image/x-icon" href="../../../Imagenes/Rosero.png">
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="producto.css">
+    <link rel="stylesheet" href="producto-dinamico.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rafaelbotazini/floating-whatsapp@latest/floating-wpp.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/rafaelbotazini/floating-whatsapp@latest/floating-wpp.min.js"></script>
+</head>
+<body>
+    <div id="BotonWA"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-button"><span class="menu-lines">☰</span></div>
+            <div class="nav-logo">
+                <a href="../../../Pagina Principal/index.html" style="display:flex;align-items:center;gap:8px;text-decoration:none;">
+                    <img src="../../../Imagenes/Rosero.png" alt="Roser Tecnologías" class="logo-img">
+                    <h2>Roser Tecnologías</h2>
+                </a>
+                <a href="../Pagina Marketplace/marketplace.html" class="marketplace-link" style="display:flex;align-items:center;gap:6px;text-decoration:none;margin-left:20px;padding:8px 12px;background:#e3f2fd;border-radius:6px;">
+                    <img src="../../../Marketplace/Iconos/Marketplace.png" alt="Marketplace" style="width:20px;height:20px;">
+                    <span style="color:#1976d2;font-weight:500;font-size:0.9rem;">Marketplace</span>
+                </a>
+            </div>
+            <ul class="nav-menu"></ul>
+            <div id="authNavBtn" class="auth-nav-btn" onclick="openAuthModal()">Iniciar sesión</div>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Loading -->
+    <div id="loadingState" class="loading-state">
+        <div class="spinner"></div>
+        <p>Cargando producto...</p>
+    </div>
+
+    <!-- Error -->
+    <div id="errorState" class="error-state hidden">
+        <p>Producto no encontrado.</p>
+        <a href="../Pagina Marketplace/marketplace.html">← Volver al Marketplace</a>
+    </div>
+
+    <!-- Contenido del producto -->
+    <div id="productPage" class="product-page hidden">
+        <div class="product-container">
+            <div class="product-gallery">
+                <div class="thumbnail-gallery-vertical" id="thumbnailGallery"></div>
+                <div class="main-image-wrapper">
+                    <div class="main-image-container" id="mainImageContainer">
+                        <img src="" alt="" class="main-product-image" id="mainImage">
+                        <div class="zoom-lens" id="zoomLens"></div>
+                    </div>
+                    <div class="zoom-result" id="zoomResult">
+                        <img src="" alt="Zoom" id="zoomImage">
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h1 id="productName"></h1>
+                <div class="product-rating">
+                    <span class="stars" id="productStars">★★★★★</span>
+                    <span class="rating-count" id="productRating"></span>
+                </div>
+                <hr class="divider">
+                <div class="product-description">
+                    <h3>Acerca de este producto</h3>
+                    <p id="productDescription"></p>
+                </div>
+            </div>
+
+            <div class="product-buy-box">
+                <div class="buy-box-price" id="buyBoxPrice"></div>
+                <div class="buy-box-stock">✅ <strong>Disponible</strong></div>
+                <div class="buy-box-delivery">
+                    <p>📦 <strong>Preparación:</strong> <span id="productPrep"></span></p>
+                    <p>🚚 <strong>Envío</strong> a todo Colombia</p>
+                </div>
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <label>Cantidad:</label>
+                        <select id="quantity">
+                            <option>1</option><option>2</option><option>3</option>
+                            <option>4</option><option>5</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCartProduct()">Agregar al Carrito</button>
+                    <button class="whatsapp-btn" onclick="contactWhatsApp()">Contactar por WhatsApp</button>
+                </div>
+                <div class="buy-box-meta">
+                    <p>Vendido por <strong>Roser Tecnologías</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Especificaciones -->
+        <div class="product-specs" id="productSpecs" style="display:none">
+            <h2>Especificaciones Técnicas</h2>
+            <table id="specsTable"></table>
+        </div>
+
+        <!-- Comprados juntos -->
+        <div class="frequently-bought" id="frequentlyBought" style="display:none">
+            <h2>Comprados juntos habitualmente</h2>
+            <div class="fbt-body">
+                <div class="fbt-items" id="fbtItems"></div>
+                <div class="fbt-summary" id="fbtSummary"></div>
+            </div>
+        </div>
+
+        <!-- Productos relacionados -->
+        <div class="related-products">
+            <h2>Productos Relacionados</h2>
+            <div class="related-grid" id="relatedGrid"></div>
+        </div>
+
+        <!-- Reseñas -->
+        <div class="reviews-section" id="reviewsSection">
+            <div class="reviews-layout">
+                <div class="reviews-left">
+                    <h2>Opiniones de clientes</h2>
+                    <div id="reviewsSummary"></div>
+                    <div id="reviewLoginPrompt" class="review-login-prompt">
+                        <p>¿Quieres dejar una opinión?</p>
+                        <button class="auth-btn-primary" onclick="openAuthModal()">Iniciar sesión</button>
+                    </div>
+                    <div class="review-form-box" style="display:none">
+                        <h3>Escribir opinión de este producto</h3>
+                        <p class="review-form-sub">Comparte tu opinión con otros clientes</p>
+                        <div class="review-star-picker" id="starPicker">
+                            <span data-v="1">★</span><span data-v="2">★</span><span data-v="3">★</span><span data-v="4">★</span><span data-v="5">★</span>
+                        </div>
+                        <input type="text" id="reviewAuthor" placeholder="Tu nombre" maxlength="60" style="display:none">
+                        <textarea id="reviewComment" placeholder="Cuéntanos tu experiencia..." rows="4" maxlength="500"></textarea>
+                        <button class="review-submit-btn" onclick="submitReview()">Publicar opinión</button>
+                        <p class="review-msg" id="reviewMsg"></p>
+                    </div>
+                </div>
+                <div class="reviews-right">
+                    <h3>Opiniones destacadas</h3>
+                    <div class="reviews-list" id="reviewsList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal" style="display:none;align-items:center;justify-content:center">
+        <div class="modal-content auth-modal-content">
+            <span class="close" onclick="closeAuthModal()">&times;</span>
+            <div id="authLogin">
+                <h2>Iniciar sesión</h2>
+                <p class="auth-sub">Para publicar una opinión necesitas una cuenta</p>
+                <input type="email" id="authEmail" placeholder="Correo electrónico" autocomplete="email">
+                <div class="auth-field-row">
+                    <input type="password" id="authPassword" placeholder="Contraseña" autocomplete="current-password">
+                    <button class="auth-gen-btn" onclick="togglePass('authPassword', this)" title="Ver contraseña">👁️</button>
+                </div>
+                <button class="auth-btn-primary" onclick="authLogin()">Entrar</button>
+                <p class="auth-msg" id="authMsg"></p>
+                <p class="auth-toggle">¿No tienes cuenta? <a href="#" onclick="showRegister()">Regístrate</a></p>
+            </div>
+            <div id="authRegister" style="display:none">
+                <h2>Crear cuenta</h2>
+                <input type="email" id="regEmail" placeholder="Correo electrónico" autocomplete="email">
+                <div class="auth-field-row">
+                    <input type="text" id="regUsername" placeholder="Nombre de usuario" maxlength="40">
+                    <button class="auth-gen-btn" onclick="generateUsername()" title="Generar usuario">⚡</button>
+                </div>
+                <div class="auth-field-row">
+                    <input type="password" id="regPassword" placeholder="Contraseña (mín. 6 caracteres)" autocomplete="new-password">
+                    <button class="auth-gen-btn" onclick="generatePassword()" title="Generar contraseña">🔑</button>
+                    <button class="auth-gen-btn" onclick="togglePass('regPassword', this)" title="Ver contraseña">👁️</button>
+                </div>
+                <button class="auth-btn-primary" onclick="authRegister()">Crear cuenta</button>
+                <p class="auth-msg" id="regMsg"></p>
+                <p class="auth-toggle">¿Ya tienes cuenta? <a href="#" onclick="showLogin()">Inicia sesión</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal galería -->
+    <div id="galleryModal" class="modal" style="display:none;align-items:center;justify-content:center">
+        <div class="modal-content gallery-modal-content">
+            <span class="close" onclick="closeGalleryModal()">&times;</span>
+            <div class="gallery-modal-body" id="galleryModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content cart-modal-content">
+            <span class="close" onclick="closeCartModal()">&times;</span>
+            <div class="cart-header"><h2>Carrito de Compras</h2></div>
+            <div id="cartBody" class="cart-body"><p class="empty-cart">Tu carrito está vacío</p></div>
+            <div class="cart-footer">
+                <div class="cart-total"><span>Total:</span><span id="cart-total">$0 COP</span></div>
+                <button class="checkout-btn" onclick="checkout()">Finalizar Compra por WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>Roser Tecnologías</h3>
+            <p>Innovación, diseño y tecnología para el futuro.</p>
+            <p>&copy; 2025 Roser Tecnologías. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../../shared-components.js"></script>
+    <script src="../../../script.js"></script>
+    <script src="producto-simple.js"></script>
+    <script src="producto-dinamico.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - Roser Tecnologías</title>
+    <link rel="icon" type="image/x-icon" href="../../Imagenes/Rosero.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="marketplace.css">
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Floating WhatsApp css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rafaelbotazini/floating-whatsapp@latest/floating-wpp.min.css">
+    <!--Floating WhatsApp javascript-->
+    <script src="https://cdn.jsdelivr.net/gh/rafaelbotazini/floating-whatsapp@latest/floating-wpp.min.js"></script>
+</head>
+<body>
+    <!--Div donde estará el botón de WhatsApp-->
+    <div id="BotonWA"></div>
+    
+    <!-- Botón Flotante de Métodos de Pago -->
+    <div class="floating-payment-btn" onclick="PaymentModal.open()">
+        <span class="payment-tooltip">Métodos de Pago</span>
+        <img src="../metodos de pago/M.png" alt="Métodos de Pago">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="sidebar-toggle" id="sidebar-toggle">
+                    <div class="menu-button">
+                        <span class="menu-lines">☰</span>
+                    </div>
+                </button>
+                <div class="nav-logo">
+                    <a href="../../Pagina Principal/index.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                        <img src="../../Imagenes/Rosero.png" alt="Roser Tecnologías" class="logo-img">
+                        <h2>Roser Tecnologías</h2>
+                    </a>
+                </div>
+                <button class="categories-btn">
+                    <img src="../../Marketplace/Iconos/categorias.png" alt="Categorías" class="categories-icon">
+                    <span>Categorías</span>
+                </button>
+            </div>
+            
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar productos...">
+                    <div class="search-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        </svg>
+                    </div>
+                    <div class="cancel-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="cart-icon">
+                    <img src="../../Imagenes/Carrito.png" alt="Carrito" width="24" height="24">
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Dropdown Menu -->
+        <div class="sidebar-dropdown">
+            <div class="dropdown-section">
+                <div class="section-header">
+                    <img src="../../Imagenes/Servicios.png" alt="Servicios" class="section-icon">
+                    <span class="section-title">Servicios</span>
+                    <span class="section-arrow">▼</span>
+                </div>
+                <div class="subsection">
+                    <a href="../../Servicios/Diseños-3D/disenos-3.html">
+                        <img src="../../Imagenes/d3d.png" alt="Diseños 3D" class="subsection-icon">
+                        Diseños 3D
+                    </a>
+                    <a href="../../Servicios/Impresiones-3D/impresiones-3d.html">
+                        <img src="../../Imagenes/i3d.png" alt="Impresión 3D" class="subsection-icon">
+                        Impresión 3D
+                    </a>
+                    <a href="../../Servicios/Diseño Electrico/diseno-electrico.html">
+                        <img src="../../Imagenes/D_electrico.png" alt="Diseño Eléctrico" class="subsection-icon">
+                        Diseño Eléctrico
+                    </a>
+                    <a href="../../Servicios/Diseño mecanico/diseno-mecanico.html">
+                        <img src="../../Imagenes/D_mecanico.png" alt="Diseño Mecánico" class="subsection-icon">
+                        Diseño Mecánico
+                    </a>
+                    <a href="../../Servicios/Fabricacion de sistemas mecanicos/fabricacion-sistemas-mecanicos.html">
+                        <img src="../../Imagenes/F_mecanico.png" alt="Fabricación de Sistemas Mecánicos" class="subsection-icon">
+                        Fabricación de Sistemas Mecánicos
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown-section">
+                <div class="section-header">
+                    <img src="../../Imagenes/PTS.png" alt="Productos" class="section-icon">
+                    <span class="section-title">Productos</span>
+                    <span class="section-arrow">▼</span>
+                </div>
+                <div class="subsection">
+                    <div class="prototypes-header">
+                        <img src="../../Imagenes/Proto.png" alt="Prototipos" class="subsection-icon">
+                        Prototipos
+                        <span class="section-arrow">▼</span>
+                    </div>
+                    <div class="prototype-subsection">
+                        <a href="../../Productos-Roser/Prototipos/DePie/DePie.html">
+                            <img src="../../Imagenes/ceo.png" alt="DePie" class="subsection-icon">
+                            DePie
+                        </a>
+                    </div>
+                    <div class="apps-header" data-toggle="apps">
+                        <img src="../../Imagenes/apps.png" alt="Apps" class="subsection-icon">
+                        Apps
+                        <span class="section-arrow">▼</span>
+                    </div>
+                    <div class="sub-subsection">
+                        <a href="../../Productos-Roser/Apps/3dcost/3dcost.html">
+                            <img src="../../Imagenes/3D.png" alt="3D" class="subsection-icon">
+                            3DCost
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown-section">
+                <div class="section-header">
+                    <img src="../../Imagenes/empresa.png" alt="Empresa" class="section-icon">
+                    <span class="section-title">Empresa</span>
+                    <span class="section-arrow">▼</span>
+                </div>
+                <div class="subsection">
+                    <a href="../../Empresa/Conocenos/conocenos.html">
+                        <img src="../../Imagenes/ceo.png" alt="CEO" class="subsection-icon">
+                        Conocenos
+                    </a>
+                    <a href="../../Empresa/Mision y Vision/mision-vision.html">
+                        <img src="../../Imagenes/vision.png" alt="Vision" class="subsection-icon">
+                        Misión y Visión
+                    </a>
+                    <a href="../../Empresa/Terminos y Condiciones/terminos-condiciones.html">
+                        <img src="../../Imagenes/terminos.png" alt="Terminos" class="subsection-icon">
+                        Términos y Condiciones
+                    </a>
+                    <a href="../../Empresa/Politicas y Privacidad/politica-privacidad.html" target="_self">
+                        <img src="../../Imagenes/privacidad.png" alt="Privacidad" class="subsection-icon">
+                        Privacidad
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    
+    <div class="marketplace-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3>Categorías</h3>
+                <button class="sidebar-close" id="sidebar-close">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Productos Destacados</h3>
+                <ul class="sidebar-list">
+                    <li><a href="#" class="sidebar-link featured-link" data-featured="bestsellers">Más Vendidos</a></li>
+                    <li><a href="#" class="sidebar-link featured-link" data-featured="new">Nuevos Lanzamientos</a></li>
+                    <li><a href="#" class="sidebar-link featured-link" data-featured="trending">Productos del Momento</a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Filtrar por Precio</h3>
+                <div class="price-filter-group">
+                    <div class="price-input-row">
+                        <input type="text" id="minPrice" placeholder="Mín">
+                        <span>-</span>
+                        <input type="text" id="maxPrice" placeholder="Máx">
+                    </div>
+                    <button id="clearFiltersBtn" class="clear-filter-btn">Limpiar Filtros</button>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Buscar por Categoría</h3>
+                <ul class="sidebar-list" id="categoriesList">
+                    <li>
+                        <a href="#" class="sidebar-link category-link active" data-category="all">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="margin-right: 8px;"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>
+                            <span>Todos los Productos</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="marketplace-content">
+                <div class="container">
+                    <h2>Productos Disponibles</h2>
+                    <div class="products-grid">
+                    </div>
+                </div>
+            </section>
+
+           
+
+    <!-- Modal del Producto -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProductModal()">&times;</span>
+            <div id="modalBody">
+                <!-- El contenido se carga dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Zoom de Imagen -->
+    <div id="imageZoomModal" class="zoom-modal">
+        <div class="zoom-modal-content">
+            <span class="zoom-close" onclick="closeImageZoom()">&times;</span>
+            <div class="zoom-container">
+                <img id="zoomImage" src="" alt="Imagen ampliada">
+                <div class="zoom-lens"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3>Roser Tecnologías</h3>
+            <p>Innovación, diseño y tecnología para el futuro.</p>
+            <p>&copy; 2025 Roser Tecnologías. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../../shared-components.js"></script>
+    <script src="../../payment-modal.js"></script>
+    <script src="../../cart-component.js"></script>
+    <script src="../../products-db.js"></script>
+    <script src="marketplace.js"></script>
+    <script src="../../script.js"></script>
+</body>
+</html>

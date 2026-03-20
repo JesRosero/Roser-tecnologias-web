@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DCost - Demo Interactivo</title>
+    <link rel="icon" type="image/x-icon" href="../../../Imagenes/Rosero.png">
+    <link rel="stylesheet" href="3dcost-demo.css">
+</head>
+<body>
+    <button onclick="window.location.href='../3dcost.html'" style="position: fixed; top: 20px; left: 20px; z-index: 1000; padding: 10px 20px; background: #664AFF; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: 500; box-shadow: 0 2px 8px rgba(102,74,255,0.3); transition: all 0.3s ease;" onmouseover="this.style.background='#5539CC'" onmouseout="this.style.background='#664AFF'">← Volver a 3DCost</button>
+
+    <div class="demo-container">
+        <div class="demo-header">
+            <h1>3DCost - Demo Interactivo</h1>
+            <p>Explora las funcionalidades de la app</p>
+        </div>
+
+        <div class="phone-mockup">
+            <!-- Screen 1: Bienvenido -->
+            <div class="screen active" id="screen-1">
+                <div class="phone-header">
+                    <span class="time">14:02</span>
+                    <div class="status-icons">
+                        <span>📶</span>
+                        <span>📶</span>
+                        <span>🔋</span>
+                    </div>
+                </div>
+                <div class="phone-content">
+                    <div class="menu-icon">☰</div>
+                    <div class="app-logo">
+                        <div class="logo-circle">
+                            <img src="../../../../Imagenes/3D.png" alt="3DCost" class="logo-3d-icon">
+                        </div>
+                    </div>
+                    <h2>Bienvenido</h2>
+                    <p class="subtitle">Roser tecnologías 🔧</p>
+                    <p class="description">Calcula el costo real de tus impresiones 3D teniendo en cuenta todos los factores que importan.</p>
+                    <button class="btn-primary" onclick="goToScreen(2)">📊 Calcular costo</button>
+                    <button class="btn-secondary" onclick="goToScreen(2)">⚙️ Configurar empresa</button>
+                </div>
+            </div>
+
+            <!-- Screen 2: Información de Empresa -->
+            <div class="screen" id="screen-2">
+                <div class="phone-header">
+                    <span class="time">14:02</span>
+                    <div class="status-icons">
+                        <span>📶</span>
+                        <span>📶</span>
+                        <span>🔋</span>
+                    </div>
+                </div>
+                <div class="phone-content">
+                    <div class="menu-icon">☰</div>
+                    <h2>Información de la Empresa</h2>
+                    <div class="form-group">
+                        <label>Nombre de usuario</label>
+                        <div class="input-field">
+                            <span class="icon">👤</span>
+                            <span>Roser tecnologías</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Nombre de empresa</label>
+                        <div class="input-field">
+                            <span class="icon">🏢</span>
+                            <span>3DCost</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>NIT</label>
+                        <div class="input-field">
+                            <span class="icon">🆔</span>
+                            <span>123456789</span>
+                        </div>
+                    </div>
+                    <div class="world-map">🗺️</div>
+                    <div class="currency-info">
+                        <span>Moneda seleccionada</span>
+                        <span class="currency-code">COP</span>
+                    </div>
+                    <button class="btn-primary" onclick="goToScreen(3)">Continuar</button>
+                </div>
+            </div>
+
+            <!-- Screen 3: Datos de Impresión -->
+            <div class="screen" id="screen-3">
+                <div class="phone-header">
+                    <span class="time">14:02</span>
+                    <div class="status-icons">
+                        <span>📶</span>
+                        <span>📶</span>
+                        <span>🔋</span>
+                    </div>
+                </div>
+                <div class="phone-content">
+                    <div class="menu-icon">☰</div>
+                    <h2>Datos de Impresión</h2>
+                    <p class="subtitle">Completa los datos de impresión para continuar el cálculo.</p>
+                    <div class="form-group">
+                        <label>Tiempo de impresión</label>
+                        <div class="time-inputs">
+                            <input type="number" value="1" class="time-input"> h
+                            <input type="number" value="30" class="time-input"> min
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Peso del objeto (g)</label>
+                        <input type="number" value="15.5" class="weight-input">
+                    </div>
+                    <div class="printer-info">
+                        <div class="printer-icon">🖨️</div>
+                        <div class="printer-details">
+                            <p><strong>Bambu Lab X1 Carbon</strong></p>
+                            <p>300 Watts</p>
+                        </div>
+                    </div>
+                    <button class="btn-primary" onclick="goToScreen(4)">Continuar a Filamento</button>
+                </div>
+            </div>
+
+            <!-- Screen 4: Costos de Filamento -->
+            <div class="screen" id="screen-4">
+                <div class="phone-header">
+                    <span class="time">14:53</span>
+                    <div class="status-icons">
+                        <span>📶</span>
+                        <span>📶</span>
+                        <span>🔋</span>
+                    </div>
+                </div>
+                <div class="phone-content">
+                    <div class="menu-icon">☰</div>
+                    <h2>Costos de Filamento</h2>
+                    <p class="subtitle">Completa los datos del filamento para estimar su costo.</p>
+                    <div class="form-group">
+                        <label>Tipo de material</label>
+                        <div class="input-field">
+                            <span class="icon">🧵</span>
+                            <span>PLA</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Material a usar: 15,50 g</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Precio bobina</label>
+                        <div class="price-field">
+                            <span class="currency">$</span>
+                            <span class="amount">50.000</span>
+                            <span class="currency-code">COP</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Peso bobina (g)</label>
+                        <div class="input-field">
+                            <span class="icon">⚖️</span>
+                            <span>1.000</span>
+                        </div>
+                    </div>
+                    <div class="total-cost">
+                        <span>Costo total del filamento:</span>
+                        <span class="cost-amount">891,25 COP</span>
+                    </div>
+                    <button class="btn-primary" onclick="goToScreen(5)">⚡ Continuar a Consumo Energético</button>
+                </div>
+            </div>
+
+            <!-- Screen 5: Consumo Energético -->
+            <div class="screen" id="screen-5">
+                <div class="phone-header">
+                    <span class="time">14:53</span>
+                    <div class="status-icons">
+                        <span>📶</span>
+                        <span>📶</span>
+                        <span>🔋</span>
+                    </div>
+                </div>
+                <div class="phone-content">
+                    <div class="menu-icon">☰</div>
+                    <h2>Consumo Energético</h2>
+                    <p class="subtitle">Completa el valor de energía por kWh para calcular el consumo.</p>
+                    <div class="form-group">
+                        <label>Impresora: Bambu Lab X1 Carbon - 300 Watts</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Costo de energía</label>
+                        <div class="input-field">
+                            <span class="icon">⚡</span>
+                            <span>940,7 COP/kWh</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tiempo de impresión: 1 h y 30 min</label>
+                    </div>
+                    <div class="total-cost">
+                        <span>Costo total de electricidad:</span>
+                        <span class="cost-amount">423,31 COP</span>
+                    </div>
+                    <button class="btn-primary" onclick="goToScreen(6)">📋 Continuar a Mano de Obra</button>
+                </div>
+            </div>
+
+            <!-- Screen 6: Mano de Obra -->
+            <div class="screen" id="screen-6">
+                <div class="phone-header">
+                    <span class="time">14:54</span>
+                    <div class="status-icons">
+                        <span>📶</span>
+                        <span>📶</span>
+                        <span>🔋</span>
+                    </div>
+                </div>
+                <div class="phone-content">
+                    <div class="menu-icon">☰</div>
+                    <h2>Mano de Obra</h2>
+                    <p class="subtitle">Completa los tiempos y tarifas para estimar los costos de mano de obra.</p>
+                    <div class="form-group">
+                        <label>Diseño</label>
+                        <div class="labor-row">
+                            <input type="number" value="1" class="time-input"> h
+                            <span>$</span>
+                            <input type="number" value="30.000" class="price-input"> COP/h
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Post-procesado</label>
+                        <div class="labor-row">
+                            <input type="number" value="0.5" class="time-input"> h
+                            <span>$</span>
+                            <input type="number" value="20.000" class="price-input"> COP/h
+                        </div>
+                    </div>
+                    <div class="total-cost">
+                        <span>Costo total de mano de obra:</span>
+                        <span class="cost-amount">40.000 COP</span>
+                    </div>
+                    <button class="btn-primary" onclick="goToScreen(9)">📊 Ver Resultado Final</button>
+                </div>
+            </div>
+
+            <!-- Screen 9: Resultado Final -->
+            <div class="screen" id="screen-9">
+                <div class="phone-header">
+                    <span class="time">14:02</span>
+                    <div class="status-icons">
+                        <span>📶</span>
+                        <span>📶</span>
+                        <span>🔋</span>
+                    </div>
+                </div>
+                <div class="phone-content">
+                    <div class="menu-icon">☰</div>
+                    <h2>Resultado final</h2>
+                    <div class="company-info">
+                        <h3>Información de la empresa</h3>
+                        <p><strong>Nombre:</strong> 3DCost</p>
+                        <p><strong>NIT:</strong> 123456789</p>
+                    </div>
+                    <div class="cost-breakdown">
+                        <h3>Desglose de costos</h3>
+                        <div class="cost-item">
+                            <span>Filamento</span>
+                            <span>COP 891,25</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>Energía</span>
+                            <span>COP 423,31</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>Diseño</span>
+                            <span>COP 30.000,00</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>Post-procesamiento</span>
+                            <span>COP 10.000,00</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>Máquina y mantenimiento</span>
+                            <span>COP 2.613,53</span>
+                        </div>
+                    </div>
+                    <div class="final-total">
+                        <div class="total-row">
+                            <span><strong>Total</strong></span>
+                            <span><strong>COP 60.604,44</strong></span>
+                        </div>
+                    </div>
+                    <button class="btn-primary" onclick="goToScreen(1)">📄 Exportar como PDF</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="demo-navigation">
+            <button onclick="goToScreen(1)" class="nav-btn">Inicio</button>
+            <button onclick="goToScreen(2)" class="nav-btn">Empresa</button>
+            <button onclick="goToScreen(3)" class="nav-btn">Datos</button>
+            <button onclick="goToScreen(4)" class="nav-btn">Filamento</button>
+            <button onclick="goToScreen(5)" class="nav-btn">Energía</button>
+            <button onclick="goToScreen(6)" class="nav-btn">Mano de Obra</button>
+            <button onclick="goToScreen(9)" class="nav-btn">Resultado</button>
+        </div>
+    </div>
+
+    <script src="../../../shared-components.js"></script>
+    <script src="3dcost-demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.demo-container {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.demo-header {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.demo-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.demo-header p {
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+/* Phone Mockup */
+.phone-mockup {
+    width: 320px;
+    height: 640px;
+    background: #000;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 auto 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.screen.active {
+    display: flex;
+}
+
+.phone-header {
+    background: #f8f9fa;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 20px 20px 0 0;
+}
+
+.status-icons {
+    display: flex;
+    gap: 5px;
+}
+
+.phone-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* App Logo */
+.app-logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo-3d-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo-circle {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #4CAF50, #2196F3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Typography */
+h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 15px 0 5px 0;
+    color: #333;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.description {
+    text-align: center;
+    color: #666;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.input-field .icon {
+    font-size: 1rem;
+}
+
+.time-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.time-input, .weight-input, .price-input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+}
+
+.weight-input {
+    width: 100px;
+}
+
+.price-input {
+    width: 80px;
+}
+
+.labor-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Price Display */
+.price-field {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    gap: 5px;
+}
+
+.price-field .currency {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.price-field .amount {
+    flex: 1;
+    font-weight: bold;
+}
+
+.price-field .currency-code {
+    color: #666;
+}
+
+/* World Map */
+.world-map {
+    text-align: center;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+/* Currency Info */
+.currency-info {
+    background: #e3f2fd;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.currency-code {
+    background: #2196F3;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Printer Info */
+.printer-info {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    gap: 15px;
+}
+
+.printer-icon {
+    font-size: 2rem;
+}
+
+.printer-details p {
+    margin: 2px 0;
+    font-size: 0.9rem;
+}
+
+/* Total Cost */
+.total-cost {
+    background: #e8f5e8;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.cost-amount {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-top: 5px;
+}
+
+/* Company Info */
+.company-info {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.company-info h3 {
+    color: #2196F3;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.company-info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* Cost Breakdown */
+.cost-breakdown {
+    margin-bottom: 20px;
+}
+
+.cost-breakdown h3 {
+    color: #2196F3;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.cost-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.final-total {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+/* Buttons */
+.btn-primary {
+    width: 100%;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #45a049;
+}
+
+.btn-secondary {
+    width: 100%;
+    background: transparent;
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #4CAF50;
+    color: white;
+}
+
+/* Navigation */
+.demo-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.nav-btn {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-btn:hover {
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .phone-mockup {
+        width: 280px;
+        height: 560px;
+    }
+    
+    .demo-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .nav-btn {
+        font-size: 0.7rem;
+        padding: 6px 10px;
+    }
+}

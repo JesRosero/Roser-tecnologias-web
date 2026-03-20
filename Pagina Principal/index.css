@@ -1,0 +1,378 @@
+/* Estilos para Métodos de Pago */
+.payment-option {
+    border: 2px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: white;
+}
+
+.payment-option:hover {
+    border-color: #2196F3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(33, 150, 243, 0.15);
+}
+
+.payment-option.selected {
+    border-color: #4CAF50;
+    background: #e8f5e9;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+}
+
+.payment-option img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 5px;
+    transition: transform 0.3s;
+}
+
+.payment-option.selected img {
+    transform: scale(1.1);
+}
+
+.remove-payment-btn {
+    background: none;
+    border: none;
+    color: #d32f2f;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0 0 0 5px;
+    line-height: 1;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.remove-payment-btn:hover {
+    color: #b71c1c;
+}
+
+/* Estilos para Notificaciones Toast */
+.toast-notification {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 10000;
+    border-left: 5px solid #4CAF50;
+    min-width: 300px;
+}
+
+.toast-notification.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.toast-notification.info {
+    border-left-color: #2196F3;
+}
+
+.toast-notification.error {
+    border-left-color: #f44336;
+}
+
+.toast-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e8f5e9;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.toast-notification.info .toast-icon {
+    background: #e3f2fd;
+    color: #2196F3;
+}
+
+.toast-notification.error .toast-icon {
+    background: #ffebee;
+    color: #f44336;
+}
+
+.toast-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.toast-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.toast-message {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Estilos para el Modal de Pagos y Botón Flotante */
+.payment-modal {
+    display: none;
+    position: fixed;
+    z-index: 10002;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+}
+
+.payment-modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 0;
+    border: none;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.payment-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.payment-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.payment-close:hover { color: #333; }
+
+.payment-body { padding: 30px 20px; }
+
+.payment-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 20px;
+}
+
+.payment-footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.floating-payment-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 9990;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.floating-payment-btn:hover {
+    transform: scale(1.1);
+}
+
+.floating-payment-btn img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+/* Estilos para el Carrusel de Imágenes */
+.image-slider-section {
+    position: relative;
+    width: 100%;
+    height: 50vh; 
+    min-height: 500px; /* Altura mínima ajustada */
+    overflow: hidden;
+}
+
+.image-slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Ajustes responsive para el carrusel */
+@media (max-width: 768px) {
+    .image-slider-section {
+        height: 40vh;
+        min-height: 250px;
+    }
+}
+
+/* Estilos para la sección Explora Nuestros Productos */
+.explore-products {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+    position: relative;
+    overflow: hidden;
+}
+
+.explore-products h2 {
+    font-size: 2.5rem;
+    color: #1565c0;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    position: relative;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #1565c0, #42a5f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: titleSlideDown 1s ease-out;
+}
+
+.explore-products h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #42a5f5;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+    opacity: 0; /* Start hidden for animation */
+    animation: cardFadeIn 0.6s ease-out forwards;
+}
+
+/* Staggered animation delays for cards */
+.category-card:nth-child(1) { animation-delay: 0.2s; }
+.category-card:nth-child(2) { animation-delay: 0.4s; }
+.category-card:nth-child(3) { animation-delay: 0.6s; }
+.category-card:nth-child(4) { animation-delay: 0.8s; }
+.category-card:nth-child(5) { animation-delay: 1.0s; }
+
+.category-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(33, 150, 243, 0.15);
+    border-color: #bbdefb;
+}
+
+.category-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
+}
+
+.category-card:hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.category-card h3 {
+    color: #37474f;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+.category-card:hover h3 {
+    color: #1976d2;
+}
+
+/* Animations */
+@keyframes titleSlideDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cardFadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Page Load Animation */
+body {
+    animation: pageFadeIn 0.8s ease-in-out;
+}
+
+@keyframes pageFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
