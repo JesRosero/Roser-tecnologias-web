@@ -2,12 +2,12 @@
 const NavbarComponent = {
     init(config = {}) {
         const defaults = {
-            logoPath: '../Imagenes/Rosero.png',
-            homeUrl: 'index.html',
-            marketplaceUrl: '../Marketplace/Pagina Marketplace/marketplace.html',
-            marketplaceIcon: '../Marketplace/Iconos/Marketplace.png',
-            cartIcon: '../Imagenes/Carrito.png',
-            sidebarBasePath: '../'
+            logoPath: '/Imagenes/Rosero.png',
+            homeUrl: '/Pagina Principal/index.html',
+            marketplaceUrl: '/Marketplace/Pagina Marketplace/marketplace.html',
+            marketplaceIcon: '/Marketplace/Iconos/Marketplace.png',
+            cartIcon: '/Imagenes/Carrito.png',
+            sidebarBasePath: '/'
         };
         
         const settings = { ...defaults, ...config };

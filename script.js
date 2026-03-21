@@ -1119,9 +1119,7 @@ function changeColorBaluns(color) {
 let currentSlideIndex = 0;
 let slideInterval;
 let isPaused = false;
-const slides = document.querySelectorAll('.slide');
-const progressBars = document.querySelectorAll('.progress-bar');
-const pauseBtn = document.getElementById('pauseBtn');
+let slides, progressBars, pauseBtn;
 
 function goToSlide(index) {
     slides[currentSlideIndex].classList.remove('active');
@@ -1166,7 +1164,12 @@ function togglePause() {
 }
 
 // Initialize slider
-if (slides.length > 0) {
+document.addEventListener('DOMContentLoaded', () => {
+    slides = document.querySelectorAll('.slide');
+    progressBars = document.querySelectorAll('.progress-bar');
+    pauseBtn = document.getElementById('pauseBtn');
+
+    if (slides.length > 0) {
     progressBars.forEach((bar, index) => {
         bar.addEventListener('click', () => goToSlide(index));
     });
@@ -1191,7 +1194,8 @@ if (slides.length > 0) {
     }
     
     resetInterval();
-}
+    }
+});
 
 // Categories Navigation
 function goToCategory(category) {

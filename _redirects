@@ -3,4 +3,3 @@
 /Empresa/productos/* /Marketplace/productos/:splat 200
 /Servicios/productos/* /Marketplace/productos/:splat 200
 /impresion-3d.html /Servicios/impresiones-3d.html 200
-/* /Pagina%20Principal/index.html 200

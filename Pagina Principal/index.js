@@ -6,8 +6,8 @@ $(function () {
 
 function initializeApp() {
     // Inicializar componentes
-    PaymentModal.init({ basePath: '../Marketplace/metodos de pago/' });
-    CartSystem.init({ imageBasePath: '../' });
+    PaymentModal.init({ basePath: '/Marketplace/metodos de pago/' });
+    CartSystem.init({ imageBasePath: '/' });
     
     $('#BotonWA').floatingWhatsApp({
         phone: '573113579437',
