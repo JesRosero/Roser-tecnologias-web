@@ -1,7 +1,90 @@
+const SUPABASE_URL_IDX = 'https://usazecwhbsxrtyijchpl.supabase.co';
+const SUPABASE_KEY_IDX = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVzYXplY3doYnN4cnR5aWpjaHBsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM1OTQzMzEsImV4cCI6MjA4OTE3MDMzMX0.TLqiJQDCjNAZAWrCn_TNaieq2khaf7ecnic4alNM4mo';
+
+async function getSiteConfig(key) {
+    const res = await fetch(`${SUPABASE_URL_IDX}/rest/v1/site_config?key=eq.${key}&select=value`, {
+        headers: { 'apikey': SUPABASE_KEY_IDX, 'Authorization': `Bearer ${SUPABASE_KEY_IDX}` }
+    });
+    const rows = await res.json();
+    return rows[0]?.value ?? null;
+}
+
+async function loadDynamicCarousel() {
+    const saved = await getSiteConfig('carousel_images');
+    if (!saved) return;
+    const items = typeof saved === 'string' ? JSON.parse(saved) : saved;
+    if (!items.length) return;
+
+    const slider = document.querySelector('.image-slider');
+    const barsContainer = document.querySelector('.progress-bars');
+    const pauseBtn = barsContainer.querySelector('.pause-btn');
+
+    slider.innerHTML = items.map((item, i) =>
+        `<div class="slide${i === 0 ? ' active' : ''}">
+            <img src="${item.src}" loading="${i === 0 ? 'eager' : 'lazy'}" alt="">
+            ${item.link ? `<a href="${item.link}" class="slide-link-btn">Ver más</a>` : ''}
+        </div>`
+    ).join('');
+
+    const bars = items.map((_, i) =>
+        `<div class="progress-bar${i === 0 ? ' active' : ''}" data-slide="${i}"><div class="progress-fill"></div></div>`
+    ).join('');
+    barsContainer.innerHTML = '';
+    barsContainer.appendChild(pauseBtn);
+    barsContainer.insertAdjacentHTML('beforeend', bars);
+
+    // Reinicializar slider con los nuevos elementos
+    initSlider();
+}
+
+async function loadDynamicExplora() {
+    const saved = await getSiteConfig('explora_categorias');
+    if (!saved) return;
+    const cats = typeof saved === 'string' ? JSON.parse(saved) : saved;
+    if (!cats || !cats.length) return;
+
+    const container = document.querySelector('.categories-container');
+    if (!container) return;
+
+    const PAGE = 5;
+    let page = 0;
+    const totalPages = Math.ceil(cats.length / PAGE);
+
+    function renderPage() {
+        const start = page * PAGE;
+        container.innerHTML = cats.slice(start, start + PAGE).map(cat => `
+            <div class="category-card" onclick="window.location.href='${cat.url}'">
+                <img src="${cat.img}" alt="${cat.title}" style="object-fit:contain;padding:20px">
+                <h3>${cat.title}</h3>
+            </div>
+        `).join('');
+    }
+
+    renderPage();
+
+    if (cats.length > PAGE) {
+        const prevBtn = document.getElementById('catPrev');
+        const nextBtn = document.getElementById('catNext');
+        prevBtn.style.display = '';
+        nextBtn.style.display = '';
+
+        prevBtn.addEventListener('click', () => {
+            page = (page - 1 + totalPages) % totalPages;
+            renderPage();
+            prevBtn.disabled = false;
+            nextBtn.disabled = false;
+        });
+        nextBtn.addEventListener('click', () => {
+            page = (page + 1) % totalPages;
+            renderPage();
+        });
+    }
+}
+
 $(function () {
-    setTimeout(() => {
-        initializeApp();
-    }, 100);
+    Promise.all([loadDynamicCarousel(), loadDynamicExplora()]).finally(() => {
+        setTimeout(() => initializeApp(), 100);
+    });
 });
 
 function initializeApp() {

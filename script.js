@@ -1164,38 +1164,46 @@ function togglePause() {
 }
 
 // Initialize slider
-document.addEventListener('DOMContentLoaded', () => {
+function initSlider() {
+    clearInterval(slideInterval);
+    currentSlideIndex = 0;
+    isPaused = false;
+
     slides = document.querySelectorAll('.slide');
     progressBars = document.querySelectorAll('.progress-bar');
     pauseBtn = document.getElementById('pauseBtn');
 
-    if (slides.length > 0) {
+    if (!slides.length) return;
+
+    // Re-bind barras de progreso
     progressBars.forEach((bar, index) => {
         bar.addEventListener('click', () => goToSlide(index));
     });
-    
-    pauseBtn.addEventListener('click', togglePause);
-    
-    // Add arrow navigation
+
+    // Re-bind pausa
+    if (pauseBtn) {
+        pauseBtn.replaceWith(pauseBtn.cloneNode(true));
+        pauseBtn = document.getElementById('pauseBtn');
+        pauseBtn.addEventListener('click', togglePause);
+    }
+
+    // Re-bind flechas
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
-    
     if (prevBtn) {
-        prevBtn.addEventListener('click', () => {
+        prevBtn.onclick = () => {
             const prevIndex = currentSlideIndex === 0 ? slides.length - 1 : currentSlideIndex - 1;
             goToSlide(prevIndex);
-        });
+        };
     }
-    
     if (nextBtn) {
-        nextBtn.addEventListener('click', () => {
-            showNextSlide();
-        });
+        nextBtn.onclick = () => showNextSlide();
     }
-    
+
     resetInterval();
-    }
-});
+}
+
+document.addEventListener('DOMContentLoaded', initSlider);
 
 // Categories Navigation
 function goToCategory(category) {

@@ -649,6 +649,7 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
     z-index: 2;
+    pointer-events: none;
 }
 
 /* Progress Bars */
@@ -2161,3 +2162,79 @@ body {
         padding-right: 45px;
     }
 }
+
+
+
+
+/* Botón link carrusel */
+.slide-link-btn {
+    position: absolute;
+    bottom: 70px;
+    right: 36px;
+    z-index: 3;
+    background: linear-gradient(135deg, #2196F3 0%, #7c3aed 100%);
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px 13px 22px;
+    border-radius: 50px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: 0 6px 24px rgba(33,150,243,0.5), 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s ease;
+    pointer-events: all;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    animation: slideInBtn 0.5s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+.slide-link-btn::after {
+    content: '→';
+    font-size: 1rem;
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+}
+.slide-link-btn:hover {
+    transform: translateY(-4px) scale(1.06);
+    box-shadow: 0 14px 36px rgba(124,58,237,0.55), 0 4px 12px rgba(0,0,0,0.2);
+}
+.slide-link-btn:hover::after {
+    transform: translateX(5px);
+}
+.slide-link-btn:active {
+    transform: translateY(-1px) scale(0.97);
+}
+@keyframes slideInBtn {
+    from { opacity: 0; transform: translateY(20px) scale(0.9); }
+    to   { opacity: 1; transform: translateY(0)   scale(1);   }
+}
+
+/* Flechas de categorías */
+.cat-arrow {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #2196F3;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cat-arrow:hover {
+    background: #2196F3;
+    color: white;
+    border-color: #2196F3;
+    transform: scale(1.1);
+    box-shadow: 0 4px 16px rgba(33,150,243,0.35);
+}
+.cat-arrow-prev { margin-right: 16px; }
+.cat-arrow-next { margin-left: 16px; }

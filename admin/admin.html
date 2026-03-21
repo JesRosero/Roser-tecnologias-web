@@ -11,11 +11,15 @@
 
     <header>
         <img src="../Imagenes/Rosero.png" alt="Roser">
-        <h1>Panel de Productos</h1>
-        <a href="../Marketplace/Pagina Marketplace/marketplace.html" target="_blank">Ver Marketplace →</a>
+        <h1 id="headerTitle">Panel de Productos</h1>
+        <nav class="header-nav">
+            <button class="nav-btn active" data-panel="productos" onclick="switchPanel('productos')">🛒 Productos</button>
+            <button class="nav-btn" data-panel="pagina-principal" onclick="switchPanel('pagina-principal')">🏠 Página Principal</button>
+            <a href="../Marketplace/Pagina Marketplace/marketplace.html" target="_blank">Ver Marketplace →</a>
+        </nav>
     </header>
 
-    <main>
+    <main id="panelProductos">
         <!-- Lista de productos -->
         <section class="list-section">
             <h2>Productos en la base de datos</h2>
@@ -174,6 +178,54 @@
 
     </main>
 
+    <!-- Panel Página Principal -->
+    <main id="panelPaginaPrincipal" class="panel-pagina" style="display:none">
+
+        <!-- Carrusel -->
+        <section class="pp-section">
+            <h2>🖼️ Imágenes del Carrusel</h2>
+            <p class="pp-hint">Sube hasta 15 imágenes. Se guardan en Supabase y se aplican al carrusel de la página principal.</p>
+            <div class="upload-area" id="carouselUploadArea" style="margin-bottom:12px">
+                <input type="file" id="carouselFileInput" accept="image/*" multiple>
+                <div class="upload-placeholder"><span>📁 Selecciona imágenes para el carrusel</span></div>
+            </div>
+            <div id="carouselPreview" class="carousel-preview"></div>
+            <button class="btn-primary" id="saveCarouselBtn" style="margin-top:14px;max-width:220px">Guardar Carrusel</button>
+            <div id="carouselMsg" class="message hidden"></div>
+        </section>
+
+        <!-- Explora Productos -->
+        <section class="pp-section">
+            <h2>🗂️ Explora Nuestros Productos</h2>
+            <p class="pp-hint">Edita las tarjetas de categorías que aparecen en la sección "Explora nuestros productos".</p>
+            <div id="exploraCategorias"></div>
+            <button type="button" class="btn-secondary" id="addExploraBtn" style="margin-top:12px;max-width:220px">＋ Agregar categoría</button>
+            <button class="btn-primary" id="saveExploraBtn" style="margin-top:14px;max-width:220px">Guardar Categorías</button>
+            <div id="exploraMsg" class="message hidden"></div>
+        </section>
+
+    </main>
+
+    <!-- Modal imagen categoría -->
+    <div id="exploraImgModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:9999;align-items:center;justify-content:center">
+        <div style="background:#fff;border-radius:14px;padding:28px;width:360px;max-width:95vw;box-shadow:0 8px 40px rgba(0,0,0,0.25)">
+            <h3 style="margin-bottom:16px;font-size:1rem;color:#1a1f36">Cambiar imagen de categoría</h3>
+            <div id="exploraImgPreviewWrap" style="width:100%;height:140px;border:2px dashed #e2e6f0;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;overflow:hidden;background:#f8f9fc">
+                <img id="exploraImgPreview" src="" alt="" style="max-width:100%;max-height:100%;object-fit:contain;display:none">
+                <span id="exploraImgPreviewPlaceholder" style="color:#9ca3af;font-size:0.85rem">Vista previa</span>
+            </div>
+            <label style="display:block;margin-bottom:8px;font-size:0.75rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.05em">Subir archivo</label>
+            <input type="file" id="exploraImgFileInput" accept="image/*" style="width:100%;margin-bottom:14px">
+            <label style="display:block;margin-bottom:6px;font-size:0.75rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.05em">O pegar URL</label>
+            <input type="text" id="exploraImgUrlInput" placeholder="https://... o /Imagenes/..." style="width:100%;margin-bottom:18px">
+            <div style="display:flex;gap:10px">
+                <button id="exploraImgCancelBtn" style="flex:1;padding:10px;border:1.5px solid #e2e6f0;border-radius:8px;background:#fff;color:#6b7280;font-weight:600;cursor:pointer">Cancelar</button>
+                <button id="exploraImgConfirmBtn" style="flex:1;padding:10px;border:none;border-radius:8px;background:#4f8ef7;color:#fff;font-weight:600;cursor:pointer">Aplicar</button>
+            </div>
+        </div>
+    </div>
+
     <script src="admin.js"></script>
+    <script src="admin-pagina.js"></script>
 </body>
 </html>
