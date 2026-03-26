@@ -371,8 +371,8 @@ body {
 /* Gallery Section */
 .gallery-section {
   background: white;
-  padding: 4rem 0;
-  min-height: 80vh;
+  padding: 1.5rem 0;
+  min-height: auto;
 }
 
 .gallery-container {
