@@ -148,7 +148,7 @@ const NavbarComponent = {
                         <div class="subsection">
                             <a href="${settings.sidebarBasePath}Servicios/Diseños-3D/disenos-3.html">
                                 <img src="${settings.sidebarBasePath}Imagenes/d3d.png" alt="Diseños 3D" class="subsection-icon">
-                                Diseños 3D
+                                Diseño y Modelado 3D
                             </a>
                             <a href="${settings.sidebarBasePath}Servicios/Impresiones-3D/impresiones-3d.html">
                                 <img src="${settings.sidebarBasePath}Imagenes/i3d.png" alt="Impresión 3D" class="subsection-icon">
@@ -164,7 +164,7 @@ const NavbarComponent = {
                             </a>
                             <a href="${settings.sidebarBasePath}Servicios/Fabricacion de sistemas mecanicos/fabricacion-sistemas-mecanicos.html">
                                 <img src="${settings.sidebarBasePath}Imagenes/F_mecanico.png" alt="Fabricación de Sistemas Mecánicos" class="subsection-icon">
-                                Fabricación de Sistemas Mecánicos
+                                Fabricación y Mantenimiento
                             </a>
                         </div>
                     </div>
