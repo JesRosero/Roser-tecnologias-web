@@ -1,0 +1,297 @@
+@import url('../../../../styles.css');
+
+:root {
+  --primary-color: #1e88e5;
+  --secondary-color: #ff9800;
+
+  --dark-bg: #0f172a;
+
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+
+  --card-bg: #ffffff;
+
+  --shadow-light: 0 8px 25px rgba(0,0,0,0.08);
+  --shadow-medium: 0 15px 40px rgba(0,0,0,0.12);
+
+  --transition-smooth: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background:
+    linear-gradient(rgba(15,23,42,0.90), rgba(15,23,42,0.92)),
+    url('../../../../Imagenes/construction-bg.webp');
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.terms-container {
+  max-width: 1100px;
+
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+.terms-header {
+  text-align: center;
+
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,0.10);
+
+  border-radius: 30px;
+
+  padding: 50px 30px;
+
+  margin-bottom: 40px;
+
+  box-shadow: var(--shadow-medium);
+}
+
+.app-logo {
+  width: 130px;
+  height: 130px;
+
+  object-fit: contain;
+
+  margin-bottom: 20px;
+
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.35));
+}
+
+.terms-header h1 {
+  font-size: 3rem;
+
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: rgba(255,255,255,0.85);
+
+  font-size: 1.1rem;
+}
+
+/* =========================================
+   TERMS SECTION
+========================================= */
+.terms-section {
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 40px;
+
+  margin-bottom: 30px;
+
+  box-shadow: var(--shadow-light);
+
+  transition: var(--transition-smooth);
+}
+
+.terms-section:hover {
+  transform: translateY(-4px);
+
+  box-shadow: var(--shadow-medium);
+}
+
+.terms-section h2 {
+  font-size: 1.7rem;
+
+  color: var(--primary-color);
+
+  margin-bottom: 22px;
+
+  position: relative;
+}
+
+.terms-section h2::after {
+  content: '';
+
+  display: block;
+
+  width: 70px;
+  height: 4px;
+
+  margin-top: 10px;
+
+  border-radius: 50px;
+
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+.terms-section p {
+  font-size: 1.03rem;
+
+  line-height: 1.9;
+
+  color: var(--text-dark);
+
+  margin-bottom: 18px;
+}
+
+.terms-section ul {
+  padding-left: 24px;
+}
+
+.terms-section li {
+  margin-bottom: 12px;
+
+  line-height: 1.7;
+
+  color: var(--text-dark);
+}
+
+/* =========================================
+   CONTACT BOX
+========================================= */
+.contact-box {
+  margin-top: 25px;
+
+  padding: 25px;
+
+  border-left: 5px solid var(--primary-color);
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(30,136,229,0.08),
+      rgba(255,152,0,0.08)
+    );
+}
+
+.contact-box p {
+  margin: 10px 0;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+.terms-footer {
+  text-align: center;
+
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 24px;
+
+  padding: 35px 25px;
+
+  color: white;
+
+  margin-top: 40px;
+}
+
+.terms-footer a {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  padding: 14px 28px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    #1565c0
+  );
+
+  transition: var(--transition-smooth);
+
+  box-shadow: 0 10px 24px rgba(30,136,229,0.28);
+}
+
+.terms-footer a:hover {
+  transform: translateY(-3px);
+
+  color: white;
+}
+
+.terms-footer p {
+  margin-top: 10px;
+
+  color: rgba(255,255,255,0.82);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 768px) {
+
+  .terms-header {
+    padding: 40px 22px;
+  }
+
+  .terms-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .terms-section {
+    padding: 30px 24px;
+  }
+
+  .terms-section h2 {
+    font-size: 1.45rem;
+  }
+
+  .terms-section p,
+  .terms-section li {
+    font-size: 0.98rem;
+  }
+
+  .app-logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .terms-container {
+    margin: 30px auto;
+  }
+
+  .terms-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .terms-section {
+    padding: 24px 20px;
+  }
+
+  .terms-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .terms-footer a {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

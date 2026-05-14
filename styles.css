@@ -284,7 +284,7 @@ body {
 }
 
 .sub-subsection.active {
-    max-height: 100px;
+    max-height: 200px;
 }
 
 .sub-subsection a {

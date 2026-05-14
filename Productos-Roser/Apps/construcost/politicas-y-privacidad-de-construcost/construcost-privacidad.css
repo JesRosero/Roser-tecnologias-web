@@ -1,0 +1,286 @@
+@import url('../../../../styles.css');
+
+:root {
+  --primary-color: #1e88e5;
+  --secondary-color: #ff9800;
+
+  --dark-bg: #0f172a;
+  --card-bg: #ffffff;
+
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+  --text-light: #f8fafc;
+
+  --border-color: #dbe4ee;
+
+  --shadow-light: 0 8px 25px rgba(0,0,0,0.08);
+  --shadow-medium: 0 15px 40px rgba(0,0,0,0.12);
+
+  --transition-smooth: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background:
+    linear-gradient(rgba(15,23,42,0.90), rgba(15,23,42,0.92)),
+    url('../../../../Imagenes/construction-bg.webp');
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.privacy-container {
+  max-width: 1100px;
+
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.privacy-header {
+  text-align: center;
+
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,0.10);
+
+  border-radius: 30px;
+
+  padding: 50px 30px;
+
+  margin-bottom: 40px;
+
+  box-shadow: var(--shadow-medium);
+}
+
+.app-logo {
+  width: 130px;
+  height: 130px;
+
+  object-fit: contain;
+
+  margin-bottom: 20px;
+
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.35));
+}
+
+.privacy-header h1 {
+  font-size: 3rem;
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+
+  color: rgba(255,255,255,0.85);
+}
+
+.privacy-section {
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 40px;
+
+  margin-bottom: 30px;
+
+  box-shadow: var(--shadow-light);
+
+  transition: var(--transition-smooth);
+}
+
+.privacy-section:hover {
+  transform: translateY(-4px);
+
+  box-shadow: var(--shadow-medium);
+}
+
+.privacy-section h2 {
+  color: var(--primary-color);
+
+  font-size: 1.7rem;
+
+  margin-bottom: 22px;
+
+  position: relative;
+}
+
+.privacy-section h2::after {
+  content: '';
+
+  display: block;
+
+  width: 70px;
+  height: 4px;
+
+  margin-top: 10px;
+
+  border-radius: 50px;
+
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+.privacy-section p {
+  color: var(--text-dark);
+
+  line-height: 1.9;
+
+  font-size: 1.03rem;
+
+  margin-bottom: 18px;
+}
+
+.privacy-section ul {
+  padding-left: 22px;
+}
+
+.privacy-section li {
+  margin-bottom: 12px;
+
+  color: var(--text-dark);
+
+  line-height: 1.7;
+}
+
+.contact-box {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(30,136,229,0.08),
+      rgba(255,152,0,0.08)
+    );
+
+  border-left: 5px solid var(--primary-color);
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  margin-top: 25px;
+}
+
+.contact-box p {
+  margin: 10px 0;
+}
+
+.privacy-footer {
+  text-align: center;
+
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 24px;
+
+  padding: 35px 25px;
+
+  color: white;
+
+  margin-top: 40px;
+}
+
+.privacy-footer a {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  text-decoration: none;
+
+  color: white;
+
+  font-weight: 700;
+
+  padding: 14px 28px;
+
+  border-radius: 50px;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    #1565c0
+  );
+
+  transition: var(--transition-smooth);
+
+  box-shadow: 0 10px 24px rgba(30,136,229,0.28);
+}
+
+.privacy-footer a:hover {
+  transform: translateY(-3px);
+
+  color: white;
+}
+
+.privacy-footer p {
+  margin-top: 10px;
+
+  color: rgba(255,255,255,0.82);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 768px) {
+
+  .privacy-header {
+    padding: 40px 22px;
+  }
+
+  .privacy-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .privacy-section {
+    padding: 30px 24px;
+  }
+
+  .privacy-section h2 {
+    font-size: 1.45rem;
+  }
+
+  .privacy-section p,
+  .privacy-section li {
+    font-size: 0.98rem;
+  }
+
+  .app-logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .privacy-container {
+    margin: 30px auto;
+  }
+
+  .privacy-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .privacy-section {
+    padding: 24px 20px;
+  }
+
+  .privacy-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .privacy-footer a {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
