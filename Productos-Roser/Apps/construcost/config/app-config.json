@@ -1,8 +1,11 @@
 {
+  "configVersion": 1,
+
   "appName": "ConstruCost",
 
   "latestVersion": "1.0.0",
-  "minimumVersion": "1.0.0",
+  "latestBuild": 1,
+
   "forceUpdate": false,
 
   "showAnnouncement": false,
