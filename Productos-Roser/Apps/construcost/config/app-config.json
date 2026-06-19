@@ -1,0 +1,14 @@
+{
+  "appName": "ConstruCost",
+
+  "latestVersion": "1.0.0",
+  "minimumVersion": "1.0.0",
+  "forceUpdate": false,
+
+  "showAnnouncement": false,
+  "announcementId": "none",
+  "announcementTitle": "",
+  "announcementMessage": "",
+
+  "reviewPromptEnabled": true
+}
