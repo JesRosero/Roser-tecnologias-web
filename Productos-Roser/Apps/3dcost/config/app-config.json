@@ -1,0 +1,14 @@
+{
+  "appName": "3DCost",
+
+  "latestVersion": "1.4.1",
+  "minimumVersion": "1.4.0",
+  "forceUpdate": false,
+
+  "showAnnouncement": false,
+  "announcementId": "none",
+  "announcementTitle": "",
+  "announcementMessage": "",
+
+  "reviewPromptEnabled": true
+}
