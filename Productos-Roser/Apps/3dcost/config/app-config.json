@@ -12,6 +12,7 @@
   "announcementId": "none",
   "announcementTitle": "",
   "announcementMessage": "",
+  "announcementUrl": "",
 
   "reviewPromptEnabled": true
 }
