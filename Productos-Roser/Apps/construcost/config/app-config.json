@@ -10,9 +10,23 @@
 
   "showAnnouncement": false,
   "announcementId": "none",
-  "announcementTitle": "",
-  "announcementMessage": "",
   "announcementUrl": "",
+
+  "announcementTitle": {
+    "es": "",
+    "en": "",
+    "fr": "",
+    "pt": "",
+    "zh": ""
+  },
+
+  "announcementMessage": {
+    "es": "",
+    "en": "",
+    "fr": "",
+    "pt": "",
+    "zh": ""
+  },
 
   "reviewPromptEnabled": true
 }
