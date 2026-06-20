@@ -1,17 +1,14 @@
 {
   "configVersion": 1,
-
   "appName": "3DCost",
-
   "latestVersion": "1.4.1",
   "latestBuild": 23,
-
   "forceUpdate": false,
 
-  "showAnnouncement": false,
-  "announcementId": "none",
-  "announcementTitle": "",
-  "announcementMessage": "",
+  "showAnnouncement": true,
+  "announcementId": "test_001",
+  "announcementTitle": "Prueba de anuncio",
+  "announcementMessage": "Si ves esta tarjeta, el sistema remoto funciona correctamente.",
   "announcementUrl": "",
 
   "reviewPromptEnabled": true
