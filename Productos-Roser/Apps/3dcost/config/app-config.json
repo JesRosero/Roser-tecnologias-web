@@ -3,7 +3,7 @@
   "appName": "3DCost",
   "latestVersion": "1.4.1",
   "latestBuild": 23,
-  "forceUpdate": false,
+  "forceUpdate": true,
 
   "showAnnouncement": true,
   "announcementId": "test_001",
