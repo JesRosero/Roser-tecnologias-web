@@ -21,11 +21,11 @@
   },
 
   "announcementMessage": {
-    "es": "La versión 1.4.0 incorpora anuncios remotos, actualizaciones remotas, mejoras de rendimiento y optimizaciones generales para una experiencia más rápida y estable.",
-    "en": "Version 1.4.0 introduces remote announcements, remote updates, performance improvements, and general optimizations for a faster and more stable experience.",
-    "fr": "La version 1.4.0 ajoute les annonces à distance, les mises à jour à distance, des améliorations de performance et des optimisations générales pour une expérience plus rapide et plus stable.",
-    "pt": "A versão 1.4.0 inclui anúncios remotos, atualizações remotas, melhorias de desempenho e otimizações gerais para uma experiência mais rápida e estável.",
-    "zh": "版本 1.4.0 新增远程公告、远程更新、性能改进和整体优化，带来更快速、更稳定的体验。"
+    "es": "La versión 1.4.1 incorpora anuncios remotos, actualizaciones remotas, mejoras de rendimiento y optimizaciones generales para una experiencia más rápida y estable.",
+    "en": "Version 1.4.1 introduces remote announcements, remote updates, performance improvements, and general optimizations for a faster and more stable experience.",
+    "fr": "La version 1.4.1 ajoute les annonces à distance, les mises à jour à distance, des améliorations de performance et des optimisations générales pour une expérience plus rapide et plus stable.",
+    "pt": "A versão 1.4.1 inclui anúncios remotos, atualizações remotas, melhorias de desempenho e otimizações gerais para uma experiência mais rápida e estável.",
+    "zh": "版本 1.4.1 新增远程公告、远程更新、性能改进和整体优化，带来更快速、更稳定的体验。"
   },
 
   "reviewPromptEnabled": true
