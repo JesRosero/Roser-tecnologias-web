@@ -8,8 +8,8 @@
 
   "forceUpdate": false,
 
-  "showAnnouncement": false,
-  "announcementId": "none",
+  "showAnnouncement": true,
+  "announcementId": "test_remote_01",
   "announcementUrl": "",
 
   "announcementTitle": {
