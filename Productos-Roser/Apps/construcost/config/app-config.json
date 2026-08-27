@@ -13,19 +13,19 @@
   "announcementUrl": "",
 
   "announcementTitle": {
-    "es": "",
-    "en": "",
-    "fr": "",
-    "pt": "",
-    "zh": ""
+    "es": "Prueba de anuncio remoto",
+    "en": "Remote announcement test",
+    "fr": "Test d’annonce à distance",
+    "pt": "Teste de anúncio remoto",
+    "zh": "远程公告测试"
   },
 
   "announcementMessage": {
-    "es": "",
-    "en": "",
-    "fr": "",
-    "pt": "",
-    "zh": ""
+    "es": "Este anuncio fue cargado directamente desde la configuración remota de ConstruCost.",
+    "en": "This announcement was loaded directly from ConstruCost remote configuration.",
+    "fr": "Cette annonce a été chargée directement depuis la configuration à distance de ConstruCost.",
+    "pt": "Este anúncio foi carregado diretamente da configuração remota do ConstruCost.",
+    "zh": "此公告直接从 ConstruCost 的远程配置加载。"
   },
 
   "reviewPromptEnabled": true
