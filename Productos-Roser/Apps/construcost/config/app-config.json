@@ -6,7 +6,7 @@
   "latestVersion": "1.0.1",
   "latestBuild": 10,
 
-  "forceUpdate": true,
+  "forceUpdate": false,
 
   "showAnnouncement": true,
   "announcementId": "test_remote_01",
