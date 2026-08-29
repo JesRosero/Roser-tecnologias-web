@@ -2,13 +2,13 @@
   "configVersion": 1,
   "appName": "ConstruCost",
 
-  "latestVersion": "1.1.0",
-  "latestBuild": 10,
+  "latestVersion": "1.1.1",
+  "latestBuild": 11,
 
   "forceUpdate": false,
 
   "showAnnouncement": true,
-  "announcementId": "release_1_1_0",
+  "announcementId": "release_1_1_1",
   "announcementUrl": "",
 
   "announcementTitle": {
