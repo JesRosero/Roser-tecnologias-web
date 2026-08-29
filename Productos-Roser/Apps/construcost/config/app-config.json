@@ -1,31 +1,30 @@
 {
   "configVersion": 1,
-
   "appName": "ConstruCost",
 
-  "latestVersion": "1.0.1",
+  "latestVersion": "1.1.0",
   "latestBuild": 10,
 
   "forceUpdate": false,
 
   "showAnnouncement": true,
-  "announcementId": "test_remote_01",
+  "announcementId": "release_1_1_0",
   "announcementUrl": "",
 
   "announcementTitle": {
-    "es": "Prueba de anuncio remoto",
-    "en": "Remote announcement test",
-    "fr": "Test d’annonce à distance",
-    "pt": "Teste de anúncio remoto",
-    "zh": "远程公告测试"
+    "es": "¡ConstruCost se ha actualizado!",
+    "en": "ConstruCost has been updated!",
+    "fr": "ConstruCost a été mis à jour !",
+    "pt": "O ConstruCost foi atualizado!",
+    "zh": "ConstruCost 已更新！"
   },
 
   "announcementMessage": {
-    "es": "Este anuncio fue cargado directamente desde la configuración remota de ConstruCost.",
-    "en": "This announcement was loaded directly from ConstruCost remote configuration.",
-    "fr": "Cette annonce a été chargée directement depuis la configuration à distance de ConstruCost.",
-    "pt": "Este anúncio foi carregado diretamente da configuração remota do ConstruCost.",
-    "zh": "此公告直接从 ConstruCost 的远程配置加载。"
+    "es": "Ya está disponible una nueva versión de ConstruCost. Mejoramos las suscripciones Pro, añadimos nuevas ofertas para el plan anual, optimizamos el rendimiento y los recursos gráficos, e incorporamos mejoras en avisos, actualizaciones y valoraciones.",
+    "en": "A new version of ConstruCost is now available. We improved Pro subscriptions, added new annual plan offers, optimized performance and graphic resources, and enhanced announcements, updates, and app reviews.",
+    "fr": "Une nouvelle version de ConstruCost est maintenant disponible. Nous avons amélioré les abonnements Pro, ajouté de nouvelles offres pour l’abonnement annuel, optimisé les performances et les ressources graphiques, et amélioré les annonces, les mises à jour et les évaluations.",
+    "pt": "Uma nova versão do ConstruCost já está disponível. Melhoramos as assinaturas Pro, adicionamos novas ofertas para o plano anual, otimizamos o desempenho e os recursos gráficos e aprimoramos os avisos, as atualizações e as avaliações do aplicativo.",
+    "zh": "ConstruCost 新版本现已发布。我们改进了 Pro 订阅，新增年度订阅优惠，优化了性能和图形资源，并改进了公告、更新和应用评分功能。"
   },
 
   "reviewPromptEnabled": true
