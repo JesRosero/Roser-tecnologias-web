@@ -1,3 +1,4 @@
+import { ORDEN_NAVEGACION } from '../../configuracion/rutas.js';
 import { cargarContenidoInicio } from '../../servicios/configuracion-sitio.js';
 import { leerJSON } from '../../servicios/archivos.js';
 import { montarNavegacion } from '../../componentes/navegacion/navegacion.js';
@@ -20,7 +21,10 @@ async function iniciar() {
     hero.addEventListener('error', () => { hero.hidden = true; });
     hero.src = contenido.hero.imagen;
     if (hero.complete && hero.naturalWidth) hero.hidden = false;
-    elemento('tarjetas').replaceChildren(...contenido.areas.map(area => crearTarjetaArea(area, textos.acciones.explorar)));
+    elemento('tarjetas').replaceChildren(...[...contenido.areas].sort((a, b) => {
+      const posicion = id => { const i = ORDEN_NAVEGACION.indexOf(id); return i < 0 ? ORDEN_NAVEGACION.length : i; };
+      return posicion(a.id) - posicion(b.id);
+    }).map(area => crearTarjetaArea(area, textos.acciones.explorar)));
     elemento('correo').textContent = contenido.contacto.correo; elemento('correo').href = `mailto:${contenido.contacto.correo}`;
     elemento('telefono').textContent = contenido.contacto.telefono; elemento('telefono').href = `tel:+${contenido.contacto.whatsapp}`;
     elemento('ubicacion').textContent = contenido.contacto.ubicacion;

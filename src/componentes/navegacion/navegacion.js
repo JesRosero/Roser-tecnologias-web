@@ -1,4 +1,4 @@
-import { RUTAS } from '../../configuracion/rutas.js';
+import { RUTAS, ORDEN_NAVEGACION } from '../../configuracion/rutas.js';
 export function crearMarca() {
   const enlace = document.createElement('a');
   enlace.className = 'identidad';
@@ -21,7 +21,7 @@ export function crearMarca() {
 export function montarNavegacion(contenedor, textos) {
   const fila = document.createElement('div'); fila.className = 'contenedor nav-fila';
   const nav = document.createElement('nav'); nav.id = 'menu-principal'; nav.setAttribute('aria-label', 'Principal');
-  for (const clave of ['inicio','servicios','proyectos','aplicaciones','productos','contacto']) {
+  for (const clave of ORDEN_NAVEGACION) {
     const a = document.createElement('a'); a.href = RUTAS[clave]; a.textContent = textos[clave]; nav.append(a);
   }
   const boton = document.createElement('button'); boton.className = 'menu-boton'; boton.type = 'button';

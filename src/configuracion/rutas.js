@@ -2,7 +2,7 @@
  * Live Server usa index.html explícito; no depende de reglas de Netlify.
  */
 export const RUTAS = Object.freeze({
-  inicio: '/index.html',
+  inicio: '/index.html?v=20261003-28',
   productos: '/paginas/productos/index.html',
   servicios: '/paginas/servicios/index.html',
   aplicaciones: '/paginas/aplicaciones/index.html',
@@ -10,5 +10,10 @@ export const RUTAS = Object.freeze({
   nosotros: '/paginas/empresa/nosotros/index.html',
   privacidad: '/paginas/empresa/privacidad/index.html',
   terminos: '/paginas/empresa/terminos/index.html',
-  contacto: '/index.html#contacto'
+  contacto: '/index.html?v=20261003-28#contacto'
 });
+
+/** Orden compartido por los menús y las tarjetas de Inicio. */
+export const ORDEN_NAVEGACION = Object.freeze([
+  'inicio', 'servicios', 'proyectos', 'aplicaciones', 'productos', 'contacto'
+]);

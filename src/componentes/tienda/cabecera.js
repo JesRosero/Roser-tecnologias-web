@@ -1,6 +1,6 @@
 import { icono } from './iconos.js';
 import { crearMarca } from '../navegacion/navegacion.js';
-import { RUTAS } from '../../configuracion/rutas.js';
+import { RUTAS, ORDEN_NAVEGACION } from '../../configuracion/rutas.js';
 import { crear, boton } from './utilidades.js';
 export function cabecera(c, t, comun, telefono) {
   const destino = document.getElementById('cabecera');
@@ -83,7 +83,7 @@ export function cabecera(c, t, comun, telefono) {
     }
   });
   nav.append(desplegar);
-  for (const k of ['inicio', 'productos', 'servicios', 'aplicaciones', 'proyectos', 'nosotros']) {
+  for (const k of ORDEN_NAVEGACION) {
     const a = crear('a', null, k === 'inicio' ? t.inicio : comun.navegacion[k]);
     a.href = RUTAS[k];
     if (k === 'productos') a.setAttribute('aria-current', 'page');
