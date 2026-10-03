@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "id": "3dcost",
+  "nombre": "3DCost",
+  "hero": {
+    "titulo": "Calcula, cotiza y exporta.",
+    "descripcion": "Calcula los costos de tus impresiones 3D con tecnologías FDM y resina.",
+    "fondo": "/assets/imagenes/aplicaciones/3dcost/fondo.webp",
+    "captura": "/assets/imagenes/aplicaciones/3dcost/captura.webp",
+    "alternativo": "Pantalla de bienvenida de 3DCost."
+  },
+  "tiendas": {
+    "google": "https://play.google.com/store/apps/details?id=com.rosertecnologias.threedcost&hl=es_CO",
+    "apple": "https://apps.apple.com/us/app/3dcost/id6762095891"
+  },
+  "funciones": {
+    "titulo": "Del cálculo a la cotización",
+    "descripcion": "Herramientas para estimar y compartir el costo de tus impresiones 3D.",
+    "items": [
+      {
+        "icono": "filamento",
+        "titulo": "FDM",
+        "descripcion": "Calcula tus impresiones con filamento."
+      },
+      {
+        "icono": "gota",
+        "titulo": "Resina",
+        "descripcion": "Estima costos de impresión en resina."
+      },
+      {
+        "icono": "historial",
+        "titulo": "Historial",
+        "descripcion": "Consulta tus cálculos guardados."
+      },
+      {
+        "icono": "archivo",
+        "titulo": "Exportación PDF",
+        "descripcion": "Prepara documentos para tus clientes."
+      }
+    ]
+  },
+  "galeria": {
+    "titulo": "Conoce la aplicación",
+    "descripcion": "Desde los datos de impresión hasta tus resultados y cálculos guardados.",
+    "items": [
+      {
+        "titulo": "Cálculo",
+        "descripcion": "Define los parámetros de tu impresión.",
+        "imagen": "/assets/imagenes/aplicaciones/3dcost/calculo.webp",
+        "alternativo": "Datos de impresión FDM en 3DCost."
+      },
+      {
+        "titulo": "Resultados",
+        "descripcion": "Revisa el detalle de costos estimados.",
+        "imagen": "/assets/imagenes/aplicaciones/3dcost/resultados.webp",
+        "alternativo": "Resultado final y opciones de exportación PDF en 3DCost."
+      },
+      {
+        "titulo": "Historial",
+        "descripcion": "Consulta y recupera tus cálculos guardados.",
+        "imagen": "/assets/imagenes/aplicaciones/3dcost/historial.webp",
+        "alternativo": "Historial de cálculos de 3DCost."
+      }
+    ]
+  },
+  "planes": {
+    "titulo": "Elige cómo usar 3DCost",
+    "descripcion": "Conoce las opciones disponibles en la aplicación.",
+    "nota": "Consulta los planes y precios dentro de la aplicación.",
+    "items": [
+      {
+        "nombre": "Free",
+        "titulo": "Empieza a calcular",
+        "beneficios": [
+          "Cálculos de impresión FDM y resina.",
+          "Guarda y recupera tus cálculos en el historial.",
+          "Exporta PDF mediante créditos.",
+          "Incluye anuncios; puedes obtener créditos viendo anuncios recompensados."
+        ]
+      },
+      {
+        "nombre": "Pro",
+        "titulo": "Trabaja sin interrupciones",
+        "beneficios": [
+          "Todas las herramientas de cálculo e historial.",
+          "Sin anuncios.",
+          "Exportación de PDF ilimitada, sin consumir créditos.",
+          "Edición completa de costos avanzados."
+        ]
+      }
+    ]
+  },
+  "contacto": {
+    "titulo": "¿Necesitas ayuda con 3DCost?",
+    "boton": "Contactar con Roser",
+    "mensaje": "Hola Roser Tecnologías, necesito ayuda con 3DCost."
+  }
+}

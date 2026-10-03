@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Roser — Administración local</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="/src/estilos/tema.css" />
+    <link rel="stylesheet" href="/src/estilos/base.css" />
+    <link rel="stylesheet" href="/admin/estilos/inicio.css" />
+    <script type="module" src="/admin/modulos/inicio.js"></script>
+  </head>
+  <body>
+    <main class="contenedor admin-contenido">
+      <header>
+        <p class="modo" data-texto="modo">Edición del proyecto</p>
+        <h1 data-texto="titulo">Administración de Inicio</h1>
+        <p data-texto="aviso">
+          Guardar cambios actualiza los archivos del proyecto. Publicar requiere subirlos con Git.
+        </p>
+        <a href="/index.html" target="_blank" rel="noopener" data-texto="ver">Ver portada</a>
+      </header>
+      <nav
+        aria-label="Secciones del panel"
+        style="display: flex; flex-wrap: wrap; gap: 24px; margin-block: 20px"
+      >
+        <a href="/admin/index.html">Inicio</a><a href="/admin/catalogo.html">Productos</a
+        ><a href="/admin/nosotros.html">Nosotros</a><a href="/admin/servicios.html">Servicios</a
+        ><a href="/admin/aplicaciones.html">Aplicaciones</a
+        ><a href="/admin/documento-sitio.html?documento=privacidad">Privacidad de Roser</a
+        ><a href="/admin/documento-sitio.html?documento=terminos">Términos de Roser</a>
+      </nav>
+      <form id="editor">
+        <div id="campos"></div>
+        <div class="acciones">
+          <button type="submit" id="guardar" disabled>Guardar cambios</button>
+          <button type="button" id="respaldos" disabled>Revisar respaldos</button>
+        </div>
+      </form>
+      <p id="estado" role="status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>

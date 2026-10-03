@@ -1,0 +1,20 @@
+.admin-contenido { max-width: 980px; padding-block: 36px; }
+header { margin-bottom: 30px; } h1 { font-size: clamp(26px,4vw,36px); margin: 8px 0; }
+header p { color: var(--color-texto-secundario); }
+header .modo { color: var(--color-acento); font-weight: 700; }
+header a { color: var(--color-acento); }
+fieldset { border: 1px solid var(--color-borde); border-radius: 14px; padding: 22px; margin: 0 0 22px; background: var(--color-superficie); }
+legend { font-size: 20px; font-weight: 700; padding-inline: 8px; }
+.campos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+label { display: grid; align-content: start; gap: 8px; font-size: 14px; }
+input,textarea,select { width: 100%; min-width: 0; padding: 11px; border: 1px solid var(--color-borde); border-radius: 8px; background: var(--color-fondo); color: var(--color-texto); }
+textarea { resize: vertical; }
+.imagen-editor { grid-column: 1 / -1; display: grid; gap: 10px; }
+.imagen-editor img { width: 240px; max-height: 160px; object-fit: contain; border-radius: 8px; background: var(--color-fondo); }
+.ayuda { font-size: 13px; color: var(--color-texto-secundario); margin: 0; }
+.acciones { display: flex; flex-wrap: wrap; gap: 12px; }
+button { padding: 12px 18px; border-radius: 8px; border: 1px solid var(--color-borde); color: var(--color-texto); background: var(--color-superficie); }
+button[type=submit] { background: var(--color-acento); color: #082031; font-weight: 700; }
+button:disabled { opacity: .5; }
+#estado { padding-block: 10px; overflow-wrap: anywhere; }
+@media(max-width:600px) { .campos-grid { grid-template-columns: 1fr; } fieldset { padding: 16px; } }

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Carrito — Roser Tecnologías</title>
+    <meta name="description" content="Catálogo de Roser Tecnologías." />
+    <link rel="stylesheet" href="/src/estilos/tema.css" />
+    <link rel="stylesheet" href="/src/estilos/base.css" />
+    <link rel="stylesheet" href="/src/estilos/componentes.css" />
+    <link rel="stylesheet" href="/src/paginas/productos/tienda.css" />
+    <script type="module" src="/src/paginas/productos/inicio.js"></script>
+  </head>
+  <body data-pagina="carrito">
+    <a id="saltar" class="saltar" href="#contenido">Saltar al contenido</a>
+    <header id="cabecera" class="tienda-cabecera"></header>
+    <main id="contenido" class="contenedor tienda-contenido">
+      <a href="/paginas/productos/index.html">← Volver a productos</a>
+      <section
+        id="carrito-pagina"
+        class="tienda-carrito-pagina"
+        aria-labelledby="carrito-titulo"
+      ></section>
+    </main>
+    <p id="estado" class="contenedor tienda-error" role="status" hidden></p>
+    <div id="pie"></div>
+    <p id="aviso" class="tienda-aviso" role="status" aria-live="polite" hidden></p>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Roser — Administrador del proyecto</title>
+    <link rel="stylesheet" href="/admin/estilos/catalogo.css" />
+    <script type="module" src="/admin/modulos/catalogo.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p>Administrador local del proyecto</p>
+        <h1>Administración del marketplace</h1>
+        <p>
+          Guardar cambios actualiza el archivo del catálogo. Publicar en la web requiere git push.
+        </p>
+        <nav>
+          <a href="/admin/panel.html">Inicio del panel</a
+          ><a href="/paginas/productos/index.html" target="_blank" rel="noopener"
+            >Ver marketplace ↗</a
+          >
+        </nav>
+      </header>
+      <section class="barra">
+        <button id="guardar" disabled>Guardar cambios</button
+        ><button id="respaldos" disabled>Revisar respaldos</button>
+      </section>
+      <p>
+        Confirma la edición con Aplicar cambios y después pulsa Guardar cambios. Se conservan las
+        últimas cinco versiones anteriores del catálogo.
+      </p>
+      <p id="estado" role="status" aria-live="polite"></p>
+      <nav id="pestanas" aria-label="Secciones"></nav>
+      <section id="contenido"></section>
+      <footer>
+        El catálogo se guarda en datos/contenido-inicial/catalogo.es.json. Los respaldos privados
+        quedan en .roser-local/, fuera de Git. Este panel funciona dentro de Administrador Roser.
+      </footer>
+    </main>
+    <dialog id="dialogo-respaldos" aria-labelledby="titulo-respaldos">
+      <header class="acciones">
+        <h2 id="titulo-respaldos">Respaldos del catálogo</h2>
+        <button id="cerrar-respaldos" type="button">Cerrar</button>
+      </header>
+      <p id="nota-respaldos"></p>
+      <div id="lista-respaldos"></div>
+      <section id="vista-respaldo" hidden></section>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,1230 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "presentacion": {
+    "etiqueta": "PROYECTOS ROSER",
+    "titulo": "Diseño y fabricación en imágenes",
+    "descripcion": "Explora nuestras ideas, procesos y soluciones.",
+    "galeriaTitulo": "Nuestros proyectos",
+    "nota": "Imágenes y textos de ejemplo. El contenido de cada proyecto puede editarse desde el administrador.",
+    "mostrarNota": true
+  },
+  "contacto": {
+    "titulo": "¿Qué quieres desarrollar?",
+    "descripcion": "Cuéntanos tu idea y encontremos una solución.",
+    "boton": "Hablemos de tu proyecto",
+    "mensaje": "Hola, quisiera hablar sobre un proyecto a medida."
+  },
+  "categorias": [
+    {
+      "id": "diseno",
+      "nombre": "Diseño e ingeniería"
+    },
+    {
+      "id": "fabricacion",
+      "nombre": "Fabricación y montaje"
+    },
+    {
+      "id": "prototipado",
+      "nombre": "Prototipado"
+    },
+    {
+      "id": "automatizacion",
+      "nombre": "Automatización"
+    },
+    {
+      "id": "software",
+      "nombre": "Aplicaciones y software"
+    }
+  ],
+  "proyectos": [
+    {
+      "id": "carroceria",
+      "nombre": "Carrocería para transporte",
+      "categoria": "fabricacion",
+      "resumen": "Una carrocería adaptada al minitruck, con estructura metálica y laterales para organizar la carga.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": true,
+      "orden": 0,
+      "formato": "grande",
+      "imagen": "/assets/imagenes/proyectos/carroceria.webp",
+      "alternativo": "Boceto ilustrativo: Carrocería para transporte",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/carroceria/index.html",
+      "producto": "",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Acero estructural, lámina para piso, madera, apoyos de caucho y acabado protector.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Una carrocería adaptada al minitruck, con estructura metálica y laterales para organizar la carga."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Acero estructural, lámina para piso, madera, apoyos de caucho y acabado protector."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Adaptar el espacio de carga al transporte cotidiano de materiales.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Modelar el conjunto, estudiar apoyos y distribuir los componentes antes del montaje.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una carrocería a medida con detalles de apertura, sujeción y protección del acabado.",
+          "imagen": "/assets/imagenes/proyectos/carroceria.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/carroceria.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Carrocería para transporte"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Carrocería para transporte."
+    },
+    {
+      "id": "vitrinas",
+      "nombre": "Vitrinas y pedestales",
+      "categoria": "fabricacion",
+      "resumen": "Mobiliario para exposición que combina una base de madera clara, fondos blancos y superficies de vidrio.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": true,
+      "orden": 1,
+      "formato": "normal",
+      "imagen": "/assets/imagenes/proyectos/vitrinas.webp",
+      "alternativo": "Boceto ilustrativo: Vitrinas y pedestales",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/vitrinas/index.html",
+      "producto": "",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Melamina de 18 mm, MDF laminado de 4 mm, vidrio templado y herrajes de montaje.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Mobiliario para exposición que combina una base de madera clara, fondos blancos y superficies de vidrio."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Melamina de 18 mm, MDF laminado de 4 mm, vidrio templado y herrajes de montaje."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Presentar piezas de exposición con orden y una presencia visual uniforme.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Definir módulos, medidas, disposición de herrajes y secuencia de armado.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una familia de vitrinas y pedestales adaptada a la distribución del espacio.",
+          "imagen": "/assets/imagenes/proyectos/vitrinas.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/vitrinas.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Vitrinas y pedestales"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Vitrinas y pedestales."
+    },
+    {
+      "id": "bipedestacion",
+      "nombre": "Dispositivo de bipedestación",
+      "categoria": "diseno",
+      "resumen": "Concepto de dispositivo de cuatro ruedas con estructura y apoyos regulables.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 2,
+      "formato": "normal",
+      "imagen": "/assets/imagenes/proyectos/bipedestacion.webp",
+      "alternativo": "Boceto ilustrativo: Dispositivo de bipedestación",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/bipedestacion/index.html",
+      "producto": "",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Estructura de acero, componentes de aluminio, ruedas, apoyos acolchados y elementos de regulación.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Concepto de dispositivo de cuatro ruedas con estructura y apoyos regulables."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Estructura de acero, componentes de aluminio, ruedas, apoyos acolchados y elementos de regulación."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Explorar una solución mecánica adaptada a una necesidad específica de apoyo y movilidad.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Estudiar distribución, ajustes y disposición de los componentes mediante un modelo conceptual.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Un concepto de dispositivo para continuar su desarrollo y validación; esta ficha no representa una certificación médica.",
+          "imagen": "/assets/imagenes/proyectos/bipedestacion.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/bipedestacion.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Dispositivo de bipedestación"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Dispositivo de bipedestación."
+    },
+    {
+      "id": "andamios",
+      "nombre": "Andamios modulares",
+      "categoria": "fabricacion",
+      "resumen": "Desarrollo conceptual de cuerpos modulares, uniones y crucetas para un sistema de andamio.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": true,
+      "orden": 3,
+      "formato": "ancho",
+      "imagen": "/assets/imagenes/proyectos/andamios.webp",
+      "alternativo": "Boceto ilustrativo: Andamios modulares",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/andamios/index.html",
+      "producto": "",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Tubos galvanizados, placas de acero, crucetas, pasadores y acabado protector.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Desarrollo conceptual de cuerpos modulares, uniones y crucetas para un sistema de andamio."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Tubos galvanizados, placas de acero, crucetas, pasadores y acabado protector."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Organizar un sistema modular que pueda fabricarse y almacenarse por componentes.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Definir cuerpos, uniones y secuencia de fabricación en el modelo.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una propuesta de sistema modular. Las imágenes no son planos ni instrucciones de montaje, ni acreditan capacidad de carga.",
+          "imagen": "/assets/imagenes/proyectos/andamios.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/andamios.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Andamios modulares"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Andamios modulares."
+    },
+    {
+      "id": "sistema-electromecanico",
+      "nombre": "Sistemas electromecánicos",
+      "categoria": "automatizacion",
+      "resumen": "Integración conceptual de un motor, un mecanismo de movimiento y un tablero de control.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 4,
+      "formato": "normal",
+      "imagen": "/assets/imagenes/proyectos/sistema-electromecanico.webp",
+      "alternativo": "Boceto ilustrativo: Sistemas electromecánicos",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/sistema-electromecanico/index.html",
+      "producto": "",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Motor eléctrico, soportes mecanizados, estructura de acero, sensores y componentes de control.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Integración conceptual de un motor, un mecanismo de movimiento y un tablero de control."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Motor eléctrico, soportes mecanizados, estructura de acero, sensores y componentes de control."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Coordinar el movimiento mecánico y el control eléctrico de una solución especial.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Definir componentes, montaje y señales de control del conjunto.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una plataforma de integración para explorar y probar la función requerida.",
+          "imagen": "/assets/imagenes/proyectos/sistema-electromecanico.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/sistema-electromecanico.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Sistemas electromecánicos"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Sistemas electromecánicos."
+    },
+    {
+      "id": "casco-articulado",
+      "nombre": "Casco con apertura articulada",
+      "categoria": "automatizacion",
+      "resumen": "Prototipo de mecanismo para abrir y cerrar una máscara mediante pequeños servomotores.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": true,
+      "orden": 5,
+      "formato": "normal",
+      "imagen": "/assets/imagenes/proyectos/casco-articulado.webp",
+      "alternativo": "Boceto ilustrativo: Casco con apertura articulada",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/casco-articulado/index.html",
+      "producto": "",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Piezas impresas en 3D, servomotores, placa de control, articulaciones y cableado.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Prototipo de mecanismo para abrir y cerrar una máscara mediante pequeños servomotores."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Piezas impresas en 3D, servomotores, placa de control, articulaciones y cableado."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Integrar movimiento en un objeto compacto con espacio interior limitado.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Diseñar soportes, recorridos y puntos de giro para el mecanismo.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Un prototipo articulado para probar el movimiento y ajustar el montaje.",
+          "imagen": "/assets/imagenes/proyectos/casco-articulado.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/casco-articulado.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Casco con apertura articulada"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Casco con apertura articulada."
+    },
+    {
+      "id": "3dcost",
+      "nombre": "3DCost: cálculo de impresión 3D",
+      "categoria": "software",
+      "resumen": "Aplicación para organizar costos de impresión FDM y resina, guardar cálculos y presentar resultados.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 6,
+      "formato": "ancho",
+      "imagen": "/assets/imagenes/proyectos/3dcost.webp",
+      "alternativo": "Boceto ilustrativo: 3DCost: cálculo de impresión 3D",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/3dcost/index.html",
+      "producto": "",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Flutter, Dart, recursos gráficos e integración de servicios móviles.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Aplicación para organizar costos de impresión FDM y resina, guardar cálculos y presentar resultados."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Flutter, Dart, recursos gráficos e integración de servicios móviles."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Reunir en una herramienta los componentes que intervienen en el costo de impresión.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Organizar pantallas, cálculos, historial e informes en una experiencia clara.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una aplicación multiplataforma que evoluciona a partir de las necesidades del usuario.",
+          "imagen": "/assets/imagenes/proyectos/3dcost.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/3dcost.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto 3DCost: cálculo de impresión 3D"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a 3DCost: cálculo de impresión 3D."
+    },
+    {
+      "id": "construcost",
+      "nombre": "ConstruCost: estimación de construcción",
+      "categoria": "software",
+      "resumen": "Aplicación para organizar medidas y estimaciones de materiales por módulos de construcción.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 7,
+      "formato": "grande",
+      "imagen": "/assets/imagenes/proyectos/construcost.webp",
+      "alternativo": "Boceto ilustrativo: ConstruCost: estimación de construcción",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/construcost/index.html",
+      "producto": "",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Flutter, Dart, modelos de cálculo e interfaces móviles.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Aplicación para organizar medidas y estimaciones de materiales por módulos de construcción."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Flutter, Dart, modelos de cálculo e interfaces móviles."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Conectar medidas generales y módulos de obra en una herramienta práctica.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Dividir el proyecto en módulos de estructura, cerramientos y acabados.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una aplicación para consultar resultados y organizar estimaciones; no sustituye el diseño profesional de una obra.",
+          "imagen": "/assets/imagenes/proyectos/construcost.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/construcost.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto ConstruCost: estimación de construcción"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a ConstruCost: estimación de construcción."
+    },
+    {
+      "id": "bb04",
+      "nombre": "Caja CCTV · BB04",
+      "categoria": "prototipado",
+      "resumen": "Caja organizadora para alojar baluns y borneras de instalaciones CCTV de cuatro canales.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 8,
+      "formato": "normal",
+      "imagen": "/assets/imagenes/proyectos/bb04.webp",
+      "alternativo": "Boceto ilustrativo: Caja CCTV · BB04",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/bb04/index.html",
+      "producto": "bb04",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Polímero impreso en 3D, tornillería y piezas de organización interior.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Caja organizadora para alojar baluns y borneras de instalaciones CCTV de cuatro canales."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Polímero impreso en 3D, tornillería y piezas de organización interior."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Resolver una necesidad de organización o uso mediante una pieza adaptada al espacio disponible.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Modelar el conjunto, ajustar su geometría y preparar una primera versión para revisar la función.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una solución personalizable cuya forma y acabado pueden adaptarse al proyecto.",
+          "imagen": "/assets/imagenes/proyectos/bb04.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/bb04.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Caja CCTV · BB04"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Caja CCTV · BB04."
+    },
+    {
+      "id": "bb08",
+      "nombre": "Caja CCTV · BB08",
+      "categoria": "prototipado",
+      "resumen": "Caja organizadora para alojar baluns y borneras de instalaciones CCTV de ocho canales.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 9,
+      "formato": "normal",
+      "imagen": "/assets/imagenes/proyectos/bb08.webp",
+      "alternativo": "Boceto ilustrativo: Caja CCTV · BB08",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/bb08/index.html",
+      "producto": "bb08",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Polímero impreso en 3D, tornillería y separadores interiores.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Caja organizadora para alojar baluns y borneras de instalaciones CCTV de ocho canales."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Polímero impreso en 3D, tornillería y separadores interiores."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Resolver una necesidad de organización o uso mediante una pieza adaptada al espacio disponible.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Modelar el conjunto, ajustar su geometría y preparar una primera versión para revisar la función.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una solución personalizable cuya forma y acabado pueden adaptarse al proyecto.",
+          "imagen": "/assets/imagenes/proyectos/bb08.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/bb08.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Caja CCTV · BB08"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Caja CCTV · BB08."
+    },
+    {
+      "id": "caja-9mm",
+      "nombre": "Caja para munición de 9 mm",
+      "categoria": "prototipado",
+      "resumen": "Caja de almacenamiento para munición de 9 mm, acompañada de una bolsita de gel de sílice para humedad.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 10,
+      "formato": "ancho",
+      "imagen": "/assets/imagenes/proyectos/caja-9mm.webp",
+      "alternativo": "Boceto ilustrativo: Caja para munición de 9 mm",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/caja-9mm/index.html",
+      "producto": "caja-9mm",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Polímero impreso en 3D, bisagra, cierre y gel de sílice.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Caja de almacenamiento para munición de 9 mm, acompañada de una bolsita de gel de sílice para humedad."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Polímero impreso en 3D, bisagra, cierre y gel de sílice."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Resolver una necesidad de organización o uso mediante una pieza adaptada al espacio disponible.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Modelar el conjunto, ajustar su geometría y preparar una primera versión para revisar la función.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una solución personalizable cuya forma y acabado pueden adaptarse al proyecto.",
+          "imagen": "/assets/imagenes/proyectos/caja-9mm.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/caja-9mm.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Caja para munición de 9 mm"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Caja para munición de 9 mm."
+    },
+    {
+      "id": "caja-silice",
+      "nombre": "Caja deshumidificadora",
+      "categoria": "prototipado",
+      "resumen": "Contenedor de sílice que cambia de color según la humedad, con higrómetro circular frontal. Destinado a reducir la humedad en espacios cerrados, como una caja fuerte.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 11,
+      "formato": "normal",
+      "imagen": "/assets/imagenes/proyectos/caja-silice.webp",
+      "alternativo": "Boceto ilustrativo: Caja deshumidificadora",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/caja-silice/index.html",
+      "producto": "caja-silice",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Polímero impreso en 3D, recipiente ventilado, sílice e higrómetro.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Contenedor de sílice que cambia de color según la humedad, con higrómetro circular frontal. Destinado a reducir la humedad en espacios cerrados, como una caja fuerte."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Polímero impreso en 3D, recipiente ventilado, sílice e higrómetro."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Resolver una necesidad de organización o uso mediante una pieza adaptada al espacio disponible.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Modelar el conjunto, ajustar su geometría y preparar una primera versión para revisar la función.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una solución personalizable cuya forma y acabado pueden adaptarse al proyecto.",
+          "imagen": "/assets/imagenes/proyectos/caja-silice.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/caja-silice.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Caja deshumidificadora"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Caja deshumidificadora."
+    },
+    {
+      "id": "soporte-qr",
+      "nombre": "Soporte QR y tarjetero",
+      "categoria": "prototipado",
+      "resumen": "Soporte para mostrar el QR y el nombre de tu negocio, con tarjetero frontal para tarjetas de presentación. El diseño se confirma antes de fabricar.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 12,
+      "formato": "normal",
+      "imagen": "/assets/imagenes/proyectos/soporte-qr.webp",
+      "alternativo": "Boceto ilustrativo: Soporte QR y tarjetero",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/soporte-qr/index.html",
+      "producto": "soporte-qr",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Polímero impreso en 3D, placa gráfica y opciones de color.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Soporte para mostrar el QR y el nombre de tu negocio, con tarjetero frontal para tarjetas de presentación. El diseño se confirma antes de fabricar."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Polímero impreso en 3D, placa gráfica y opciones de color."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Resolver una necesidad de organización o uso mediante una pieza adaptada al espacio disponible.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Modelar el conjunto, ajustar su geometría y preparar una primera versión para revisar la función.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una solución personalizable cuya forma y acabado pueden adaptarse al proyecto.",
+          "imagen": "/assets/imagenes/proyectos/soporte-qr.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/soporte-qr.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Soporte QR y tarjetero"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Soporte QR y tarjetero."
+    },
+    {
+      "id": "kit-k1se",
+      "nombre": "Kit de cerramiento K1 SE",
+      "categoria": "prototipado",
+      "resumen": "Kit para cerrar una impresora Creality K1 SE: paneles laterales de acrílico, puerta frontal con bisagras, tapa superior corrediza y guía para cable y tubo de filamento.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 13,
+      "formato": "ancho",
+      "imagen": "/assets/imagenes/proyectos/kit-k1se.webp",
+      "alternativo": "Boceto ilustrativo: Kit de cerramiento K1 SE",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/kit-k1se/index.html",
+      "producto": "kit-k1se",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Acrílico, piezas impresas, bisagras, tornillería y guías.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Kit para cerrar una impresora Creality K1 SE: paneles laterales de acrílico, puerta frontal con bisagras, tapa superior corrediza y guía para cable y tubo de filamento."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Acrílico, piezas impresas, bisagras, tornillería y guías."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Resolver una necesidad de organización o uso mediante una pieza adaptada al espacio disponible.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Modelar el conjunto, ajustar su geometría y preparar una primera versión para revisar la función.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una solución personalizable cuya forma y acabado pueden adaptarse al proyecto.",
+          "imagen": "/assets/imagenes/proyectos/kit-k1se.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/kit-k1se.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Kit de cerramiento K1 SE"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Kit de cerramiento K1 SE."
+    },
+    {
+      "id": "caja-usb",
+      "nombre": "Organizador de memorias USB",
+      "categoria": "prototipado",
+      "resumen": "Caja con compartimientos individuales para memorias USB y bolsa de sílice. Las memorias mostradas en el boceto son ilustrativas.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 14,
+      "formato": "grande",
+      "imagen": "/assets/imagenes/proyectos/caja-usb.webp",
+      "alternativo": "Boceto ilustrativo: Organizador de memorias USB",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/caja-usb/index.html",
+      "producto": "caja-usb",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Polímero impreso en 3D, separadores, bisagra y gel de sílice.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Caja con compartimientos individuales para memorias USB y bolsa de sílice. Las memorias mostradas en el boceto son ilustrativas."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Polímero impreso en 3D, separadores, bisagra y gel de sílice."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Resolver una necesidad de organización o uso mediante una pieza adaptada al espacio disponible.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Modelar el conjunto, ajustar su geometría y preparar una primera versión para revisar la función.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una solución personalizable cuya forma y acabado pueden adaptarse al proyecto.",
+          "imagen": "/assets/imagenes/proyectos/caja-usb.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/caja-usb.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Organizador de memorias USB"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Organizador de memorias USB."
+    },
+    {
+      "id": "estuche-gafas",
+      "nombre": "Estuche de escritorio para gafas",
+      "categoria": "prototipado",
+      "resumen": "Estuche de escritorio cuya tapa se abre desde el frente hacia arriba, inspirado en la apertura del baúl de un vehículo.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 15,
+      "formato": "normal",
+      "imagen": "/assets/imagenes/proyectos/estuche-gafas.webp",
+      "alternativo": "Boceto ilustrativo: Estuche de escritorio para gafas",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/estuche-gafas/index.html",
+      "producto": "estuche-gafas",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Polímero impreso en 3D, bisagras y protección interior.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Estuche de escritorio cuya tapa se abre desde el frente hacia arriba, inspirado en la apertura del baúl de un vehículo."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Polímero impreso en 3D, bisagras y protección interior."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Resolver una necesidad de organización o uso mediante una pieza adaptada al espacio disponible.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Modelar el conjunto, ajustar su geometría y preparar una primera versión para revisar la función.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una solución personalizable cuya forma y acabado pueden adaptarse al proyecto.",
+          "imagen": "/assets/imagenes/proyectos/estuche-gafas.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/estuche-gafas.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Estuche de escritorio para gafas"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Estuche de escritorio para gafas."
+    },
+    {
+      "id": "gabinete-filamento",
+      "nombre": "Gabinete para filamentos con calentamiento",
+      "categoria": "diseno",
+      "resumen": "Proyecto en diseño para almacenar filamentos en posición vertical sobre tubos horizontales. La configuración de calentamiento y capacidad se definirán durante el desarrollo.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 16,
+      "formato": "normal",
+      "imagen": "/assets/imagenes/proyectos/gabinete-filamento.webp",
+      "alternativo": "Boceto ilustrativo: Gabinete para filamentos con calentamiento",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/gabinete-filamento/index.html",
+      "producto": "gabinete-filamento",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Estructura metálica, cerramiento, soportes para bobinas y componentes de control de temperatura.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Proyecto en diseño para almacenar filamentos en posición vertical sobre tubos horizontales. La configuración de calentamiento y capacidad se definirán durante el desarrollo."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Estructura metálica, cerramiento, soportes para bobinas y componentes de control de temperatura."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Resolver una necesidad de organización o uso mediante una pieza adaptada al espacio disponible.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Modelar el conjunto, ajustar su geometría y preparar una primera versión para revisar la función.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una solución personalizable cuya forma y acabado pueden adaptarse al proyecto.",
+          "imagen": "/assets/imagenes/proyectos/gabinete-filamento.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/gabinete-filamento.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Gabinete para filamentos con calentamiento"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Gabinete para filamentos con calentamiento."
+    },
+    {
+      "id": "soporte-celular",
+      "nombre": "Soporte de escritorio para celular",
+      "categoria": "prototipado",
+      "resumen": "Propuesta de soporte inclinado para celular, con base estable y paso para el cable de carga. Modelo ilustrativo por definir.",
+      "estado": "concepto",
+      "visible": true,
+      "destacado": false,
+      "orden": 17,
+      "formato": "ancho",
+      "imagen": "/assets/imagenes/proyectos/soporte-celular.webp",
+      "alternativo": "Boceto ilustrativo: Soporte de escritorio para celular",
+      "alcance": "Diseño, desarrollo y presentación de la solución.",
+      "enfoque": "Funcionalidad, integración y fabricación a medida.",
+      "nota": "Imágenes y contenido ilustrativos, pendientes de sustituir por la documentación del proyecto.",
+      "ruta": "/paginas/proyectos/soporte-celular/index.html",
+      "producto": "soporte-celular",
+      "mostrarEtapas": true,
+      "mostrarDetalles": true,
+      "mostrarGaleria": true,
+      "materiales": "Polímero impreso en 3D y apoyos antideslizantes.",
+      "detalles": [
+        {
+          "titulo": "Desarrollo a medida",
+          "texto": "Propuesta de soporte inclinado para celular, con base estable y paso para el cable de carga. Modelo ilustrativo por definir."
+        },
+        {
+          "titulo": "Materiales y acabados",
+          "texto": "Polímero impreso en 3D y apoyos antideslizantes."
+        }
+      ],
+      "etapas": [
+        {
+          "titulo": "El reto",
+          "texto": "Resolver una necesidad de organización o uso mediante una pieza adaptada al espacio disponible.",
+          "imagen": "",
+          "visible": true
+        },
+        {
+          "titulo": "El diseño",
+          "texto": "Modelar el conjunto, ajustar su geometría y preparar una primera versión para revisar la función.",
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "visible": true
+        },
+        {
+          "titulo": "La propuesta",
+          "texto": "Una solución personalizable cuya forma y acabado pueden adaptarse al proyecto.",
+          "imagen": "/assets/imagenes/proyectos/soporte-celular.webp",
+          "visible": true
+        }
+      ],
+      "galeria": [
+        {
+          "imagen": "/assets/imagenes/proyectos/soporte-celular.webp",
+          "pie": "Vista ilustrativa de la solución.",
+          "alternativo": "Vista del proyecto Soporte de escritorio para celular"
+        },
+        {
+          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "pie": "Boceto genérico del proceso de diseño.",
+          "alternativo": "Diseño y desarrollo en el taller"
+        }
+      ],
+      "videos": [],
+      "mensaje": "Hola, quisiera consultar un proyecto similar a Soporte de escritorio para celular."
+    }
+  ]
+}

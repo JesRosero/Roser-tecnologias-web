@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "id": "fabricacion-montaje",
+  "titulo": "Fabricación y montaje",
+  "subtitulo": "Soluciones que integran electricidad y mecánica.",
+  "introduccion": "Cuéntanos qué necesitas. Evaluamos la fabricación, el montaje y la integración de componentes eléctricos y mecánicos.",
+  "evaluacion": {
+    "titulo": "Qué podemos evaluar",
+    "areas": [
+      {
+        "titulo": "Fabricación",
+        "descripcion": "Evaluación de piezas y elementos para soluciones eléctricas y mecánicas.",
+        "icono": "engranaje"
+      },
+      {
+        "titulo": "Montaje",
+        "descripcion": "Evaluación del armado e instalación de componentes eléctricos y mecánicos.",
+        "icono": "herramienta"
+      },
+      {
+        "titulo": "Integración",
+        "descripcion": "Evaluación de la conexión y adaptación de componentes dentro de una solución electromecánica.",
+        "icono": "circuito"
+      }
+    ]
+  },
+  "proceso": {
+    "titulo": "Cómo empezar",
+    "pasos": [
+      {
+        "titulo": "Cuéntanos tu necesidad",
+        "descripcion": "Describe qué necesitas resolver."
+      },
+      {
+        "titulo": "Comparte información",
+        "descripcion": "Envía fotos, medidas o planos, si los tienes."
+      },
+      {
+        "titulo": "Evaluamos la solicitud",
+        "descripcion": "Revisamos la viabilidad antes de acordar el trabajo."
+      }
+    ]
+  },
+  "contacto": {
+    "titulo": "Hablemos de tu proyecto",
+    "texto": "Cada solicitud se evalúa según sus necesidades y alcance.",
+    "mensaje": "Hola Roser Tecnologías, quisiera consultar el servicio de Fabricación y montaje. Mi solicitud es:",
+    "imagen": "/assets/imagenes/servicios/fabricacion-montaje/boceto.webp"
+  },
+  "imagen": "/assets/imagenes/servicios/fabricacion-montaje/hero.webp"
+}

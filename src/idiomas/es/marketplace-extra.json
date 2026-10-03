@@ -1,0 +1,23 @@
+{
+  "atencion": "Atención directa por WhatsApp",
+  "diseno": "Productos y personalización",
+  "carritoCompleto": "Revisar carrito completo →",
+  "categoriasAnteriores": "Categorías anteriores",
+  "categoriasSiguientes": "Categorías siguientes",
+  "favoritosTitulo": "Mis favoritos",
+  "favoritosNota": "Conservados en este navegador, sin registro.",
+  "favoritosVacio": "Aún no tienes favoritos.",
+  "atencionDetalle": "Te asesoramos en tus proyectos",
+  "enviosTitulo": "Envíos en Colombia",
+  "disenoDetalle": "Soluciones a la medida de tus necesidades",
+  "carritoDetalle": "Revisa y prepara tu pedido",
+  "personalIncluida": "Personalización incluida en el precio",
+  "personalOpcional": "Quiero personalizar este producto (opcional)",
+  "personalRecargo": "La personalización tiene un costo adicional por cotizar. Confirmaremos el valor antes de fabricar.",
+  "personalPendiente": "El subtotal no incluye los recargos de personalización pendientes de cotizar.",
+  "tambienInteresa": "También podría interesarte",
+  "personalizacion": "Personalización",
+  "conRecargo": "Opcional con recargo por cotizar",
+  "sinRecargo": "Incluida en el precio",
+  "personalOpcionalDetalle": "Opcional · Costo adicional por cotizar"
+}

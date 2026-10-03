@@ -1,0 +1,2 @@
+.app-telefono { width:min(255px,100%); margin-inline:auto; padding:10px; border:2px solid #777e88; border-radius:36px; background:linear-gradient(110deg,#383c43,#090b0e 30%,#171b20 85%,#545b63); box-shadow:0 20px 45px rgb(0 0 0 / 45%); }
+.app-telefono img { width:100%; height:auto; border-radius:25px; background:#fff; }

@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "aplicacion": "roser",
+  "documento": "terminos",
+  "nombre": "Roser Tecnologías",
+  "titulo": "Términos y condiciones",
+  "actualizacion": "2 de octubre de 2026",
+  "introduccion": "Condiciones para consultas, contratación de productos y servicios, pagos, entregas y atención al cliente.",
+  "secciones": [
+    {
+      "id": "identificacion",
+      "titulo": "Identificación y alcance",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Roser Tecnologías es el nombre comercial bajo el cual actúa Jesús Aurelio Rosero Dávila, NIT 1088946338-5. Dirección del taller: CS Los Estudiantes DIV 3, El Rosario, Nariño, Colombia. Correo: contact@rosertecnologias.com. WhatsApp: +57 311 3579437."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Estos términos regulan el uso del sitio y las condiciones generales para solicitar productos y servicios de Roser Tecnologías. Las aplicaciones tienen sus propios términos. Ninguna cláusula limita los derechos obligatorios del consumidor."
+        }
+      ]
+    },
+    {
+      "id": "solicitudes",
+      "titulo": "Solicitudes y contratación",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "La web presenta productos, servicios, aplicaciones y proyectos. Las solicitudes se gestionan por WhatsApp o correo. Enviar una consulta no confirma un pedido ni inicia automáticamente un trabajo."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Cada solicitud se evalúa según su alcance y viabilidad. La contratación se concreta mediante la aceptación de la cotización y las condiciones informadas, incluyendo el anticipo cuando corresponda. Se conserva la confirmación escrita por el canal utilizado."
+        }
+      ]
+    },
+    {
+      "id": "cotizacion",
+      "titulo": "Cotizaciones y alcance",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Antes de contratar se informa la descripción del producto o servicio, especificaciones, cantidades, precio total en pesos colombianos, impuestos aplicables, costos de transporte, plazo o fecha de entrega, forma de pago y condiciones de garantía. La vigencia de la cotización se indica en ella."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "En trabajos personalizados se acuerdan las características, materiales, entregables y criterios de aceptación. Los cambios de alcance o requisitos se confirman por escrito, junto con su efecto en precio y plazo, antes de ejecutarse. Las imágenes de referencia no sustituyen las especificaciones acordadas."
+        }
+      ]
+    },
+    {
+      "id": "pagos",
+      "titulo": "Anticipos y pagos",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Como condición general se solicita un anticipo del 30 % del valor acordado. El 70 % restante se paga antes del despacho del producto o al completar el servicio, según lo indicado en la cotización."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Para casos específicos puede solicitarse el pago del 100 % por anticipado. Esta condición se informa y acepta antes de contratar. El medio y los datos de pago se confirman por el canal oficial. La web no procesa pagos directamente."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El inicio del trabajo y el despacho se coordinan con los pagos acordados y su recepción efectiva. El anticipo forma parte del precio total; no constituye una penalización automática ni se considera no reembolsable en todos los casos."
+        }
+      ]
+    },
+    {
+      "id": "envios",
+      "titulo": "Envíos y entregas",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Por ahora se realizan envíos dentro de Colombia. La cobertura, el transportador, el costo y el plazo se confirman antes de contratar. El cliente debe proporcionar datos de entrega correctos y un contacto disponible."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Si ocurre un retraso o dificultad, se informa al cliente y se gestiona la solución correspondiente. El transporte no elimina la responsabilidad legal de Roser Tecnologías frente al consumidor. Los derechos por incumplimiento de entrega se mantienen conforme a la ley."
+        }
+      ]
+    },
+    {
+      "id": "servicios",
+      "titulo": "Fabricación, montaje y mantenimiento",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los servicios se ejecutan conforme al alcance aceptado. Si un diagnóstico revela necesidades adicionales, se informa su costo y se solicita aprobación antes de realizar trabajos no incluidos."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Cuando se recibe un equipo para reparación o mantenimiento, se deja constancia de su estado, elementos recibidos y trabajo solicitado. Las pruebas, condiciones de uso y recomendaciones relevantes se comunican al entregar el producto o servicio."
+        }
+      ]
+    },
+    {
+      "id": "garantia",
+      "titulo": "Garantías",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Roser Tecnologías atiende las solicitudes de garantía conforme a la legislación colombiana y a las condiciones ofrecidas. El plazo aplicable se informa antes de contratar. Para productos nuevos, si no se anuncia un plazo y no existe una regla especial obligatoria, aplica un año desde su entrega."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La fabricación personalizada o la condición de prototipo no eliminan por sí mismas la garantía. Se evalúa el defecto y la solución legal correspondiente, sin trasladar automáticamente toda responsabilidad al fabricante de componentes o al transportador."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Las causas de exclusión deben estar legalmente justificadas y guardar relación con el defecto. Para solicitar atención, describe el problema y aporta la información disponible del pedido. No se exige exclusivamente la factura como prueba de compra."
+        }
+      ]
+    },
+    {
+      "id": "retracto",
+      "titulo": "Retracto y devoluciones",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Cuando corresponde legalmente el derecho de retracto en una venta a distancia, puede ejercerse dentro de cinco días hábiles desde la entrega del producto o la celebración del contrato de servicios. Los costos de devolución corresponden al consumidor en los casos previstos por la ley."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Entre las excepciones legales están los bienes confeccionados según especificaciones del consumidor o claramente personalizados y los servicios cuya prestación haya comenzado con su acuerdo. Estas excepciones no eliminan las garantías ni los derechos por incumplimiento."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La devolución del dinero se realiza dentro del plazo legal aplicable. En comercio electrónico, el plazo máximo es de quince días calendario, cumplidas las condiciones legales de devolución del producto y suministro de los datos necesarios para el reembolso."
+        }
+      ]
+    },
+    {
+      "id": "cancelacion",
+      "titulo": "Cancelaciones y cambios",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Si deseas cancelar o modificar un pedido, comunícalo cuanto antes por WhatsApp o correo. Cuando no resulte aplicable el retracto, se revisan el avance del trabajo, los compromisos aceptados y los costos efectivamente incurridos para acordar una solución conforme a la ley."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "No se pierde automáticamente todo anticipo. Cualquier liquidación debe estar justificada y respetar los derechos del consumidor. Si Roser Tecnologías no puede cumplir, se informa y se gestiona la devolución que corresponda."
+        }
+      ]
+    },
+    {
+      "id": "reclamaciones",
+      "titulo": "Reclamaciones y atención",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Las reclamaciones pueden presentarse a contact@rosertecnologias.com o al WhatsApp +57 311 3579437. Indica el pedido o servicio, describe lo ocurrido y señala la solución solicitada. Puedes adjuntar fotografías o documentos si los tienes."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Las reclamaciones directas de consumidores se responden dentro de quince días hábiles de su recepción, conforme al procedimiento aplicable. También puedes acudir a la Superintendencia de Industria y Comercio: https://www.sic.gov.co."
+        }
+      ]
+    },
+    {
+      "id": "contenido",
+      "titulo": "Contenido y uso del sitio",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "El contenido, marca, fotografías, ilustraciones y diseños del sitio pertenecen a sus titulares. La consulta del sitio no autoriza su reproducción comercial ni atribuirse trabajos ajenos."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La titularidad y el uso de planos, archivos de diseño, desarrollos y entregables de un proyecto se determinan en su cotización o acuerdo. No se presume una cesión general de todos los derechos por el solo hecho de contratar un servicio."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los enlaces externos se rigen por las condiciones de sus respectivos proveedores. El sitio no ofrece cuentas de cliente ni garantiza disponibilidad ininterrumpida."
+        }
+      ]
+    },
+    {
+      "id": "ley",
+      "titulo": "Ley aplicable y cambios",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Se aplica la legislación colombiana. Las modificaciones de estos términos no cambian retroactivamente las condiciones de pedidos ya aceptados ni reducen garantías o derechos obligatorios. Las condiciones particulares se acuerdan por escrito y deben respetar la ley."
+        }
+      ]
+    }
+  ]
+}

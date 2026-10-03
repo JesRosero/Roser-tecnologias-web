@@ -1,0 +1,122 @@
+@import url("/src/estilos/componentes.css");
+
+.portada { display: grid; grid-template-columns: 1fr 1.15fr; align-items: center; min-height: 520px; gap: 45px; padding-block: 65px; }
+.marca { color: var(--color-acento); font-size: 18px; margin: 0 0 16px; }
+h1 { font-size: clamp(40px, 5vw, 66px); line-height: 1.08; letter-spacing: -2px; margin: 0; max-width: 560px; }
+.lema { font-size: 22px; color: var(--color-texto-secundario); margin: 22px 0 32px; }
+.portada-visual { min-height: 360px; border-radius: 22px; overflow: hidden; background: radial-gradient(ellipse at 65% 45%, #183c56, transparent 65%), linear-gradient(135deg, #152235, #090f19); }
+.portada-visual img { width: 100%; height: 380px; object-fit: cover; }
+.areas { padding-bottom: 72px; scroll-margin-top: 24px; }
+.areas-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.tarjeta-area { background: var(--color-superficie); border: 1px solid var(--color-borde); border-radius: var(--radio-tarjeta); overflow: hidden; box-shadow: var(--sombra-tarjeta); }
+.area-visual { height: 160px; background: radial-gradient(ellipse at center, #24445d, #142030 75%); }
+.area-visual img { width: 100%; height: 100%; object-fit: cover; }
+.area-cuerpo { padding: 22px; }
+.area-cuerpo h2 { font-size: 21px; margin: 0 0 9px; }
+.area-cuerpo p { font-size: 14px; color: var(--color-texto-secundario); margin: 0 0 20px; min-height: 45px; }
+.area-cuerpo a { color: var(--color-acento); text-decoration: none; font-size: 14px; font-weight: 650; }
+.contacto { padding-block: 48px; border-block: 1px solid var(--color-borde); background: #0d1623; scroll-margin-top: 20px; }
+.contacto-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 70px; }
+.contacto h2 { font-size: 30px; margin: 0 0 20px; }
+.datos-contacto { font-style: normal; color: var(--color-texto-secundario); font-size: 15px; }
+.datos-contacto a { display: block; text-decoration: none; margin-bottom: 12px; overflow-wrap: anywhere; }
+.datos-contacto p { margin: 0; }
+form, label { display: grid; gap: 8px; }
+form { gap: 14px; }
+label span { color: var(--color-texto-secundario); font-size: 13px; }
+.campos-fila { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+input, textarea { min-width: 0; width: 100%; border: 1px solid var(--color-borde); border-radius: 8px; background: var(--color-fondo); color: var(--color-texto); padding: 10px 12px; }
+textarea { resize: vertical; }
+.boton-whatsapp { justify-self: start; background: #28c67b; color: #072618; font-size: 14px; }
+.boton-whatsapp:hover { background: #51d696; }
+.boton-whatsapp:disabled { opacity: .5; }
+.mapa { margin-block: 32px; }
+.mapa iframe { width: 100%; height: 190px; border: 0; border-radius: 12px; display: block; }
+@media (max-width: 1000px) {
+  .areas-grid { grid-template-columns: repeat(2, 1fr); }
+  .portada { gap: 24px; } .contacto-grid { gap: 35px; }
+}
+@media (max-width: 760px) {
+  .portada { grid-template-columns: 1fr; padding-block: 40px; min-height: auto; }
+  .portada-visual { min-height: 240px; } .portada-visual img { height: 270px; }
+  .contacto-grid { grid-template-columns: 1fr; gap: 28px; }
+  .areas { padding-bottom: 40px; } .contacto { padding-block: 35px; }
+}
+@media (max-width: 440px) {
+  .areas-grid, .campos-fila { grid-template-columns: 1fr; }
+  .area-cuerpo p { min-height: auto; } .area-visual { height: 180px; }
+  h1 { letter-spacing: -1px; }
+}
+.portada {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: 520px;
+  padding-block: 60px;
+  overflow: hidden;
+}
+
+.portada-texto {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  max-width: 570px;
+}
+
+.portada-visual {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  min-height: 0;
+  border-radius: 0;
+  background: transparent;
+  pointer-events: none;
+}
+
+.portada-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.portada::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    var(--color-fondo) 0%,
+    rgba(9, 15, 25, 0.96) 25%,
+    rgba(9, 15, 25, 0.78) 43%,
+    rgba(9, 15, 25, 0.15) 65%,
+    transparent 100%
+  );
+}
+
+@media (max-width: 760px) {
+  .portada {
+    min-height: 500px;
+    padding-block: 40px;
+  }
+
+  .portada-texto {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .portada-visual img {
+    object-position: 65% center;
+  }
+
+  .portada::after {
+    background: linear-gradient(
+      90deg,
+      rgba(9, 15, 25, 0.97),
+      rgba(9, 15, 25, 0.78)
+    );
+  }
+}

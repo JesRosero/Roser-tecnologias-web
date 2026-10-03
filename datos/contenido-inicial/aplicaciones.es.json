@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "etiqueta": "Aplicaciones de Roser",
+  "titulo": "Nuestras aplicaciones",
+  "descripcion": "Herramientas para calcular costos de impresión 3D y estimar materiales y costos de construcción.",
+  "aplicaciones": [
+    {
+      "id": "3dcost",
+      "nombre": "3DCost",
+      "categoria": "Impresión 3D",
+      "descripcion": "Calcula costos de impresión 3D con tecnologías FDM y resina.",
+      "fondo": "/assets/imagenes/aplicaciones/3dcost/fondo.webp",
+      "captura": "/assets/imagenes/aplicaciones/3dcost/captura.webp",
+      "alternativo": "Pantalla de bienvenida de 3DCost."
+    },
+    {
+      "id": "construcost",
+      "nombre": "ConstruCost",
+      "categoria": "Construcción",
+      "descripcion": "Estima materiales y costos para tus proyectos de construcción.",
+      "fondo": "/assets/imagenes/aplicaciones/construcost/fondo.webp",
+      "captura": "/assets/imagenes/aplicaciones/construcost/captura.webp",
+      "alternativo": "Pantalla de bienvenida de ConstruCost."
+    }
+  ],
+  "contacto": {
+    "texto": "Desarrolladas por Roser Tecnologías.",
+    "enlace": "¿Tienes una consulta? Contáctanos",
+    "mensaje": "Hola Roser Tecnologías, quisiera consultar sobre sus aplicaciones."
+  }
+}

@@ -1,5 +1,55 @@
-/ /Pagina%20Principal/index.html 200
-/productos/* /Marketplace/productos/:splat 200
-/Empresa/productos/* /Marketplace/productos/:splat 200
-/Servicios/productos/* /Marketplace/productos/:splat 200
-/impresion-3d.html /Servicios/impresiones-3d.html 200
+# Roser Tecnologías — web nueva
+# / usa index.html de la raíz. Sin redirección a la portada antigua.
+# Las URLs /Productos-Roser/Apps/*/config/app-config.json se conservan.
+
+/Pagina%20Principal/* /index.html 301!
+/pagina%20principal/* /index.html 301!
+/Empresa/Politicas%20y%20Privacidad/politica-privacidad.html /paginas/empresa/privacidad/index.html 301!
+/Empresa/Terminos%20y%20Condiciones/terminos-condiciones.html /paginas/empresa/terminos/index.html 301!
+/Empresa/Mision%20y%20Vision/mision-vision.html /paginas/empresa/nosotros/index.html 301!
+/Empresa/Conocenos/conocenos.html /paginas/empresa/nosotros/index.html 301!
+/Servicios/Fabricacion%20de%20sistemas%20mecanicos/fabricacion-sistemas-mecanicos.html /paginas/servicios/fabricacion-montaje/index.html 301!
+/Servicios/Dise%C3%B1o%20Electrico/diseno-electrico.html /paginas/servicios/diseno-ingenieria/index.html 301!
+/Servicios/Dise%C3%B1os-3D/disenos-3.html /paginas/servicios/diseno-ingenieria/index.html 301!
+/Servicios/Dise%C3%B1o%20mecanico/diseno-mecanico.html /paginas/servicios/diseno-ingenieria/index.html 301!
+/Servicios/Impresiones-3D/impresiones-3d.html /paginas/servicios/prototipado-impresion-3d/index.html 301!
+/impresion-3d.html /paginas/servicios/prototipado-impresion-3d/index.html 301!
+/Servicios/impresiones-3d.html /paginas/servicios/prototipado-impresion-3d/index.html 301!
+/Productos-Roser/Apps/3dcost/3dcost.html /paginas/aplicaciones/3dcost/index.html 301!
+/productos-roser/apps/3dcost/3dcost.html /paginas/aplicaciones/3dcost/index.html 301!
+/Productos-Roser/Apps/3dcost/politicas-y-privacidad-de-3dcost /paginas/aplicaciones/3dcost/privacidad/index.html 301!
+/Productos-Roser/Apps/3dcost/politicas-y-privacidad-de-3dcost/* /paginas/aplicaciones/3dcost/privacidad/index.html 301!
+/productos-roser/apps/3dcost/politicas-y-privacidad-de-3dcost /paginas/aplicaciones/3dcost/privacidad/index.html 301!
+/productos-roser/apps/3dcost/politicas-y-privacidad-de-3dcost/* /paginas/aplicaciones/3dcost/privacidad/index.html 301!
+/Productos-Roser/Apps/3dcost/Terminos-y-condiciones-de-3Dcost /paginas/aplicaciones/3dcost/terminos/index.html 301!
+/Productos-Roser/Apps/3dcost/Terminos-y-condiciones-de-3Dcost/* /paginas/aplicaciones/3dcost/terminos/index.html 301!
+/productos-roser/apps/3dcost/terminos-y-condiciones-de-3dcost /paginas/aplicaciones/3dcost/terminos/index.html 301!
+/productos-roser/apps/3dcost/terminos-y-condiciones-de-3dcost/* /paginas/aplicaciones/3dcost/terminos/index.html 301!
+/Productos-Roser/Apps/3dcost/3Dcost-demo/* /paginas/aplicaciones/3dcost/index.html 301!
+/Productos-Roser/Apps/construcost/construcost.html /paginas/aplicaciones/construcost/index.html 301!
+/productos-roser/apps/construcost/construcost.html /paginas/aplicaciones/construcost/index.html 301!
+/Productos-Roser/Apps/construcost/terminos-y-condiciones-de-construcost /paginas/aplicaciones/construcost/terminos/index.html 301!
+/Productos-Roser/Apps/construcost/terminos-y-condiciones-de-construcost/* /paginas/aplicaciones/construcost/terminos/index.html 301!
+/productos-roser/apps/construcost/terminos-y-condiciones-de-construcost /paginas/aplicaciones/construcost/terminos/index.html 301!
+/productos-roser/apps/construcost/terminos-y-condiciones-de-construcost/* /paginas/aplicaciones/construcost/terminos/index.html 301!
+/Productos-Roser/Apps/construcost/politicas-y-privacidad-de-construcost /paginas/aplicaciones/construcost/privacidad/index.html 301!
+/Productos-Roser/Apps/construcost/politicas-y-privacidad-de-construcost/* /paginas/aplicaciones/construcost/privacidad/index.html 301!
+/productos-roser/apps/construcost/politicas-y-privacidad-de-construcost /paginas/aplicaciones/construcost/privacidad/index.html 301!
+/productos-roser/apps/construcost/politicas-y-privacidad-de-construcost/* /paginas/aplicaciones/construcost/privacidad/index.html 301!
+/Productos-Roser/Prototipos/DePie/* /paginas/proyectos/bipedestacion/index.html 301!
+/Empresa/* /paginas/empresa/nosotros/index.html 301!
+/Servicios/* /paginas/servicios/index.html 301!
+/Marketplace/* /paginas/productos/index.html 301!
+/productos/* /paginas/productos/index.html 301!
+/Empresa/productos/* /paginas/productos/index.html 301!
+/Servicios/productos/* /paginas/productos/index.html 301!
+
+# Herramientas locales: no servirlas como páginas públicas en Netlify.
+/admin /404.html 404!
+/admin/* /404.html 404!
+/herramientas/* /404.html 404!
+/.roser-local/* /404.html 404!
+/abrir-administrador.bat /404.html 404!
+/Administrador-Roser.vbs /404.html 404!
+/Limpiar-web.bat /404.html 404!
+/README.md /404.html 404!

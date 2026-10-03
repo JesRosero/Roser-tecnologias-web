@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "aplicacion": "3dcost",
+  "documento": "terminos",
+  "nombre": "3DCost",
+  "titulo": "Términos y condiciones",
+  "actualizacion": "2 de octubre de 2026",
+  "introduccion": "Estos términos describen las condiciones de uso de 3DCost, sus funciones gratuitas, suscripciones y documentos generados.",
+  "secciones": [
+    {
+      "titulo": "Alcance de los términos",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Estos términos regulan el uso de 3DCost, desarrollada por Roser Tecnologías. La aplicación permite calcular costos estimados de impresión 3D FDM y resina, conservar historial y generar documentos PDF. El usuario debe conocer estos términos antes de utilizarla; si no está de acuerdo, puede dejar de usarla."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La app no requiere una cuenta de Roser Tecnologías. Las compras y suscripciones se vinculan a la cuenta de la tienda utilizada."
+        }
+      ],
+      "id": "apartado-1"
+    },
+    {
+      "titulo": "Uso permitido",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Se permite utilizar la aplicación para actividades personales o comerciales legítimas. Los derechos sobre la aplicación y la marca permanecen en Roser Tecnologías, sin perjuicio de los derechos de los componentes de terceros."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "No se permite distribuir copias no autorizadas, eludir controles de acceso, utilizarla para actividades ilícitas o vulnerar derechos de otras personas. Estas restricciones se aplican en la medida permitida por la legislación correspondiente."
+        }
+      ],
+      "id": "apartado-2"
+    },
+    {
+      "titulo": "Datos y responsabilidad del usuario",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "El usuario es responsable de introducir información adecuada y comprobarla. Los datos de empresas, clientes y proyectos que incorpore deben utilizarse de forma legítima."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Antes de compartir un PDF, revise sus resultados y la información personal, imágenes u otros contenidos incluidos. Compartir un documento no significa que Roser Tecnologías haya validado o aprobado su contenido."
+        }
+      ],
+      "id": "apartado-3"
+    },
+    {
+      "titulo": "Carácter estimativo de los cálculos",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los resultados dependen de los tiempos, cantidades, tarifas y demás datos introducidos. Compruebe los costos reales y las condiciones de cada trabajo antes de emitir una cotización o tomar una decisión comercial."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La aplicación es una herramienta de apoyo. No garantiza que una estimación coincida con el costo final ni que abarque todos los factores de un trabajo."
+        }
+      ],
+      "id": "apartado-4"
+    },
+    {
+      "titulo": "Modalidades Free y Pro",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "La aplicación ofrece una modalidad gratuita y funciones Pro mediante suscripciones mensuales o anuales. Las prestaciones, límites y condiciones aplicables se muestran en la aplicación y en la tienda antes de contratar."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Pro permite utilizar las funciones habilitadas para ese plan y elimina la visualización de anuncios dentro de la experiencia Pro. No implica por sí mismo que se desactiven todos los servicios de analítica o las conexiones de compras."
+        }
+      ],
+      "id": "apartado-5"
+    },
+    {
+      "titulo": "Precios, cobros y renovación",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los planes Pro disponibles son de duración mensual o anual. La periodicidad contratada, el precio, las ofertas elegibles y sus condiciones se muestran antes de confirmar la operación."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El precio y la periodicidad aplicables son los mostrados por Google Play o Apple App Store antes de confirmar. La tienda gestiona el cobro y la renovación automática, salvo cancelación conforme a sus condiciones."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los precios y ofertas pueden variar por región, moneda y elegibilidad. No se promete un importe fijo en estos términos ni una oferta disponible para todas las cuentas."
+        }
+      ],
+      "id": "apartado-6"
+    },
+    {
+      "titulo": "Cancelación, restauración y reembolsos",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "La cancelación se realiza desde la cuenta de Google Play o Apple con la que se contrató, antes de la siguiente renovación y conforme a los plazos de la tienda. Desinstalar la aplicación no cancela la suscripción. Cancelar una renovación y solicitar un reembolso son operaciones distintas. El acceso durante el periodo ya pagado se rige por las condiciones de la tienda y el estado de la suscripción."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La aplicación incluye un mecanismo para restaurar compras reconocidas por la tienda. La restauración depende de la cuenta, la plataforma y el estado de la compra; no se promete transferir una suscripción entre Google Play y Apple."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los reembolsos se solicitan mediante los mecanismos de la tienda correspondiente, sin perjuicio de los derechos que reconozca la normativa aplicable. Para dificultades con el acceso Pro puede escribir a contact@rosertecnologias.com."
+        }
+      ],
+      "id": "apartado-7"
+    },
+    {
+      "titulo": "Publicidad y créditos",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "La modalidad gratuita puede mostrar banners, intersticiales y anuncios recompensados. Las funciones que utilizan créditos y las condiciones para obtenerlos o consumirlos se explican dentro de la aplicación."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los créditos son un recurso interno para las funciones indicadas y no representan dinero ni una suscripción Pro. La disponibilidad de anuncios recompensados depende del proveedor, la conexión y otras condiciones técnicas; no se garantiza que siempre haya uno disponible."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El tratamiento de datos asociado a publicidad y analítica se describe en la política de privacidad. Utilizar la app no sustituye las autorizaciones específicas que correspondan para esos servicios."
+        }
+      ],
+      "id": "apartado-8"
+    },
+    {
+      "titulo": "Almacenamiento y documentos",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los datos de trabajo se guardan en el dispositivo. Roser Tecnologías no ofrece sincronización o respaldo propio en la nube de estos cálculos y documentos."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Borrar datos, cambiar de dispositivo o desinstalar la app puede ocasionar pérdida de información local. Las restauraciones del sistema dependen de sus ajustes y del proveedor. Conserve por su cuenta los documentos que necesite, utilizando las opciones disponibles para compartirlos."
+        }
+      ],
+      "id": "apartado-9"
+    },
+    {
+      "titulo": "Disponibilidad y responsabilidad",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "La aplicación puede experimentar errores o interrupciones. Algunas funciones dependen de Internet y de servicios externos. Si detecta un resultado incorrecto, no lo utilice sin verificarlo y comuníquelo al soporte."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Estas condiciones no excluyen responsabilidades ni derechos que no puedan limitarse conforme a la legislación aplicable. La validación de los datos y del uso previsto de los resultados corresponde al usuario, sin sustituir las obligaciones legales de Roser Tecnologías."
+        }
+      ],
+      "id": "apartado-10"
+    },
+    {
+      "titulo": "Cambios, privacidad y contacto",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Las funciones y estos términos pueden actualizarse. Los cambios relevantes se comunicarán cuando corresponda y respetarán los derechos aplicables a las suscripciones y operaciones existentes. La versión publicada indicará su fecha de actualización."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La política de privacidad de 3DCost explica el tratamiento de información. Ambas aplicaciones pertenecen a Roser Tecnologías y comparten actualmente el correo contact@rosertecnologias.com."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Roser Tecnologías · El Rosario, Nariño, Colombia. Sitio web: https://rosertecnologias.com."
+        }
+      ],
+      "id": "apartado-11"
+    }
+  ]
+}

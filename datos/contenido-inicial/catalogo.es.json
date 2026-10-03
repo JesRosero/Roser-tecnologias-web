@@ -1,0 +1,705 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "grupos": [
+    {
+      "id": "cctv",
+      "nombre": "Seguridad y CCTV",
+      "imagen": "/assets/imagenes/productos/bb04.webp",
+      "visible": true
+    },
+    {
+      "id": "organizacion",
+      "nombre": "Almacenamiento y organización",
+      "imagen": "/assets/imagenes/productos/caja-silice.webp",
+      "visible": true
+    },
+    {
+      "id": "escritorio",
+      "nombre": "Negocios y escritorio",
+      "imagen": "/assets/imagenes/productos/soporte-qr.webp",
+      "visible": true
+    },
+    {
+      "id": "impresion3d",
+      "nombre": "Impresión 3D",
+      "imagen": "/assets/imagenes/productos/kit-k1se.webp",
+      "visible": true
+    },
+    {
+      "id": "electromecanica",
+      "nombre": "Electromecánica y automatización",
+      "imagen": "",
+      "visible": true
+    },
+    {
+      "id": "taller",
+      "nombre": "Taller y fabricación",
+      "imagen": "",
+      "visible": true
+    },
+    {
+      "id": "estructuras",
+      "nombre": "Estructuras y mobiliario",
+      "imagen": "",
+      "visible": true
+    },
+    {
+      "id": "automotriz",
+      "nombre": "Automotriz y repuestos",
+      "imagen": "",
+      "visible": true
+    }
+  ],
+  "subcategorias": [
+    {
+      "id": "conexiones",
+      "grupo": "cctv",
+      "nombre": "Organización de conexiones",
+      "visible": true
+    },
+    {
+      "id": "montaje-cctv",
+      "grupo": "cctv",
+      "nombre": "Soportes y accesorios de montaje",
+      "visible": true
+    },
+    {
+      "id": "cajas",
+      "grupo": "organizacion",
+      "nombre": "Cajas y estuches",
+      "visible": true
+    },
+    {
+      "id": "humedad",
+      "grupo": "organizacion",
+      "nombre": "Control de humedad",
+      "visible": true
+    },
+    {
+      "id": "organizadores",
+      "grupo": "organizacion",
+      "nombre": "Organizadores y almacenamiento modular",
+      "visible": true
+    },
+    {
+      "id": "identificacion",
+      "grupo": "escritorio",
+      "nombre": "Identificación comercial",
+      "visible": true
+    },
+    {
+      "id": "accesorios",
+      "grupo": "escritorio",
+      "nombre": "Accesorios de escritorio",
+      "visible": true
+    },
+    {
+      "id": "cerramientos",
+      "grupo": "impresion3d",
+      "nombre": "Cerramientos",
+      "visible": true
+    },
+    {
+      "id": "filamentos",
+      "grupo": "impresion3d",
+      "nombre": "Almacenamiento de filamentos",
+      "visible": true
+    },
+    {
+      "id": "accesorios-3d",
+      "grupo": "impresion3d",
+      "nombre": "Accesorios y repuestos",
+      "visible": true
+    },
+    {
+      "id": "control",
+      "grupo": "electromecanica",
+      "nombre": "Control y automatización",
+      "visible": true
+    },
+    {
+      "id": "electricos",
+      "grupo": "electromecanica",
+      "nombre": "Componentes y accesorios eléctricos",
+      "visible": true
+    },
+    {
+      "id": "mecanicos",
+      "grupo": "electromecanica",
+      "nombre": "Componentes mecánicos",
+      "visible": true
+    },
+    {
+      "id": "soldadura",
+      "grupo": "taller",
+      "nombre": "Soldadura y montaje",
+      "visible": true
+    },
+    {
+      "id": "herramientas",
+      "grupo": "taller",
+      "nombre": "Herramientas y accesorios",
+      "visible": true
+    },
+    {
+      "id": "utillajes",
+      "grupo": "taller",
+      "nombre": "Plantillas y útiles de fabricación",
+      "visible": true
+    },
+    {
+      "id": "estantes",
+      "grupo": "estructuras",
+      "nombre": "Estantes y almacenamiento",
+      "visible": true
+    },
+    {
+      "id": "mesas",
+      "grupo": "estructuras",
+      "nombre": "Mesas y superficies de trabajo",
+      "visible": true
+    },
+    {
+      "id": "andamios",
+      "grupo": "estructuras",
+      "nombre": "Andamios y accesorios",
+      "visible": true
+    },
+    {
+      "id": "repuestos",
+      "grupo": "automotriz",
+      "nombre": "Repuestos",
+      "visible": true
+    },
+    {
+      "id": "accesorios-auto",
+      "grupo": "automotriz",
+      "nombre": "Accesorios",
+      "visible": true
+    },
+    {
+      "id": "componentes-auto",
+      "grupo": "automotriz",
+      "nombre": "Componentes fabricados a medida",
+      "visible": true
+    }
+  ],
+  "productos": [
+    {
+      "id": "bb04",
+      "referencia": "BB04",
+      "nombre": "Caja CCTV · BB04",
+      "grupo": "cctv",
+      "subcategoria": "conexiones",
+      "descripcion": "Caja organizadora para alojar baluns y borneras de instalaciones CCTV de cuatro canales.",
+      "precio": {
+        "modo": "fijo",
+        "valor": 36900
+      },
+      "visible": true,
+      "destacado": true,
+      "imagenes": [
+        "/assets/imagenes/productos/bb04.webp"
+      ],
+      "variantes": [
+        {
+          "id": "base",
+          "color": "Negro",
+          "tamano": "Único",
+          "precio": null,
+          "existencias": null,
+          "disponibilidad": "disponible"
+        }
+      ],
+      "preparacion": "Por confirmar",
+      "especificaciones": [],
+      "incluye": [
+        "Caja organizadora de cuatro canales"
+      ],
+      "personalizacion": {
+        "activa": false,
+        "texto": false,
+        "imagen": false,
+        "qr": false,
+        "observaciones": true
+      },
+      "notaInterna": "Precio provisional para revisión."
+    },
+    {
+      "id": "bb08",
+      "referencia": "BB08",
+      "nombre": "Caja CCTV · BB08",
+      "grupo": "cctv",
+      "subcategoria": "conexiones",
+      "descripcion": "Caja organizadora para alojar baluns y borneras de instalaciones CCTV de ocho canales.",
+      "precio": {
+        "modo": "fijo",
+        "valor": 40000
+      },
+      "visible": true,
+      "destacado": true,
+      "imagenes": [
+        "/assets/imagenes/productos/bb08.webp"
+      ],
+      "variantes": [
+        {
+          "id": "base",
+          "color": "Negro",
+          "tamano": "Único",
+          "precio": null,
+          "existencias": null,
+          "disponibilidad": "disponible"
+        }
+      ],
+      "preparacion": "Por confirmar",
+      "especificaciones": [],
+      "incluye": [
+        "Caja organizadora de ocho canales"
+      ],
+      "personalizacion": {
+        "activa": false,
+        "texto": false,
+        "imagen": false,
+        "qr": false,
+        "observaciones": true
+      },
+      "notaInterna": "Precio provisional para revisión."
+    },
+    {
+      "id": "caja-9mm",
+      "referencia": "CM09",
+      "nombre": "Caja para munición de 9 mm",
+      "grupo": "organizacion",
+      "subcategoria": "cajas",
+      "descripcion": "Caja de almacenamiento para munición de 9 mm, acompañada de una bolsita de gel de sílice para humedad.",
+      "precio": {
+        "modo": "fijo",
+        "valor": 39900
+      },
+      "visible": true,
+      "destacado": false,
+      "imagenes": [
+        "/assets/imagenes/productos/caja-9mm.webp"
+      ],
+      "variantes": [
+        {
+          "id": "base",
+          "color": "Por confirmar",
+          "tamano": "Único",
+          "precio": null,
+          "existencias": null,
+          "disponibilidad": "consultar"
+        }
+      ],
+      "preparacion": "Por confirmar",
+      "especificaciones": [
+        {
+          "nombre": "Frente",
+          "valor": "3,5 cm"
+        },
+        {
+          "nombre": "Largo",
+          "valor": "10 cm"
+        },
+        {
+          "nombre": "Alto",
+          "valor": "5 cm"
+        }
+      ],
+      "incluye": [
+        "Caja",
+        "Bolsita de gel de sílice"
+      ],
+      "personalizacion": {
+        "activa": true,
+        "texto": true,
+        "imagen": true,
+        "qr": true,
+        "observaciones": true,
+        "modalidad": "cotizar"
+      },
+      "notaInterna": "Precio provisional para revisión."
+    },
+    {
+      "id": "caja-silice",
+      "referencia": "SH01",
+      "nombre": "Caja deshumidificadora",
+      "grupo": "organizacion",
+      "subcategoria": "humedad",
+      "descripcion": "Contenedor de sílice que cambia de color según la humedad, con higrómetro circular frontal. Destinado a reducir la humedad en espacios cerrados, como una caja fuerte.",
+      "precio": {
+        "modo": "fijo",
+        "valor": 69900
+      },
+      "visible": true,
+      "destacado": false,
+      "imagenes": [
+        "/assets/imagenes/productos/caja-silice.webp"
+      ],
+      "variantes": [
+        {
+          "id": "base",
+          "color": "Por confirmar",
+          "tamano": "Único",
+          "precio": null,
+          "existencias": null,
+          "disponibilidad": "consultar"
+        }
+      ],
+      "preparacion": "Por confirmar",
+      "especificaciones": [
+        {
+          "nombre": "Frente",
+          "valor": "8 cm"
+        },
+        {
+          "nombre": "Largo",
+          "valor": "10 cm"
+        },
+        {
+          "nombre": "Alto",
+          "valor": "9 cm"
+        }
+      ],
+      "incluye": [
+        "Caja",
+        "Sílice indicador",
+        "Higrómetro circular"
+      ],
+      "personalizacion": {
+        "activa": false,
+        "texto": false,
+        "imagen": false,
+        "qr": false,
+        "observaciones": true
+      },
+      "notaInterna": "Precio provisional para revisión."
+    },
+    {
+      "id": "soporte-qr",
+      "referencia": "QR01",
+      "nombre": "Soporte QR y tarjetero",
+      "grupo": "escritorio",
+      "subcategoria": "identificacion",
+      "descripcion": "Soporte para mostrar el QR y el nombre de tu negocio, con tarjetero frontal para tarjetas de presentación. El diseño se confirma antes de fabricar.",
+      "precio": {
+        "modo": "fijo",
+        "valor": 89900
+      },
+      "visible": true,
+      "destacado": true,
+      "imagenes": [
+        "/assets/imagenes/productos/soporte-qr.webp"
+      ],
+      "variantes": [
+        {
+          "id": "base",
+          "color": "Negro",
+          "tamano": "Único",
+          "precio": null,
+          "existencias": null,
+          "disponibilidad": "consultar"
+        },
+        {
+          "id": "var-1e122dae",
+          "color": "Azul",
+          "tamano": "Único",
+          "precio": null,
+          "existencias": null,
+          "disponibilidad": "consultar"
+        },
+        {
+          "id": "var-26bb6806",
+          "color": "A convenir",
+          "tamano": "Único",
+          "precio": null,
+          "existencias": null,
+          "disponibilidad": "consultar"
+        }
+      ],
+      "preparacion": "Por confirmar",
+      "especificaciones": [],
+      "incluye": [
+        "Soporte QR",
+        "Tarjetero frontal integrado"
+      ],
+      "personalizacion": {
+        "activa": true,
+        "texto": true,
+        "imagen": true,
+        "qr": true,
+        "observaciones": true
+      },
+      "notaInterna": "Precio provisional para revisión."
+    },
+    {
+      "id": "kit-k1se",
+      "referencia": "CK01",
+      "nombre": "Kit de cerramiento K1 SE",
+      "grupo": "impresion3d",
+      "subcategoria": "cerramientos",
+      "descripcion": "Kit para cerrar una impresora Creality K1 SE: paneles laterales de acrílico, puerta frontal con bisagras, tapa superior corrediza y guía para cable y tubo de filamento.",
+      "precio": {
+        "modo": "fijo",
+        "valor": 349900
+      },
+      "visible": true,
+      "destacado": false,
+      "imagenes": [
+        "/assets/imagenes/productos/kit-k1se.webp"
+      ],
+      "variantes": [
+        {
+          "id": "base",
+          "color": "Por confirmar",
+          "tamano": "Único",
+          "precio": null,
+          "existencias": null,
+          "disponibilidad": "consultar"
+        }
+      ],
+      "preparacion": "Por confirmar",
+      "especificaciones": [
+        {
+          "nombre": "Compatibilidad",
+          "valor": "Creality K1 SE"
+        }
+      ],
+      "incluye": [
+        "Paneles laterales de acrílico",
+        "Puerta frontal y bisagras",
+        "Tapa superior corrediza",
+        "Guía de cable y tubo de filamento"
+      ],
+      "personalizacion": {
+        "activa": false,
+        "texto": false,
+        "imagen": false,
+        "qr": false,
+        "observaciones": true
+      },
+      "notaInterna": "Precio provisional para revisión."
+    },
+    {
+      "id": "caja-usb",
+      "referencia": "USB01",
+      "nombre": "Organizador de memorias USB",
+      "grupo": "organizacion",
+      "subcategoria": "cajas",
+      "descripcion": "Caja con compartimientos individuales para memorias USB y bolsa de sílice. Las memorias mostradas en el boceto son ilustrativas.",
+      "precio": {
+        "modo": "fijo",
+        "valor": 59900
+      },
+      "visible": true,
+      "destacado": false,
+      "imagenes": [
+        "/assets/imagenes/productos/caja-usb.webp"
+      ],
+      "variantes": [
+        {
+          "id": "base",
+          "color": "Por confirmar",
+          "tamano": "Único",
+          "precio": null,
+          "existencias": null,
+          "disponibilidad": "consultar"
+        }
+      ],
+      "preparacion": "Por confirmar",
+      "especificaciones": [
+        {
+          "nombre": "Frente",
+          "valor": "10 cm"
+        },
+        {
+          "nombre": "Fondo",
+          "valor": "10 cm"
+        },
+        {
+          "nombre": "Alto",
+          "valor": "12 cm"
+        }
+      ],
+      "incluye": [
+        "Caja con compartimientos",
+        "Bolsita de sílice"
+      ],
+      "personalizacion": {
+        "activa": false,
+        "texto": false,
+        "imagen": false,
+        "qr": false,
+        "observaciones": true
+      },
+      "notaInterna": "Precio provisional para revisión."
+    },
+    {
+      "id": "estuche-gafas",
+      "referencia": "EG01",
+      "nombre": "Estuche de escritorio para gafas",
+      "grupo": "escritorio",
+      "subcategoria": "accesorios",
+      "descripcion": "Estuche de escritorio cuya tapa se abre desde el frente hacia arriba, inspirado en la apertura del baúl de un vehículo.",
+      "precio": {
+        "modo": "fijo",
+        "valor": 39900
+      },
+      "visible": true,
+      "destacado": false,
+      "imagenes": [
+        "/assets/imagenes/productos/estuche-gafas.webp"
+      ],
+      "variantes": [
+        {
+          "id": "base",
+          "color": "Por confirmar",
+          "tamano": "Único",
+          "precio": null,
+          "existencias": null,
+          "disponibilidad": "consultar"
+        }
+      ],
+      "preparacion": "Por confirmar",
+      "especificaciones": [],
+      "incluye": [
+        "Estuche de escritorio"
+      ],
+      "personalizacion": {
+        "activa": false,
+        "texto": false,
+        "imagen": false,
+        "qr": false,
+        "observaciones": true
+      },
+      "notaInterna": "Precio provisional para revisión."
+    },
+    {
+      "id": "gabinete-filamento",
+      "referencia": "GF01",
+      "nombre": "Gabinete para filamentos con calentamiento",
+      "grupo": "impresion3d",
+      "subcategoria": "filamentos",
+      "descripcion": "Proyecto en diseño para almacenar filamentos en posición vertical sobre tubos horizontales. La configuración de calentamiento y capacidad se definirán durante el desarrollo.",
+      "precio": {
+        "modo": "consultar",
+        "valor": null
+      },
+      "visible": true,
+      "destacado": false,
+      "imagenes": [
+        "/assets/imagenes/productos/gabinete-filamento.webp"
+      ],
+      "variantes": [
+        {
+          "id": "base",
+          "color": "Por confirmar",
+          "tamano": "Único",
+          "precio": null,
+          "existencias": null,
+          "disponibilidad": "desarrollo"
+        }
+      ],
+      "preparacion": "Por confirmar",
+      "especificaciones": [
+        {
+          "nombre": "Alto",
+          "valor": "150 cm"
+        },
+        {
+          "nombre": "Frente",
+          "valor": "40 cm"
+        },
+        {
+          "nombre": "Fondo",
+          "valor": "35 cm"
+        }
+      ],
+      "incluye": [],
+      "personalizacion": {
+        "activa": false,
+        "texto": false,
+        "imagen": false,
+        "qr": false,
+        "observaciones": true
+      },
+      "notaInterna": "En diseño. No ofrecer disponibilidad inmediata."
+    },
+    {
+      "id": "soporte-celular",
+      "referencia": "SC01",
+      "nombre": "Soporte de escritorio para celular",
+      "grupo": "escritorio",
+      "subcategoria": "accesorios",
+      "descripcion": "Propuesta de soporte inclinado para celular, con base estable y paso para el cable de carga. Modelo ilustrativo por definir.",
+      "precio": {
+        "modo": "fijo",
+        "valor": 24900
+      },
+      "visible": true,
+      "destacado": false,
+      "imagenes": [
+        "/assets/imagenes/productos/soporte-celular.webp"
+      ],
+      "variantes": [
+        {
+          "id": "base",
+          "color": "Por confirmar",
+          "tamano": "Único",
+          "precio": null,
+          "existencias": null,
+          "disponibilidad": "consultar"
+        }
+      ],
+      "preparacion": "Por confirmar",
+      "especificaciones": [],
+      "incluye": [
+        "Soporte de escritorio"
+      ],
+      "personalizacion": {
+        "activa": false,
+        "texto": false,
+        "imagen": false,
+        "qr": false,
+        "observaciones": true
+      },
+      "notaInterna": "Precio provisional para revisión."
+    }
+  ],
+  "destacados": [
+    {
+      "id": "cctv",
+      "titulo": "Organiza tus instalaciones CCTV",
+      "descripcion": "Cajas BB04 y BB08 · 4 y 8 canales",
+      "boton": "Ver cajas CCTV",
+      "tipoDestino": "grupo",
+      "destino": "cctv",
+      "imagen": "/assets/imagenes/marketplace/cctv-destacado.webp",
+      "visible": true
+    },
+    {
+      "id": "qr",
+      "titulo": "Dale identidad a tu negocio",
+      "descripcion": "Soportes QR personalizables",
+      "boton": "Ver soportes",
+      "tipoDestino": "producto",
+      "destino": "soporte-qr",
+      "imagen": "/assets/imagenes/marketplace/qr-destacado.webp",
+      "visible": true
+    }
+  ],
+  "comercio": {
+    "titulo": "Productos Roser",
+    "descripcion": "Diseño propio y soluciones para tu día a día.",
+    "anticipo": 30,
+    "envios": "Envíos en Colombia; cobertura, costo y plazo por confirmar.",
+    "pagosNota": "Productos disponibles: pago completo antes del envío. Productos bajo pedido: anticipo acordado para iniciar la fabricación y pago del saldo antes del envío.",
+    "metodosPago": [],
+    "medidaTitulo": "¿Necesitas algo a tu medida?",
+    "medidaDescripcion": "Diseñamos y desarrollamos soluciones para tu necesidad, desde una pieza hasta varias unidades.",
+    "medidaBoton": "Cuéntanos tu idea",
+    "medidaMensaje": "Hola Roser Tecnologías, necesito una solución a medida. Quisiera contarles mi idea.",
+    "medidaImagen": "/assets/imagenes/marketplace/diseno-medida.webp"
+  }
+}

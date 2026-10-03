@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Administrador Roser</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="/src/estilos/tema.css" />
+    <link rel="stylesheet" href="/src/estilos/base.css" />
+    <link rel="stylesheet" href="/admin/estilos/inicio.css" />
+    <script type="module" src="/admin/modulos/panel.js"></script>
+  </head>
+  <body>
+    <main class="contenedor admin-contenido">
+      <h1>Administrador Roser</h1>
+      <p>
+        Modifica el contenido, guarda los cambios y revisa la web local. Cuando decidas publicar,
+        sube los archivos desde VS Code con Git.
+      </p>
+      <a href="/index.html" target="_blank" rel="noopener">Ver sitio local ↗</a>
+      <div id="secciones" class="admin-panel-grid"></div>
+      <p>Los respaldos conservan las últimas cinco versiones anteriores de cada sección.</p>
+      <p>
+        <a href="/admin/recuperar-todo.html" target="_blank"
+          >Recuperar ediciones del navegador anterior</a
+        >
+      </p>
+      <p id="estado" role="status"></p>
+    </main>
+  </body>
+</html>

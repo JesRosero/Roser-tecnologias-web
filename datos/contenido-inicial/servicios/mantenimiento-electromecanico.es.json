@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "id": "mantenimiento-electromecanico",
+  "titulo": "Mantenimiento electromecánico",
+  "subtitulo": "Evaluación y atención de necesidades eléctricas y mecánicas.",
+  "introduccion": "Cuéntanos qué ocurre con tu equipo o sistema. Evaluamos la solicitud y definimos la viabilidad y el alcance del trabajo.",
+  "evaluacion": {
+    "titulo": "Qué podemos evaluar",
+    "areas": [
+      {
+        "titulo": "Diagnóstico",
+        "descripcion": "Evaluación de fallas y necesidades en equipos y sistemas eléctricos y mecánicos.",
+        "icono": "lupa"
+      },
+      {
+        "titulo": "Reparación",
+        "descripcion": "Evaluación de intervenciones según la falla, el estado y la viabilidad del equipo.",
+        "icono": "herramienta"
+      },
+      {
+        "titulo": "Mantenimiento",
+        "descripcion": "Evaluación de necesidades de revisión y mantenimiento según el equipo o sistema.",
+        "icono": "engranaje"
+      }
+    ]
+  },
+  "proceso": {
+    "titulo": "Cómo empezar",
+    "pasos": [
+      {
+        "titulo": "Cuéntanos qué ocurre",
+        "descripcion": "Describe el equipo y la necesidad o falla que observas."
+      },
+      {
+        "titulo": "Comparte información",
+        "descripcion": "Envía fotos, datos del equipo o antecedentes, si los tienes."
+      },
+      {
+        "titulo": "Evaluamos la solicitud",
+        "descripcion": "Revisamos la viabilidad antes de acordar el trabajo."
+      }
+    ]
+  },
+  "contacto": {
+    "titulo": "Hablemos de tu necesidad",
+    "texto": "Cada solicitud se evalúa según sus necesidades y alcance.",
+    "mensaje": "Hola Roser Tecnologías, quisiera consultar el servicio de Mantenimiento electromecánico. Mi solicitud es:",
+    "imagen": "/assets/imagenes/servicios/mantenimiento-electromecanico/boceto.webp"
+  },
+  "imagen": "/assets/imagenes/servicios/mantenimiento-electromecanico/hero.webp"
+}

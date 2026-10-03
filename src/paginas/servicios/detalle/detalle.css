@@ -1,0 +1,90 @@
+
+.detalle-hero { position:relative; isolation:isolate; overflow:hidden; background:var(--color-fondo); }
+.detalle-fondo { position:absolute; z-index:-2; inset:0; width:100%; height:100%; object-fit:contain; object-position:right center; }
+.detalle-hero::after { content:""; position:absolute; z-index:-1; inset:0; background:linear-gradient(90deg,#090f19 0%,rgba(9,15,25,.93) 25%,rgba(9,15,25,.65) 45%,transparent 75%); }
+.detalle-presentacion { min-height:560px; padding-block:30px 65px; }
+nav.migas { display:flex; flex-wrap:wrap; gap:12px; align-items:center; width:auto; padding:0; color:var(--color-texto-secundario); font-size:13px; margin-bottom:55px; }
+.migas a { padding:0; }
+.migas [aria-current] { color:var(--color-acento); }
+.detalle-texto { max-width:570px; width:52%; }
+.detalle-texto h1 { font-size:clamp(36px,4.5vw,62px); line-height:1.08; letter-spacing:-1.5px; margin:0 0 22px; }
+.detalle-subtitulo { font-size:clamp(19px,2vw,25px); line-height:1.45; margin-bottom:22px; }
+.detalle-texto p:not(.detalle-subtitulo) { color:var(--color-texto-secundario); line-height:1.7; margin-bottom:28px; }
+.detalle-seccion { padding-block:54px 15px; }
+.detalle-seccion h2, .detalle-contacto h2 { font-size:clamp(25px,3vw,36px); line-height:1.2; margin-bottom:30px; }
+.detalle-seccion h2::after { content:""; display:block; width:50px; height:2px; background:var(--color-acento); margin-top:14px; }
+.detalle-areas { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.detalle-area { padding:28px; border:1px solid var(--color-borde); border-radius:10px; background:var(--color-superficie); }
+.detalle-area svg { color:var(--color-acento); width:42px; height:42px; margin-bottom:22px; }
+.detalle-area h3 { font-size:20px; margin-bottom:12px; }
+.detalle-area p, .detalle-pasos p { color:var(--color-texto-secundario); line-height:1.65; }
+.detalle-pasos { padding:0; margin:0; list-style:none; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; }
+.detalle-pasos li { display:flex; gap:18px; align-items:flex-start; }
+.paso-numero { flex-shrink:0; width:54px; height:54px; border:1px solid var(--color-acento); border-radius:50%; display:grid; place-items:center; color:var(--color-acento); font-size:20px; }
+.detalle-pasos h3 { font-size:16px; margin:4px 0 8px; }
+.detalle-contacto { position:relative; isolation:isolate; overflow:hidden; border:1px solid var(--color-borde); border-radius:12px; padding:42px; margin-top:55px; }
+.detalle-contacto img { position:absolute; z-index:-2; inset:0; width:100%; height:100%; object-fit:contain; object-position:right center; opacity:.85; }
+.detalle-contacto::after { content:""; position:absolute; z-index:-1; inset:0; background:linear-gradient(90deg,#0b1521 0%,rgba(9,15,25,.85) 45%,rgba(9,15,25,.35) 100%); }
+.detalle-contacto h2 { margin-bottom:14px; }
+.detalle-contacto p { color:var(--color-texto-secundario); margin-bottom:24px; max-width:600px; }
+.detalle-volver { padding-block:30px; }
+.detalle-volver a { color:var(--color-acento); text-decoration:none; }
+@media(max-width:760px) {
+ .detalle-presentacion { min-height:540px; padding-block:24px 40px; }
+ nav.migas { margin-bottom:40px; font-size:12px; }
+ .detalle-texto { width:100%; max-width:560px; }
+ .detalle-hero::after { background:linear-gradient(90deg,rgba(9,15,25,.96),rgba(9,15,25,.78)); }
+ .detalle-fondo { object-position:65% center; }
+ .detalle-areas, .detalle-pasos { grid-template-columns:1fr; gap:20px; }
+ .detalle-area { padding:24px; }
+ .detalle-seccion { padding-top:38px; }
+ .detalle-contacto { padding:28px; margin-top:35px; }
+}
+/* Alinear la presentación con el resto del contenido */
+.detalle-hero {
+  width: min(var(--ancho-contenido), calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.detalle-presentacion {
+  width: 100%;
+}
+
+/* Integrar la imagen en toda la presentación */
+.detalle-fondo {
+  object-fit: cover;
+  object-position: right center;
+}
+
+.detalle-hero::after {
+  background:
+    linear-gradient(
+      0deg,
+      var(--color-fondo),
+      transparent 18%
+    ),
+    linear-gradient(
+      90deg,
+      var(--color-fondo) 0%,
+      rgba(9, 15, 25, .94) 28%,
+      rgba(9, 15, 25, .65) 48%,
+      transparent 75%
+    );
+}
+
+/* Ampliar el boceto del bloque de contacto */
+.detalle-contacto img {
+  object-fit: cover;
+  object-position: right center;
+  opacity: 1;
+}
+
+@media (max-width: 760px) {
+  .detalle-hero::after {
+    background: linear-gradient(
+      90deg,
+      rgba(9, 15, 25, .96),
+      rgba(9, 15, 25, .78)
+    );
+  }
+}

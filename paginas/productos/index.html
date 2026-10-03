@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Productos — Roser Tecnologías</title>
+    <meta name="description" content="Catálogo de Roser Tecnologías." />
+    <link rel="stylesheet" href="/src/estilos/tema.css" />
+    <link rel="stylesheet" href="/src/estilos/base.css" />
+    <link rel="stylesheet" href="/src/estilos/componentes.css" />
+    <link rel="stylesheet" href="/src/paginas/productos/tienda.css" />
+    <script type="module" src="/src/paginas/productos/inicio.js"></script>
+  </head>
+  <body data-pagina="catalogo">
+    <a id="saltar" class="saltar" href="#contenido">Saltar al contenido</a>
+    <header id="cabecera" class="tienda-cabecera"></header>
+    <main id="contenido" class="contenedor tienda-contenido">
+      <h1 id="titulo"></h1>
+      <p id="descripcion" class="tienda-intro"></p>
+      <section id="destacados" class="tienda-destacados" aria-label="Destacados"></section>
+      <nav id="categorias" class="tienda-categorias" aria-label="Categorías de productos"></nav>
+      <section id="catalogo" aria-labelledby="catalogo-titulo">
+        <div class="tienda-catalogo-cabecera">
+          <div>
+            <h2 id="catalogo-titulo"></h2>
+            <span id="cuenta" role="status"></span>
+          </div>
+          <div id="controles" class="tienda-controles"></div>
+          <button id="abrir-filtros" type="button" class="tienda-secundario"></button
+          ><select id="orden"></select>
+        </div>
+        <div id="filtros" class="tienda-filtros" hidden>
+          <label
+            ><span id="grupo-label"></span
+            ><select id="grupo-filtro"></select></label
+          ><label
+            ><span id="sub-label"></span
+            ><select id="sub-filtro"></select></label
+          ><input id="min" type="number" min="0" /><input id="max" type="number" min="0" /><button
+            id="limpiar"
+            type="button"
+            class="tienda-secundario"
+          ></button>
+        </div>
+        <div id="productos" class="tienda-grid"></div>
+        <p id="sin-resultados" hidden></p>
+      </section>
+      <section class="tienda-medida" aria-labelledby="medida-titulo">
+        <div>
+          <h2 id="medida-titulo"></h2>
+          <p id="medida-descripcion"></p>
+        </div>
+        <a id="medida-boton" class="tienda-boton"></a>
+      </section>
+    </main>
+    <p id="estado" class="contenedor tienda-error" role="status" hidden></p>
+    <div id="pie"></div>
+    <dialog id="carrito-dialog" class="tienda-carrito" aria-labelledby="carrito-titulo"></dialog>
+    <p id="aviso" class="tienda-aviso" role="status" aria-live="polite" hidden></p>
+  </body>
+</html>

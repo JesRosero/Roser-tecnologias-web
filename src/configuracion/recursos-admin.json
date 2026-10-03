@@ -1,0 +1,194 @@
+[
+  {
+    "id": "inicio",
+    "titulo": "Inicio",
+    "archivo": "datos/contenido-inicial/inicio.es.json",
+    "modulo": "sitio",
+    "validar": "validarContenido",
+    "args": [],
+    "clave": "roser:inicio:borrador:es:v1"
+  },
+  {
+    "id": "servicios",
+    "titulo": "Servicios",
+    "archivo": "datos/contenido-inicial/servicios.es.json",
+    "modulo": "servicios",
+    "validar": "validarContenidoServicios",
+    "args": [],
+    "clave": "roser:servicios:borrador:es:v1"
+  },
+  {
+    "id": "aplicaciones",
+    "titulo": "Aplicaciones",
+    "archivo": "datos/contenido-inicial/aplicaciones.es.json",
+    "modulo": "aplicaciones",
+    "validar": "validarContenidoAplicaciones",
+    "args": [],
+    "clave": "roser:aplicaciones:borrador:es:v1"
+  },
+  {
+    "id": "nosotros",
+    "titulo": "Nosotros",
+    "archivo": "datos/contenido-inicial/nosotros.es.json",
+    "modulo": "nosotros",
+    "validar": "validarContenidoNosotros",
+    "args": [],
+    "clave": "roser:nosotros:borrador:es:v1"
+  },
+  {
+    "id": "servicio-diseno-ingenieria",
+    "titulo": "Diseno ingenieria",
+    "archivo": "datos/contenido-inicial/servicios/diseno-ingenieria.es.json",
+    "modulo": "detalle-servicio",
+    "validar": "validarDetalleServicio",
+    "args": [
+      "diseno-ingenieria"
+    ],
+    "clave": "roser:detalle-servicio:diseno-ingenieria:borrador:es:v1"
+  },
+  {
+    "id": "servicio-prototipado-impresion-3d",
+    "titulo": "Prototipado impresion 3d",
+    "archivo": "datos/contenido-inicial/servicios/prototipado-impresion-3d.es.json",
+    "modulo": "detalle-servicio",
+    "validar": "validarDetalleServicio",
+    "args": [
+      "prototipado-impresion-3d"
+    ],
+    "clave": "roser:detalle-servicio:prototipado-impresion-3d:borrador:es:v1"
+  },
+  {
+    "id": "servicio-fabricacion-montaje",
+    "titulo": "Fabricacion montaje",
+    "archivo": "datos/contenido-inicial/servicios/fabricacion-montaje.es.json",
+    "modulo": "detalle-servicio",
+    "validar": "validarDetalleServicio",
+    "args": [
+      "fabricacion-montaje"
+    ],
+    "clave": "roser:detalle-servicio:fabricacion-montaje:borrador:es:v1"
+  },
+  {
+    "id": "servicio-mantenimiento-electromecanico",
+    "titulo": "Mantenimiento electromecanico",
+    "archivo": "datos/contenido-inicial/servicios/mantenimiento-electromecanico.es.json",
+    "modulo": "detalle-servicio",
+    "validar": "validarDetalleServicio",
+    "args": [
+      "mantenimiento-electromecanico"
+    ],
+    "clave": "roser:detalle-servicio:mantenimiento-electromecanico:borrador:es:v1"
+  },
+  {
+    "id": "aplicacion-3dcost",
+    "titulo": "3DCost",
+    "archivo": "datos/contenido-inicial/aplicaciones/3dcost.es.json",
+    "modulo": "detalle-aplicacion",
+    "validar": "validarDetalleAplicacion",
+    "args": [
+      "3dcost"
+    ],
+    "clave": "roser:detalle-aplicacion:3dcost:borrador:es:v1"
+  },
+  {
+    "id": "aplicacion-construcost",
+    "titulo": "ConstruCost",
+    "archivo": "datos/contenido-inicial/aplicaciones/construcost.es.json",
+    "modulo": "detalle-aplicacion",
+    "validar": "validarDetalleAplicacion",
+    "args": [
+      "construcost"
+    ],
+    "clave": "roser:detalle-aplicacion:construcost:borrador:es:v1"
+  },
+  {
+    "id": "legal-3dcost-privacidad",
+    "titulo": "3dcost · privacidad",
+    "archivo": "datos/contenido-inicial/legales/3dcost/privacidad.es.json",
+    "modulo": "documento-legal",
+    "validar": "validarDocumentoLegal",
+    "args": [
+      "3dcost",
+      "privacidad"
+    ],
+    "clave": "roser:legal:3dcost:privacidad:borrador:es:v1"
+  },
+  {
+    "id": "legal-3dcost-terminos",
+    "titulo": "3dcost · terminos",
+    "archivo": "datos/contenido-inicial/legales/3dcost/terminos.es.json",
+    "modulo": "documento-legal",
+    "validar": "validarDocumentoLegal",
+    "args": [
+      "3dcost",
+      "terminos"
+    ],
+    "clave": "roser:legal:3dcost:terminos:borrador:es:v1"
+  },
+  {
+    "id": "legal-construcost-privacidad",
+    "titulo": "construcost · privacidad",
+    "archivo": "datos/contenido-inicial/legales/construcost/privacidad.es.json",
+    "modulo": "documento-legal",
+    "validar": "validarDocumentoLegal",
+    "args": [
+      "construcost",
+      "privacidad"
+    ],
+    "clave": "roser:legal:construcost:privacidad:borrador:es:v1"
+  },
+  {
+    "id": "legal-construcost-terminos",
+    "titulo": "construcost · terminos",
+    "archivo": "datos/contenido-inicial/legales/construcost/terminos.es.json",
+    "modulo": "documento-legal",
+    "validar": "validarDocumentoLegal",
+    "args": [
+      "construcost",
+      "terminos"
+    ],
+    "clave": "roser:legal:construcost:terminos:borrador:es:v1"
+  },
+  {
+    "id": "legal-roser-privacidad",
+    "titulo": "roser · privacidad",
+    "archivo": "datos/contenido-inicial/legales/roser/privacidad.es.json",
+    "modulo": "documento-legal",
+    "validar": "validarDocumentoLegal",
+    "args": [
+      "roser",
+      "privacidad"
+    ],
+    "clave": "roser:legal:roser:privacidad:borrador:es:v1"
+  },
+  {
+    "id": "legal-roser-terminos",
+    "titulo": "roser · terminos",
+    "archivo": "datos/contenido-inicial/legales/roser/terminos.es.json",
+    "modulo": "documento-legal",
+    "validar": "validarDocumentoLegal",
+    "args": [
+      "roser",
+      "terminos"
+    ],
+    "clave": "roser:legal:roser:terminos:borrador:es:v1"
+  },
+  {
+    "id": "catalogo",
+    "titulo": "Productos",
+    "archivo": "datos/contenido-inicial/catalogo.es.json",
+    "modulo": "catalogo/modelo",
+    "validar": "validarCatalogo",
+    "args": [],
+    "clave": "roser:catalogo:borrador:es:v1"
+  },
+  {
+    "id": "proyectos",
+    "titulo": "Proyectos",
+    "archivo": "datos/contenido-inicial/proyectos.es.json",
+    "modulo": "proyectos",
+    "validar": "validarProyectos",
+    "args": [],
+    "clave": "roser:proyectos:borrador:es:v1"
+  }
+]

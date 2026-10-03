@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Roser — Administración local</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="/src/estilos/tema.css" />
+    <link rel="stylesheet" href="/src/estilos/base.css" />
+    <link rel="stylesheet" href="/admin/estilos/inicio.css" />
+    <script type="module" src="/admin/modulos/aplicaciones.js"></script>
+  </head>
+  <body>
+    <main class="contenedor admin-contenido">
+      <header>
+        <p class="modo" data-texto="modo">Edición del proyecto</p>
+        <h1 data-texto="titulo">Administración de Aplicaciones</h1>
+        <p data-texto="aviso">
+          Guardar cambios actualiza los archivos del proyecto. Publicar requiere subirlos con Git.
+        </p>
+        <a href="/paginas/aplicaciones/index.html" target="_blank" rel="noopener" data-texto="ver"
+          >Ver aplicaciones</a
+        >
+      </header>
+      <nav aria-label="Secciones del panel" style="display: flex; gap: 24px; margin-block: 20px">
+        <a href="/admin/index.html">Inicio</a><a href="/admin/servicios.html">Servicios</a
+        ><a href="/admin/aplicaciones.html" aria-current="page">Aplicaciones</a>
+      </nav>
+      <p>
+        <a href="/admin/detalle-aplicacion.html?aplicacion=3dcost">Editar página de 3DCost →</a>
+      </p>
+      <p>
+        <a href="/admin/detalle-aplicacion.html?aplicacion=construcost"
+          >Editar página de ConstruCost →</a
+        >
+      </p>
+      <div
+        class="enlaces-legales"
+        style="display: flex; gap: 18px; flex-wrap: wrap; margin-block: 24px"
+      >
+        <a href="/admin/documento-legal.html?aplicacion=3dcost&amp;documento=privacidad"
+          >3DCost · Privacidad</a
+        ><a href="/admin/documento-legal.html?aplicacion=3dcost&amp;documento=terminos"
+          >3DCost · Términos</a
+        ><a href="/admin/documento-legal.html?aplicacion=construcost&amp;documento=privacidad"
+          >ConstruCost · Privacidad</a
+        ><a href="/admin/documento-legal.html?aplicacion=construcost&amp;documento=terminos"
+          >ConstruCost · Términos</a
+        >
+      </div>
+      <form id="editor">
+        <div id="campos"></div>
+        <div class="acciones">
+          <button type="submit" id="guardar" disabled>Guardar cambios</button>
+          <button type="button" id="respaldos" disabled>Revisar respaldos</button>
+        </div>
+      </form>
+      <p id="estado" role="status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>

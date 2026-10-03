@@ -1,0 +1,48 @@
+{
+  "modo": "Borrador local · Español",
+  "titulo": "Administración de Inicio",
+  "aviso": "Los cambios se guardan en este navegador. No modifican la web publicada. Usa el mismo navegador y dirección de Live Server para verlos en la portada.",
+  "ver": "Ver portada ↗",
+  "guardar": "Guardar borrador",
+  "exportar": "Exportar contenido",
+  "restaurar": "Restaurar contenido inicial",
+  "campos": {
+    "marca": "Nombre de la empresa",
+    "titulo": "Título",
+    "lema": "Lema",
+    "boton": "Texto del botón",
+    "destino": "Destino del botón",
+    "imagen": "Ruta de imagen WebP",
+    "descripcion": "Descripción",
+    "correo": "Correo electrónico",
+    "telefono": "Teléfono visible",
+    "whatsapp": "Número de WhatsApp con indicativo, solo dígitos",
+    "ubicacion": "Ubicación escrita"
+  },
+  "secciones": {
+    "hero": "Presentación principal",
+    "area": "Área",
+    "contacto": "Contacto"
+  },
+  "areas": {
+    "productos": "Productos",
+    "servicios": "Servicios",
+    "aplicaciones": "Aplicaciones",
+    "proyectos": "Proyectos"
+  },
+  "destinos": {
+    "areas": "Áreas",
+    "contacto": "Contacto"
+  },
+  "ayudaImagen": "Coloca el archivo WebP en assets y escribe su ruta, por ejemplo /assets/imagenes/inicio/hero.webp.",
+  "vistaImagen": "Vista previa de imagen",
+  "imagenNoEncontrada": "No se pudo cargar esta imagen. Revisa su ruta y el archivo.",
+  "notaMapa": "Este campo modifica el texto de ubicación. El mapa mantiene la dirección actual.",
+  "sinGuardar": "Hay cambios sin guardar.",
+  "guardado": "Borrador guardado en este navegador. Abre o recarga la portada para verlo.",
+  "errorGuardar": "No se pudo guardar el borrador.",
+  "guardarAntes": "Guarda el borrador antes de exportarlo.",
+  "exportado": "Contenido exportado. Conserva el archivo como respaldo.",
+  "confirmarRestaurar": "¿Eliminar el borrador local y volver al contenido inicial?",
+  "restaurado": "Contenido inicial restaurado. Recarga la portada."
+}

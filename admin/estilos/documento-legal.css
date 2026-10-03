@@ -1,0 +1,1 @@
+.selector-documentos{display:flex;gap:18px;flex-wrap:wrap;margin-block:24px}.selector-documentos [aria-current=page]{color:var(--color-acento);font-weight:700}.admin-contenido textarea{min-height:140px;line-height:1.6}.admin-contenido .campos-grid{grid-template-columns:1fr}

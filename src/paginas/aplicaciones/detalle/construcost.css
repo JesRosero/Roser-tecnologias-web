@@ -1,0 +1,3 @@
+body[data-aplicacion="construcost"] .ficha-presentacion h1 { font-size:clamp(36px,5.7vw,68px); letter-spacing:-1.5px; }
+body[data-aplicacion="construcost"] .ficha-presentacion h1 span { color:#ff8a24; }
+body[data-aplicacion="construcost"] .ficha-presentacion > div { min-width:0; }

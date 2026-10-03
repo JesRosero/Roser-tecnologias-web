@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "hero": {
+    "marca": "Roser Tecnologías",
+    "titulo": "Diseño y fabricación",
+    "lema": "Lo piensas, lo haces.",
+    "boton": "Explorar nuestras áreas",
+    "destino": "#areas",
+    "imagen": "/assets/imagenes/inicio/hero.webp"
+  },
+  "areas": [
+    {
+      "id": "productos",
+      "titulo": "Productos",
+      "descripcion": "Explora nuestro catálogo.",
+      "imagen": "/assets/imagenes/inicio/productos.webp"
+    },
+    {
+      "id": "servicios",
+      "titulo": "Servicios",
+      "descripcion": "Diseño y fabricación de soluciones técnicas.",
+      "imagen": "/assets/imagenes/inicio/servicios.webp"
+    },
+    {
+      "id": "aplicaciones",
+      "titulo": "Aplicaciones",
+      "descripcion": "3DCost y ConstruCost.",
+      "imagen": "/assets/imagenes/inicio/aplicaciones.webp"
+    },
+    {
+      "id": "proyectos",
+      "titulo": "Proyectos",
+      "descripcion": "Conoce nuestros desarrollos.",
+      "imagen": "/assets/imagenes/inicio/proyectos.webp"
+    }
+  ],
+  "contacto": {
+    "correo": "contact@rosertecnologias.com",
+    "telefono": "+57 311 3579437",
+    "whatsapp": "573113579437",
+    "ubicacion": "El Rosario, Nariño, Colombia"
+  }
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Productos — Roser Tecnologías</title>
+    <meta name="description" content="Catálogo de Roser Tecnologías." />
+    <link rel="stylesheet" href="/src/estilos/tema.css" />
+    <link rel="stylesheet" href="/src/estilos/base.css" />
+    <link rel="stylesheet" href="/src/estilos/componentes.css" />
+    <link rel="stylesheet" href="/src/paginas/productos/tienda.css" />
+    <script type="module" src="/src/paginas/productos/inicio.js"></script>
+  </head>
+  <body data-pagina="ficha">
+    <a id="saltar" class="saltar" href="#contenido">Saltar al contenido</a>
+    <header id="cabecera" class="tienda-cabecera"></header>
+    <main id="contenido" class="contenedor tienda-contenido">
+      <a id="volver" href="/paginas/productos/index.html"></a>
+      <div class="tienda-ficha">
+        <section class="tienda-galeria">
+          <button
+            id="foto"
+            type="button"
+            class="tienda-foto-grande"
+            aria-label="Ampliar imagen"
+          ></button>
+          <div id="miniaturas" class="tienda-miniaturas"></div>
+          <p id="ilustracion" class="tienda-meta"></p>
+        </section>
+        <section>
+          <p id="referencia" class="tienda-meta"></p>
+          <h1 id="nombre"></h1>
+          <p id="descripcion"></p>
+          <p id="precio" class="tienda-precio"></p>
+          <p id="disponibilidad" class="tienda-estado"></p>
+          <form id="personalizacion" class="tienda-personalizacion" onsubmit="return false;"></form>
+          <div class="tienda-ficha-acciones">
+            <button id="agregar" type="button" class="tienda-boton"></button
+            ><a id="consultar" class="tienda-boton tienda-whatsapp"></a>
+          </div>
+          <p id="preparacion" class="tienda-meta"></p>
+        </section>
+      </div>
+      <div class="tienda-detalles">
+        <section id="incluye-seccion">
+          <h2 id="incluye-titulo"></h2>
+          <ul id="incluye"></ul>
+        </section>
+        <section id="especificaciones-seccion">
+          <h2 id="especificaciones-titulo"></h2>
+          <dl id="especificaciones"></dl>
+        </section>
+      </div>
+      <section id="relacionados-seccion">
+        <h2 id="relacionados-titulo"></h2>
+        <div id="relacionados" class="tienda-grid"></div>
+      </section>
+    </main>
+    <dialog id="visor" class="tienda-visor">
+      <button id="cerrar-visor" type="button" class="tienda-secundario"></button>
+      <div id="visor-foto"></div>
+    </dialog>
+    <p id="estado" class="contenedor tienda-error" role="status" hidden></p>
+    <div id="pie"></div>
+    <dialog id="carrito-dialog" class="tienda-carrito" aria-labelledby="carrito-titulo"></dialog>
+    <p id="aviso" class="tienda-aviso" role="status" aria-live="polite" hidden></p>
+  </body>
+</html>

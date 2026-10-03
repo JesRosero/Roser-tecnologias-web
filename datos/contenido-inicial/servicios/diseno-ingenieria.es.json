@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "id": "diseno-ingenieria",
+  "titulo": "Diseño e ingeniería",
+  "subtitulo": "Diseño eléctrico, mecánico y modelado 3D.",
+  "introduccion": "Cuéntanos qué necesitas. Evaluamos tu solicitud y definimos la viabilidad y el alcance del trabajo.",
+  "imagen": "/assets/imagenes/servicios/diseno-ingenieria/hero.webp",
+  "evaluacion": {
+    "titulo": "Qué podemos evaluar",
+    "areas": [
+      {
+        "titulo": "Diseño eléctrico",
+        "descripcion": "Necesidades de diseño y desarrollo de soluciones eléctricas.",
+        "icono": "rayo"
+      },
+      {
+        "titulo": "Diseño mecánico",
+        "descripcion": "Necesidades de diseño de piezas, mecanismos y conjuntos.",
+        "icono": "engranaje"
+      },
+      {
+        "titulo": "Modelado 3D",
+        "descripcion": "Representación digital de piezas y conjuntos para evaluar una idea.",
+        "icono": "cubo"
+      }
+    ]
+  },
+  "proceso": {
+    "titulo": "Cómo empezar",
+    "pasos": [
+      {
+        "titulo": "Cuéntanos tu necesidad",
+        "descripcion": "Describe qué necesitas resolver."
+      },
+      {
+        "titulo": "Comparte información",
+        "descripcion": "Envía fotos, medidas o archivos, si los tienes."
+      },
+      {
+        "titulo": "Evaluamos la solicitud",
+        "descripcion": "Revisamos la viabilidad antes de acordar el trabajo."
+      }
+    ]
+  },
+  "contacto": {
+    "titulo": "Hablemos de tu proyecto",
+    "texto": "Cada solicitud se evalúa según sus necesidades y alcance.",
+    "mensaje": "Hola Roser Tecnologías, quisiera consultar el servicio de Diseño e ingeniería. Mi solicitud es:",
+    "imagen": "/assets/imagenes/servicios/diseno-ingenieria/boceto.webp"
+  }
+}

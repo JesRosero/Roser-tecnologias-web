@@ -1,0 +1,9 @@
+
+# Respaldos privados del editor local
+.roser-local/
+
+# Archivos de uso local
+node_modules/
+herramientas/limpieza/
+Limpiar-web.bat
+LEEME-LIMPIEZA.md

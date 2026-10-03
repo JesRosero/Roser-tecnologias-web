@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "id": "prototipado-impresion-3d",
+  "titulo": "Prototipado e impresión 3D",
+  "subtitulo": "De una idea a un prototipo físico.",
+  "introduccion": "Cuéntanos qué necesitas. Evaluamos el diseño, la fabricación y el alcance de tu solicitud.",
+  "imagen": "/assets/imagenes/servicios/prototipado-impresion-3d/hero.webp",
+  "evaluacion": {
+    "titulo": "Qué podemos evaluar",
+    "areas": [
+      {
+        "titulo": "Desarrollo de prototipos",
+        "descripcion": "Evaluación de ideas y diseños para desarrollar un prototipo.",
+        "icono": "cubo"
+      },
+      {
+        "titulo": "Impresión de piezas",
+        "descripcion": "Revisión de modelos y necesidades de fabricación mediante impresión 3D.",
+        "icono": "archivo"
+      },
+      {
+        "titulo": "Ajustes y pruebas",
+        "descripcion": "Evaluación de cambios para revisar la forma, el montaje o el funcionamiento.",
+        "icono": "engranaje"
+      }
+    ]
+  },
+  "proceso": {
+    "titulo": "Cómo empezar",
+    "pasos": [
+      {
+        "titulo": "Cuéntanos tu necesidad",
+        "descripcion": "Describe qué necesitas resolver."
+      },
+      {
+        "titulo": "Comparte información",
+        "descripcion": "Envía bocetos, medidas o archivos 3D, si los tienes."
+      },
+      {
+        "titulo": "Evaluamos la solicitud",
+        "descripcion": "Revisamos la viabilidad antes de acordar el trabajo."
+      }
+    ]
+  },
+  "contacto": {
+    "titulo": "Hablemos de tu prototipo",
+    "texto": "Cada solicitud se evalúa según sus necesidades y alcance.",
+    "mensaje": "Hola Roser Tecnologías, quisiera consultar el servicio de Prototipado e impresión 3D. Mi solicitud es:",
+    "imagen": "/assets/imagenes/servicios/prototipado-impresion-3d/boceto.webp"
+  }
+}

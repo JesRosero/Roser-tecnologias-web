@@ -1,0 +1,29 @@
+{
+  "idioma": "es",
+  "navegacion": {
+    "inicio": "Inicio",
+    "productos": "Productos",
+    "servicios": "Servicios",
+    "aplicaciones": "Aplicaciones",
+    "proyectos": "Proyectos",
+    "nosotros": "Nosotros",
+    "contacto": "Contacto",
+    "abrirMenu": "Abrir menú",
+    "cerrarMenu": "Cerrar menú"
+  },
+  "acciones": {
+    "explorar": "Explorar"
+  },
+  "contacto": {
+    "titulo": "Contáctanos",
+    "nombre": "Nombre",
+    "correo": "Correo electrónico",
+    "mensaje": "Mensaje",
+    "enviar": "Enviar por WhatsApp"
+  },
+  "pie": {
+    "privacidad": "Privacidad",
+    "terminos": "Términos y condiciones",
+    "derechos": "Todos los derechos reservados."
+  }
+}

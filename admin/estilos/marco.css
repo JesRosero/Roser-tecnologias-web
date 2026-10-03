@@ -1,0 +1,63 @@
+#marco-admin {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #101e32;
+  color: #fff;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 12px 22px;
+  border-bottom: 1px solid #267ea0;
+}
+#marco-admin a {
+  color: #d4e8f5;
+  text-decoration: none;
+  padding: 7px 10px;
+  border-radius: 7px;
+}
+#marco-admin a:hover,
+#marco-admin a[aria-current] {
+  background: #214765;
+  color: white;
+}
+.admin-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+.admin-panel-grid section {
+  padding: 20px;
+  border: 1px solid #294764;
+  border-radius: 12px;
+}
+.admin-panel-grid a {
+  display: block;
+  padding: 8px;
+}
+.respaldo-json {
+  max-height: 45vh;
+  overflow: auto;
+  white-space: pre-wrap;
+  font-size: 12px;
+}
+.admin-respaldos {
+  width: min(900px, 94vw);
+  max-height: 90vh;
+  overflow: auto;
+  padding: 24px;
+  border-radius: 12px;
+}
+.admin-respaldos::backdrop {
+  background: #0009;
+}
+.admin-respaldos button {
+  margin: 6px;
+}
+.admin-subir {
+  display: block;
+  margin: 10px 0;
+}
+.admin-subir input {
+  max-width: 100%;
+}

@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "aplicacion": "roser",
+  "documento": "privacidad",
+  "nombre": "Roser Tecnologías",
+  "titulo": "Política de privacidad",
+  "actualizacion": "2 de octubre de 2026",
+  "introduccion": "Información sobre el uso de tus datos y los canales de atención de Roser Tecnologías.",
+  "secciones": [
+    {
+      "id": "responsable",
+      "titulo": "Responsable y alcance",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Roser Tecnologías es el nombre comercial bajo el cual actúa Jesús Aurelio Rosero Dávila, NIT 1088946338-5. Dirección del taller: CS Los Estudiantes DIV 3, El Rosario, Nariño, Colombia. Correo: contact@rosertecnologias.com. WhatsApp: +57 311 3579437."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Esta política corresponde al sitio https://rosertecnologias.com y a la atención de consultas, cotizaciones y pedidos relacionados con Roser Tecnologías. Las aplicaciones 3DCost y ConstruCost tienen políticas propias, disponibles en sus respectivas páginas."
+        }
+      ]
+    },
+    {
+      "id": "formulario",
+      "titulo": "Formulario y canales de contacto",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "El formulario prepara un mensaje con el nombre, correo y texto que introduces y abre WhatsApp para que decidas enviarlo. No envía esos campos a una base de datos de clientes de la web. El contenido preparado se incorpora al enlace que abre WhatsApp y queda sujeto al tratamiento de ese proveedor."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Cuando envías un mensaje por WhatsApp o correo, Roser Tecnologías recibe y trata la información necesaria para atenderte. No envíes contraseñas, datos completos de tarjetas ni información sensible que no sea necesaria para la solicitud."
+        }
+      ]
+    },
+    {
+      "id": "informacion",
+      "titulo": "Información que se utiliza",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Según la solicitud, podemos recibir nombre, datos de contacto, especificaciones, archivos o fotografías del proyecto, dirección de entrega y datos necesarios para cotizaciones, comprobantes o facturación. No se solicitan todos estos datos para una simple consulta."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El sitio no ofrece registro de clientes ni inicio de sesión, y actualmente no recibe pagos mediante una pasarela propia."
+        }
+      ]
+    },
+    {
+      "id": "preferencias-locales",
+      "titulo": "Carrito, favoritos y personalización",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "El marketplace utiliza almacenamiento del navegador para recordar el carrito, los favoritos y las opciones que introduces, sin necesidad de crear una cuenta. Las imágenes de personalización que seleccionas se conservan en ese navegador para acompañar tu consulta; no se suben automáticamente a una base de datos de clientes."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Al abrir WhatsApp se prepara un resumen del pedido con los productos y las opciones elegidas. Tú decides si lo envías. Las imágenes no se adjuntan automáticamente: puedes descargarlas desde el carrito y enviarlas en la conversación. Evita introducir datos sensibles en los campos de personalización."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Puedes vaciar el carrito, quitar favoritos o borrar los datos del sitio desde tu navegador. Al eliminar un artículo del carrito se eliminan sus archivos de personalización guardados por esta función. Los datos no se sincronizan entre dispositivos y pueden perderse al limpiar el navegador."
+        }
+      ]
+    },
+    {
+      "id": "finalidades",
+      "titulo": "Finalidades y autorización",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "La información se utiliza para responder consultas, evaluar la viabilidad de trabajos, preparar cotizaciones, coordinar pedidos y entregas, documentar operaciones y atender garantías o reclamaciones. No se utiliza para vender bases de datos ni para campañas publicitarias no autorizadas."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El tratamiento se realiza con la autorización del titular cuando es exigible o con otra habilitación prevista en la ley. La navegación por el sitio no equivale a una autorización general para cualquier uso de datos personales."
+        }
+      ]
+    },
+    {
+      "id": "proveedores",
+      "titulo": "Alojamiento, mapa y servicios externos",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "El sitio se aloja en Netlify. La entrega y protección de una página web puede implicar el tratamiento de información técnica, como dirección IP, navegador, fecha de acceso y solicitudes, por el proveedor de alojamiento. No empleamos actualmente herramientas propias de analítica de visitantes ni publicidad en esta web."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El mapa integrado utiliza Google Maps. Al cargarlo, Google puede recibir información técnica del navegador y aplicar sus mecanismos de almacenamiento o cookies. Esto es independiente de que envíes el formulario."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "WhatsApp, Google y Netlify operan sus servicios conforme a sus condiciones y políticas: https://www.whatsapp.com/legal/privacy-policy, https://policies.google.com/privacy?hl=es y https://www.netlify.com/privacy/. Los enlaces a tiendas de aplicaciones y otras plataformas te llevan a servicios externos."
+        }
+      ]
+    },
+    {
+      "id": "destinatarios",
+      "titulo": "Destinatarios de la información",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los datos de una solicitud pueden ser conocidos por Roser Tecnologías y por los proveedores necesarios para atenderla. Para un envío, se facilitan al transportador los datos indispensables de destinatario, contacto y entrega. También puede comunicarse información cuando exista una obligación legal."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El uso de plataformas externas puede implicar tratamiento de información fuera de Colombia. No afirmamos que todos los datos permanezcan exclusivamente en el dispositivo o en el país."
+        }
+      ]
+    },
+    {
+      "id": "conservacion",
+      "titulo": "Conservación y seguridad",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Aunque la web no dispone de una base de datos de clientes, las conversaciones, correos y documentos relacionados con operaciones pueden conservarse en los canales utilizados y en los registros necesarios para prestar el servicio, atender reclamaciones y cumplir obligaciones legales."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La información se conserva durante el tiempo necesario para esas finalidades y obligaciones. Se limita su acceso y se procura protegerla frente a usos no autorizados. No se garantiza seguridad absoluta ni se afirma que Roser Tecnologías cifre por sí misma todos los datos."
+        }
+      ]
+    },
+    {
+      "id": "derechos",
+      "titulo": "Tus derechos",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Puedes conocer, actualizar y rectificar tus datos, solicitar prueba de la autorización cuando corresponda, conocer su uso, acceder gratuitamente a ellos y pedir su supresión o revocar la autorización en los casos previstos por la ley. La eliminación puede estar limitada por obligaciones legales o contractuales vigentes."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Envía la solicitud a contact@rosertecnologias.com o al WhatsApp +57 311 3579437. Indica tu nombre, un medio de respuesta y lo que solicitas. Solo se pedirá la información necesaria para verificar tu identidad y tramitar la solicitud."
+        }
+      ]
+    },
+    {
+      "id": "solicitudes",
+      "titulo": "Atención de solicitudes",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Las consultas sobre datos personales se atienden dentro de diez días hábiles; si procede una ampliación, se informa el motivo y el nuevo plazo, que no excederá cinco días hábiles adicionales. Los reclamos se atienden dentro de quince días hábiles y, si procede una ampliación, se informa antes de vencer el plazo, por un máximo de ocho días hábiles adicionales."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Puedes acudir a la Superintendencia de Industria y Comercio siguiendo el procedimiento legal, incluida la atención previa de la consulta o reclamo ante el responsable cuando corresponda: https://www.sic.gov.co."
+        }
+      ]
+    },
+    {
+      "id": "actualizaciones",
+      "titulo": "Actualizaciones de esta política",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "La fecha indicada identifica la versión del documento. Los cambios en finalidades, servicios o tratamientos se informarán conforme a la normativa aplicable y requerirán autorización adicional cuando corresponda. Esta política describe el funcionamiento actual del sitio."
+        }
+      ]
+    }
+  ]
+}

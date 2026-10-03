@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "titulo": "Servicios",
+  "subtitulo": "Diseño, fabricación y soluciones electromecánicas.",
+  "introduccion": "Cuéntanos qué necesitas. Evaluamos tu solicitud y definimos la viabilidad, el alcance y las condiciones del trabajo.",
+  "imagen": "/assets/imagenes/servicios/hero-servicios.webp",
+  "servicios": [
+    {
+      "id": "diseno-ingenieria",
+      "titulo": "Diseño e ingeniería",
+      "descripcion": "Desarrollo de soluciones técnicas mediante diseño eléctrico, mecánico y modelado 3D.",
+      "imagen": "/assets/imagenes/servicios/diseno-ingenieria.webp"
+    },
+    {
+      "id": "prototipado-impresion-3d",
+      "titulo": "Prototipado e impresión 3D",
+      "descripcion": "Desarrollo y fabricación de prototipos y piezas mediante impresión 3D.",
+      "imagen": "/assets/imagenes/servicios/prototipado-impresion-3d.webp"
+    },
+    {
+      "id": "fabricacion-montaje",
+      "titulo": "Fabricación y montaje",
+      "descripcion": "Evaluación y ejecución de trabajos de fabricación, montaje e integración según las necesidades del proyecto.",
+      "imagen": "/assets/imagenes/servicios/fabricacion-montaje.webp"
+    },
+    {
+      "id": "mantenimiento-electromecanico",
+      "titulo": "Mantenimiento electromecánico",
+      "descripcion": "Evaluación de necesidades de diagnóstico, reparación y mantenimiento de equipos y sistemas electromecánicos.",
+      "imagen": "/assets/imagenes/servicios/mantenimiento-electromecanico.webp"
+    }
+  ],
+  "contacto": {
+    "titulo": "Hablemos de tu proyecto",
+    "texto": "Cuéntanos qué necesitas. Evaluamos tu solicitud.",
+    "mensaje": "Hola Roser Tecnologías, quisiera consultar un servicio. Mi solicitud es:"
+  }
+}

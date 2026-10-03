@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Roser — Documentos de Roser Tecnologías</title>
+    <link rel="stylesheet" href="/src/estilos/tema.css" />
+    <link rel="stylesheet" href="/src/estilos/base.css" />
+    <link rel="stylesheet" href="/admin/estilos/inicio.css" />
+    <link rel="stylesheet" href="/admin/estilos/documento-legal.css" />
+    <script type="module" src="/admin/modulos/documento-sitio.js"></script>
+  </head>
+  <body>
+    <main class="contenedor admin-contenido">
+      <header>
+        <p class="modo" data-texto="modo">Edición del proyecto</p>
+        <h1 data-texto="titulo">Documentos de Roser Tecnologías</h1>
+        <p id="documento-actual"></p>
+        <p data-texto="aviso"></p>
+        <a data-texto="ver" target="_blank" rel="noopener">Ver documento</a>
+      </header>
+      <nav class="selector-documentos" aria-label="Documentos">
+        <a href="/admin/documento-sitio.html?documento=privacidad">Roser · Privacidad</a
+        ><a href="/admin/documento-sitio.html?documento=terminos">Roser · Términos</a>
+      </nav>
+      <p><a href="/admin/index.html">Volver al panel de inicio</a></p>
+      <form id="editor">
+        <div id="campos"></div>
+        <div class="acciones">
+          <button id="guardar" type="submit" disabled>Guardar cambios</button
+          ><button type="button" id="respaldos" disabled>Revisar respaldos</button>
+        </div>
+      </form>
+      <p id="estado" role="status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>

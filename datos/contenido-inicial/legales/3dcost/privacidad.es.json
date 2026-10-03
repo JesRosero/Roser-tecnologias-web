@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "aplicacion": "3dcost",
+  "documento": "privacidad",
+  "nombre": "3DCost",
+  "titulo": "Política de privacidad",
+  "actualizacion": "2 de octubre de 2026",
+  "introduccion": "Esta política explica el tratamiento de información en 3DCost, desarrollada por Roser Tecnologías. Distingue los datos de trabajo conservados en el dispositivo de la información tratada por servicios de publicidad, analítica y compras.",
+  "secciones": [
+    {
+      "titulo": "Responsable y alcance",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "3DCost es desarrollada por Roser Tecnologías, en El Rosario, Nariño, Colombia. Esta política explica el tratamiento de información relacionado con la aplicación para Android e iOS. Las consultas de privacidad se reciben en contact@rosertecnologias.com."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La aplicación no exige crear una cuenta ni iniciar sesión en Roser Tecnologías. Las compras utilizan la cuenta de la tienda correspondiente."
+        }
+      ],
+      "id": "apartado-1"
+    },
+    {
+      "titulo": "Información introducida en la aplicación",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Para realizar los cálculos y preparar documentos, el usuario puede introducir parámetros de impresión FDM o resina, materiales, tiempos y costos, preferencias e información de su empresa o sus clientes. Estos datos funcionales se procesan en el dispositivo y se conservan allí mediante el almacenamiento interno de la aplicación."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Roser Tecnologías no ofrece un servicio propio de sincronización en la nube de estos cálculos y documentos. Si incorpora información de otras personas, incluya únicamente los datos necesarios y asegúrese de contar con autorización cuando corresponda."
+        }
+      ],
+      "id": "apartado-2"
+    },
+    {
+      "titulo": "Archivos PDF y contenido compartido",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los PDF se generan en el dispositivo. El usuario decide cuándo compartirlos y qué aplicación instalada los recibe para guardarlos, enviarlos o gestionarlos. No se realiza una subida automática de estos documentos a un servidor propio de Roser Tecnologías."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los archivos pueden contener información que el usuario haya incluido en el documento. Una vez compartidos, su tratamiento depende también de la aplicación o del destinatario elegido. Revise el contenido antes de compartirlo."
+        }
+      ],
+      "id": "apartado-3"
+    },
+    {
+      "titulo": "Publicidad con Google AdMob",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "3DCost utiliza Google AdMob para mostrar banners, anuncios intersticiales y anuncios recompensados. El servicio puede tratar dirección IP y ubicación aproximada derivada de ella, identificadores del dispositivo, interacciones con la aplicación y los anuncios, datos publicitarios y diagnósticos. Sus finalidades incluyen publicidad, medición y prevención del fraude, según la plataforma y la configuración."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Este tratamiento es distinto del almacenamiento local de cálculos y documentos. Los identificadores y datos publicitarios pueden permitir relacionar actividad del dispositivo con servicios de terceros, según la configuración y los permisos aplicables."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Consulte la información de Google en https://policies.google.com/privacy y https://policies.google.com/technologies/ads."
+        }
+      ],
+      "id": "apartado-4"
+    },
+    {
+      "titulo": "Medición de uso con Firebase Analytics",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "3DCost utiliza Google Analytics para Firebase para conocer el uso de la aplicación. Los eventos personalizados para cálculos FDM o resina completados y exportación de PDF registran la acción, sin incluir los valores introducidos, los resultados ni el contenido del documento. Otros eventos personalizados registran visitas a Pro, anuncios recompensados, solicitudes de valoración y compras; el evento de compra incluye el identificador del producto."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Además de los eventos personalizados, el SDK puede registrar automáticamente datos técnicos, identificadores de instalación o publicitarios, sesiones, pantallas, ubicación aproximada y eventos de compras, según la plataforma, su configuración y las condiciones del servicio. Por ello, la medición no se limita a las acciones registradas expresamente por el código de la aplicación."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los servicios de Analytics están vinculados con Google Ads y pueden utilizarse para medición y finalidades publicitarias conforme a su configuración. La existencia de esa vinculación no significa que los cálculos o PDF se envíen a Google Ads."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Información de los proveedores: https://firebase.google.com/support/privacy y https://policies.google.com/privacy."
+        }
+      ],
+      "id": "apartado-5"
+    },
+    {
+      "titulo": "Compras y suscripciones",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Google Play o Apple App Store procesan las compras. La aplicación recibe información sobre el producto y el estado de la operación para gestionar el acceso Pro y las restauraciones. Roser Tecnologías no recibe a través de la aplicación los números completos de las tarjetas utilizadas en la tienda."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La tienda aplica sus propias condiciones de pago y privacidad. Si solicita soporte sobre una compra, comparta solo la información necesaria para localizar la operación; no envíe contraseñas ni datos completos de su tarjeta."
+        }
+      ],
+      "id": "apartado-6"
+    },
+    {
+      "titulo": "Conexiones y permisos",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "La aplicación utiliza Internet para servicios como publicidad, analítica, compras y consulta de configuración o avisos alojados en la web de Roser Tecnologías. Las conexiones pueden exponer información técnica de la solicitud al proveedor que la recibe."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El acceso a archivos o imágenes depende de la función utilizada, la versión de la aplicación y el sistema operativo. En 3DCost se han declarado permisos de almacenamiento para determinadas versiones antiguas de Android. Esto no equivale a subir esos archivos a un servidor de Roser Tecnologías."
+        }
+      ],
+      "id": "apartado-7"
+    },
+    {
+      "titulo": "Conservación y seguridad",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los datos funcionales se conservan en el dispositivo mientras permanezcan en el almacenamiento de la aplicación. Borrar sus datos o desinstalarla puede eliminar información local. Las copias de seguridad y restauraciones del sistema operativo, cuando existan, dependen de sus ajustes y del proveedor del dispositivo."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Roser Tecnologías no ofrece un respaldo propio de estos datos ni garantiza su recuperación. La protección de la información local depende también del dispositivo y del sistema operativo. Los proveedores externos gestionan la conservación y seguridad de la información que reciben conforme a sus servicios y configuraciones."
+        }
+      ],
+      "id": "apartado-8"
+    },
+    {
+      "titulo": "Consultas y derechos",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Puede consultar el tratamiento de información o solicitar acceso, corrección o eliminación de los datos que Roser Tecnologías trate sobre usted, cuando corresponda según la normativa aplicable, escribiendo a contact@rosertecnologias.com."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Para datos conservados únicamente en su dispositivo, Roser Tecnologías no puede acceder a ellos ni eliminarlos remotamente. Los datos recibidos por las tiendas, otras aplicaciones o proveedores externos requieren considerar los mecanismos que estos ofrecen. Los ajustes de privacidad disponibles pueden variar según el sistema operativo y el servicio."
+        }
+      ],
+      "id": "apartado-9"
+    },
+    {
+      "titulo": "Cambios y contacto",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Esta política se revisará cuando cambien las funciones o el tratamiento de información. La versión publicada indicará su fecha de actualización. Cualquier comunicación o autorización adicional que corresponda se gestionará conforme al cambio y a los requisitos aplicables."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Roser Tecnologías · El Rosario, Nariño, Colombia. Correo: contact@rosertecnologias.com. Sitio web: https://rosertecnologias.com."
+        }
+      ],
+      "id": "apartado-10"
+    }
+  ]
+}

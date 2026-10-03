@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "hero": {
+    "etiqueta": "Nosotros",
+    "titulo": "Ingeniería, experiencia y tecnología",
+    "lema": "Diseño y fabricación. Lo piensas, lo haces.",
+    "descripcion": "Desde El Rosario, Nariño, integramos ingeniería electromecánica, experiencia de taller y herramientas digitales para desarrollar soluciones.",
+    "imagen": "/assets/imagenes/empresa/nosotros/portada-fj40.webp",
+    "nota": "Una historia de taller. Un camino de desarrollo."
+  },
+  "origen": {
+    "titulo": "Nuestros inicios",
+    "parrafos": [
+      "Roser Tecnologías nació durante la etapa universitaria de su fundador, vinculada al desarrollo de proyectos de ingeniería y sistemas de asistencia a la movilidad.",
+      "Con el tiempo, incorporó herramientas de fabricación e impresión 3D y amplió su actividad hacia el desarrollo de productos y aplicaciones propias, como 3DCost y ConstruCost."
+    ]
+  },
+  "personas": {
+    "titulo": "Personas detrás de Roser",
+    "perfiles": [
+      {
+        "id": "jesus",
+        "nombre": "Jesús Aurelio Rosero Dávila",
+        "cargo": "Fundador · Ingeniero electromecánico",
+        "imagen": "/assets/imagenes/empresa/nosotros/jesus-rosero.webp",
+        "alternativo": "Retrato de Jesús Aurelio Rosero Dávila",
+        "iniciales": "JR",
+        "parrafos": [
+          "Responsable de la dirección y el desarrollo de Roser Tecnologías. Su experiencia combina diseño, trabajo de taller y desarrollo de herramientas digitales. Para cada trabajo se incorpora apoyo adicional cuando su alcance lo requiere."
+        ]
+      },
+      {
+        "id": "jhon",
+        "nombre": "Jhon Fernando Rosero López",
+        "cargo": "Cofundador · En memoria",
+        "imagen": "/assets/imagenes/empresa/nosotros/jhon-rosero.webp",
+        "alternativo": "Retrato de Jhon Fernando Rosero López",
+        "iniciales": "JR",
+        "parrafos": [
+          "Desde niño encontró en el comercio una forma de salir adelante. Siendo un adulto joven, una parálisis afectó la movilidad de sus piernas, pero continuó trabajando y desarrollando sus negocios. Viajó en transporte público para comercializar productos y, posteriormente, condujo su propio vehículo para transportar mercancía.",
+          "Con años de trabajo construyó un patrimonio, impulsó la educación de sus hijos y estableció los espacios donde hoy se desarrolla Roser Tecnologías. Su experiencia en el comercio y el taller, junto con su apoyo a los primeros proyectos, fueron fundamentales para el origen de la empresa.",
+          "Su trayectoria dejó un ejemplo de perseverancia, autonomía y capacidad para encontrar soluciones frente a las dificultades. Roser Tecnologías conserva su nombre y su aporte como parte esencial de su historia."
+        ]
+      }
+    ]
+  },
+  "trabajo": {
+    "titulo": "Nuestra forma de trabajar",
+    "descripcion": "Partimos de comprender la necesidad y evaluar su viabilidad. A partir de ello, definimos el alcance, los recursos y la solución propuesta para trabajos de diseño, fabricación, montaje o mantenimiento.",
+    "pasos": [
+      "Comprender",
+      "Evaluar",
+      "Desarrollar"
+    ]
+  },
+  "mision": {
+    "titulo": "Nuestra misión",
+    "descripcion": "Desarrollar productos, servicios y herramientas digitales que respondan a necesidades reales, integrando ingeniería electromecánica, diseño y experiencia práctica de fabricación, montaje y mantenimiento. Evaluamos cada propuesta según su viabilidad y definimos con claridad su alcance, buscando soluciones útiles y una ejecución responsable. Combinamos el trabajo de taller con nuevas tecnologías para transformar ideas en desarrollos que aporten valor a nuestros clientes."
+  },
+  "vision": {
+    "titulo": "Nuestra visión",
+    "descripcion": "Consolidar a Roser Tecnologías como una empresa reconocida por su capacidad para integrar ingeniería, fabricación y desarrollo tecnológico. Aspiramos a ampliar progresivamente nuestro catálogo de productos, servicios y aplicaciones, fortalecer nuestras capacidades técnicas y construir relaciones de confianza con nuestros clientes. Queremos crecer sobre una base de experiencia práctica, aprendizaje continuo y desarrollos propios que permitan atender necesidades cada vez más diversas."
+  },
+  "contacto": {
+    "titulo": "¿Tienes una idea o una necesidad?",
+    "descripcion": "Conversemos sobre tu proyecto y evaluemos cómo podemos ayudarte.",
+    "boton": "Cuéntanos tu idea",
+    "mensaje": "Hola Roser Tecnologías, quisiera consultarles sobre una idea o necesidad."
+  }
+}

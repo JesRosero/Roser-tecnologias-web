@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "idioma": "es",
+  "id": "construcost",
+  "nombre": "ConstruCost",
+  "hero": {
+    "titulo": "Estima materiales y costos de tu obra.",
+    "descripcion": "Organiza tus cálculos por módulos y prepara el presupuesto de tu proyecto.",
+    "fondo": "/assets/imagenes/aplicaciones/construcost/fondo.webp",
+    "captura": "/assets/imagenes/aplicaciones/construcost/captura.webp",
+    "alternativo": "Pantalla de bienvenida de ConstruCost."
+  },
+  "tiendas": {
+    "google": "https://play.google.com/store/apps/details?id=com.rosertecnologias.construcost&hl=es_CO",
+    "apple": "https://apps.apple.com/co/app/construcost/id6777458153"
+  },
+  "funciones": {
+    "titulo": "Del proyecto al presupuesto",
+    "descripcion": "Herramientas para estimar materiales y organizar el presupuesto de tu obra.",
+    "items": [
+      {
+        "icono": "materiales",
+        "titulo": "Materiales",
+        "descripcion": "Calcula cantidades por módulos."
+      },
+      {
+        "icono": "resultados",
+        "titulo": "Resultados",
+        "descripcion": "Consulta materiales detallados o consolidados."
+      },
+      {
+        "icono": "costos",
+        "titulo": "Costos",
+        "descripcion": "Asigna precios y estima tu presupuesto."
+      },
+      {
+        "icono": "archivo",
+        "titulo": "Exportación PDF",
+        "descripcion": "Comparte tus estimaciones en documentos."
+      }
+    ]
+  },
+  "galeria": {
+    "titulo": "Conoce la aplicación",
+    "descripcion": "Configura tus cálculos, revisa las cantidades y prepara el presupuesto.",
+    "items": [
+      {
+        "titulo": "Estructura",
+        "descripcion": "Configura los parámetros de cálculo.",
+        "imagen": "/assets/imagenes/aplicaciones/construcost/estructura.webp",
+        "alternativo": "Módulo de estimación de materiales de estructura en ConstruCost."
+      },
+      {
+        "titulo": "Resultados",
+        "descripcion": "Consulta las cantidades estimadas.",
+        "imagen": "/assets/imagenes/aplicaciones/construcost/resultados.webp",
+        "alternativo": "Resultados simplificados de materiales en ConstruCost."
+      },
+      {
+        "titulo": "Costos",
+        "descripcion": "Edita precios y revisa el presupuesto.",
+        "imagen": "/assets/imagenes/aplicaciones/construcost/costos.webp",
+        "alternativo": "Pantalla de costos por sección en ConstruCost."
+      }
+    ]
+  },
+  "planes": {
+    "titulo": "Elige cómo usar ConstruCost",
+    "descripcion": "Conoce las opciones disponibles en la aplicación.",
+    "nota": "Consulta los planes y precios dentro de la aplicación.",
+    "items": [
+      {
+        "nombre": "Versión gratuita",
+        "titulo": "Empieza a estimar",
+        "beneficios": [
+          "Cálculo de materiales por módulos.",
+          "Resultados detallados y simplificados.",
+          "Incluye anuncios."
+        ]
+      },
+      {
+        "nombre": "Versión Pro",
+        "titulo": "Prepara tu presupuesto",
+        "beneficios": [
+          "Edición de precios y cálculo de costos.",
+          "Presupuestos con margen configurable.",
+          "Exportación de documentos PDF.",
+          "Sin anuncios."
+        ]
+      }
+    ]
+  },
+  "contacto": {
+    "titulo": "¿Necesitas ayuda con ConstruCost?",
+    "boton": "Contactar con Roser",
+    "mensaje": "Hola Roser Tecnologías, necesito ayuda con ConstruCost."
+  }
+}

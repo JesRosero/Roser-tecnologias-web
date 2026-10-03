@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Favoritos — Roser Tecnologías</title>
+    <meta name="description" content="Catálogo de Roser Tecnologías." />
+    <link rel="stylesheet" href="/src/estilos/tema.css" />
+    <link rel="stylesheet" href="/src/estilos/base.css" />
+    <link rel="stylesheet" href="/src/estilos/componentes.css" />
+    <link rel="stylesheet" href="/src/paginas/productos/tienda.css" />
+    <script type="module" src="/src/paginas/productos/inicio.js"></script>
+  </head>
+  <body data-pagina="favoritos">
+    <a id="saltar" class="saltar" href="#contenido">Saltar al contenido</a>
+    <header id="cabecera" class="tienda-cabecera"></header>
+    <main id="contenido" class="contenedor tienda-contenido">
+      <h1>Mis favoritos</h1>
+      <p>Conservados en este navegador, sin registro.</p>
+      <p id="cuenta" role="status"></p>
+      <div id="productos" class="tienda-grid"></div>
+      <div id="vacio-favoritos" hidden>
+        <p>Aún no tienes favoritos.</p>
+        <a class="tienda-boton" href="/paginas/productos/index.html">Explorar productos →</a>
+      </div>
+    </main>
+    <p id="estado" class="contenedor tienda-error" role="status" hidden></p>
+    <div id="pie"></div>
+    <dialog id="carrito-dialog" class="tienda-carrito" aria-labelledby="carrito-titulo"></dialog>
+    <p id="aviso" class="tienda-aviso" role="status" aria-live="polite" hidden></p>
+  </body>
+</html>
