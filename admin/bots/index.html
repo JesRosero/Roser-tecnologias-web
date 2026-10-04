@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Bots · Administrador Roser Tecnologías</title>
+<link rel="stylesheet" href="/src/estilos/tema.css"><link rel="stylesheet" href="/admin/bots/panel.css">
+<script type="module" src="/admin/bots/app.mjs"></script>
+</head><body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="topbar"><a href="/admin/" class="brand">ROSER <span>TECNOLOGÍAS · ADMIN</span></a><div><a href="/admin/">Administrador</a><a href="/index.html">Ver sitio</a><button id="logout" hidden type="button">Cerrar sesión</button></div></header>
+<main id="main">
+<div class="page-title"><p class="eyebrow">ADMINISTRACIÓN PRIVADA</p><h1>Bots de WhatsApp</h1><p>Configura negocios, catálogo y respuestas desde un solo lugar.</p></div>
+<p id="status" role="status" aria-live="polite" class="status">Cargando acceso…</p>
+<section id="login-section" class="card login-card" hidden>
+<h2>Iniciar sesión</h2><p>Acceso exclusivo del administrador de Roser.</p>
+<form id="login-form"><label>Correo electrónico<input name="email" id="login-email" type="email" autocomplete="username" required></label><label>Contraseña<input name="password" type="password" autocomplete="current-password" required></label><button type="submit" class="primary">Entrar</button></form>
+<button type="button" id="reset-password" class="text-button">Recuperar contraseña</button>
+<p class="muted">No hay registro público de usuarios.</p>
+</section>
+<section id="denied" class="card" hidden><h2>Acceso denegado</h2><p>Esta cuenta no tiene permiso para administrar Roser Bots. Cierra sesión para utilizar la cuenta autorizada.</p></section>
+<div id="workspace" hidden>
+<section class="card business-bar"><label>Negocio<select id="business-select" aria-label="Seleccionar negocio"></select></label><button id="new-business" type="button">Añadir negocio</button><button id="refresh" type="button">Recargar datos</button><span class="cloud-badge">Datos en Firestore</span></section>
+<p class="notice">Este panel configura el servicio. No conecta el bot ni envía mensajes. Los pedidos y la atención del vendedor se gestionarán por WhatsApp.</p>
+<nav class="tabs" aria-label="Secciones del panel"><button id="tab-products" type="button" aria-pressed="true">Productos</button><button id="tab-business" type="button" aria-pressed="false">Negocio y respuestas</button></nav>
+<section id="products-panel">
+<div class="section-heading"><div><h2>Catálogo</h2><p id="catalog-count" class="muted"></p></div><button id="new-product" class="primary" type="button">Crear producto</button></div>
+<div class="card"><div class="filters"><label>Buscar por nombre o código<input id="search" type="search" placeholder="Buscar producto"></label><label>Categoría<select id="category"><option value="">Todas</option></select></label><label>Estado<select id="active-filter"><option value="">Todos</option><option value="true">Activos</option><option value="false">Inactivos</option></select></label></div>
+<p class="muted">Disponibilidad declarada por el negocio. No hay inventario en tiempo real ni conexión con Sicar.</p>
+<div class="table-wrap"><table><caption class="sr-only">Catálogo y actualización de precios</caption><thead><tr><th>Código / producto</th><th>Categoría / unidad</th><th>Precio COP</th><th>Disponibilidad</th><th>Estado</th><th>Acciones</th></tr></thead><tbody id="products-table"></tbody></table></div>
+<div class="actions"><button id="save-prices" class="primary" type="button" disabled>Guardar precios modificados</button><span id="price-count" class="muted"></span></div>
+</div>
+<section class="card csv-card"><h3>Importar y exportar con Excel</h3><p>La importación añade o actualiza productos; no elimina los que no estén en el archivo. Revisa el detalle antes de guardar.</p><div class="actions"><button id="export-csv" type="button">Exportar catálogo CSV</button><button id="template-csv" type="button">Descargar plantilla vacía</button><label class="file-label">Seleccionar CSV<input id="import-file" type="file" accept=".csv,text/csv"></label></div><p class="muted">UTF-8, separado por punto y coma. Precio vacío = pendiente; 0 = cero. Sin símbolos ni separadores de miles.</p>
+<div id="import-review" hidden><h3>Revisión de importación</h3><p id="import-summary"></p><ul id="import-errors" class="error-list"></ul><div id="import-details" class="import-details"></div><div class="actions"><button id="confirm-import" class="primary" type="button">Guardar cambios revisados</button><button id="cancel-import" type="button">Cancelar importación</button></div></div>
+</section>
+</section>
+<section id="business-panel" hidden><form id="business-form" class="card">
+<h2>Información del negocio</h2><p id="business-state" class="muted"></p>
+<div class="form-grid"><label>Nombre comercial<input name="commercialName" maxlength="160" required></label><label>WhatsApp de atención<input name="customerWhatsApp" type="tel" placeholder="+573168026222" required></label><label>Número interno de notificaciones (opcional)<input name="internalNotificationWhatsApp" type="tel" placeholder="+57…"></label><label>Zona horaria<input value="America/Bogota" readonly aria-label="Zona horaria"></label><label class="wide">Dirección<textarea name="address" maxlength="500" rows="2"></textarea></label><label class="wide">Enlace de ubicación<input name="locationUrl" type="url" placeholder="https://…" maxlength="1000"></label></div>
+<p class="muted">El número interno es independiente del número del bot. Guardarlo no configura las notificaciones; el servidor definirá ese mecanismo.</p>
+<h3>Horarios por día</h3><p class="muted">Un intervalo por día, dentro del mismo día. Revisa los horarios antes de habilitar la atención.</p><div id="schedule" class="schedule"></div>
+<h3>Respuestas del bot</h3><p class="muted">Textos literales sin variables. No son plantillas aprobadas por Meta.</p><div id="responses" class="response-fields"></div>
+<section class="preview"><h3>Vista previa textual</h3><label>Respuesta<select id="preview-key"></select></label><p id="preview-text"></p><small>Solo vista previa. No se envía ningún mensaje.</small></section>
+<button class="primary" type="submit">Guardar negocio y respuestas</button>
+</form></section>
+</div>
+</main>
+<dialog id="product-dialog"><form id="product-form"><div class="dialog-heading"><h2 id="product-title">Producto</h2><button type="button" id="close-product" aria-label="Cerrar editor">×</button></div><p id="product-id" class="muted"></p><div class="form-grid">
+<label>Código<input name="sku" maxlength="80" required></label><label>Nombre<input name="name" maxlength="160" required></label><label class="wide">Descripción breve<textarea name="description" maxlength="500" rows="2"></textarea></label><label>Categoría<input name="category" maxlength="100" required></label><label>Unidad de venta<input name="unit" maxlength="60" placeholder="unidad, metro, kilogramo…" required></label><label>Precio COP<input name="priceCOP" inputmode="decimal" placeholder="Vacío = pendiente"></label><label>Disponibilidad<select name="availability"><option value="check">Consultar disponibilidad</option><option value="available">Disponible según el negocio</option><option value="unavailable">No disponible</option></select></label><label>Orden de presentación<input name="sortOrder" type="number" min="0" max="1000000" step="1" required></label><label class="check"><input name="allowDecimalQuantity" type="checkbox">Permitir cantidades con hasta 2 decimales</label><label class="check"><input name="active" type="checkbox">Producto activo</label></div><p class="muted">Un precio pendiente nunca debe interpretarse como gratuito. Desactiva el producto para retirarlo sin perder su ID.</p><p id="product-error" role="alert"></p><div class="actions"><button class="primary" type="submit">Guardar producto</button><button id="cancel-product" type="button">Cancelar</button></div></form></dialog>
+<dialog id="business-dialog"><form id="new-business-form"><h2>Añadir negocio</h2><label>Identificador permanente<input name="businessId" pattern="[a-z0-9]+(-[a-z0-9]+)*" maxlength="80" placeholder="mi-negocio" required></label><p class="muted">Se crea al guardar su configuración. No se crean usuarios ni se conceden permisos a propietarios.</p><div class="actions"><button class="primary" type="submit">Preparar configuración</button><button id="cancel-business" type="button">Cancelar</button></div></form></dialog>
+<footer>Roser Tecnologías · Administración de Bots</footer>
+</body></html>

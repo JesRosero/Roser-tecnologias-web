@@ -1,0 +1,19 @@
+{
+  "name": "roser-bots-panel-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild sdk-entry.mjs --bundle --format=esm --minify --legal-comments=eof --outfile=../../admin/bots/firebase-sdk.mjs",
+    "test:model": "node --test tests/model.test.mjs tests/integrator.test.mjs",
+    "test:integration": "firebase emulators:exec --project demo-roser-bots --only firestore,auth \"node --test tests/integration.test.mjs\"",
+    "test": "npm run test:model && npm run test:integration"
+  },
+  "devDependencies": {
+    "firebase": "12.19.0",
+    "@firebase/rules-unit-testing": "5.0.2",
+    "firebase-tools": "13.35.1",
+    "esbuild": "0.25.12",
+    "jsdom": "26.1.0",
+    "firebase-admin": "13.6.0"
+  }
+}
