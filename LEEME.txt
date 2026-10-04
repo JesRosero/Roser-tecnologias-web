@@ -1,0 +1,18 @@
+PASO 43 — Panel privado Roser Bots
+
+Copiar admin/bots y herramientas/bots sobre la raíz del proyecto. No se reemplaza el administrador anterior.
+
+Desde la raíz de la web, ejecutar:
+node herramientas/bots/integrar-admin.mjs
+
+Antes de comprobar el proyecto real, copiar el appId completo de Roser Bots Admin desde la consola a admin/bots/firebase-config.mjs. El appId recibido parece incompleto; no se inventó el sufijo.
+
+Abrir /admin/bots/ y entrar con la cuenta administradora existente. Revisar y guardar el negocio antes de crear productos.
+
+Documentación incluida:
+PUBLICAR.md — instalación, Git/Netlify y comprobación real
+ESQUEMA.md — campos, tipos y contrato CSV
+PARA-CHAT-BOT.md — resumen para el otro chat
+VERIFICACION.md — pruebas realizadas y pendientes
+
+No se cambian las reglas publicadas. El panel usa las rutas ya permitidas. No se activa Analytics ni Blaze; no se envían mensajes ni se toca el registro del número de WhatsApp.

@@ -45,6 +45,10 @@
 /Servicios/productos/* /paginas/productos/index.html 301!
 
 # Herramientas locales: no servirlas como páginas públicas en Netlify.
+# Permitir el panel de bots y sus archivos.
+/admin/bots /admin/bots/ 301!
+/admin/bots/ /admin/bots/index.html 200!
+/admin/bots/* /admin/bots/:splat 200!
 /admin /404.html 404!
 /admin/* /404.html 404!
 /herramientas/* /404.html 404!
