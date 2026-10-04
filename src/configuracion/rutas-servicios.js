@@ -1,4 +1,5 @@
 export const RUTAS_SERVICIOS = Object.freeze({
+  'desarrollo-software': '/paginas/servicios/desarrollo-software/index.html',
   'diseno-ingenieria': '/paginas/servicios/diseno-ingenieria/index.html',
   'prototipado-impresion-3d': '/paginas/servicios/prototipado-impresion-3d/index.html',
   'fabricacion-montaje': '/paginas/servicios/fabricacion-montaje/index.html',

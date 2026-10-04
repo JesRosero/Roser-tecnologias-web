@@ -12,6 +12,7 @@ const iconoProyecto = tipo => {const i=n('img','proyecto-icono');i.src='/assets/
 let t;
 try {
  const [raw,textos,comun,inicio] = await Promise.all([leerJSON('/datos/contenido-inicial/proyectos.es.json'),leerJSON('/src/idiomas/es/proyectos.json'),leerJSON('/src/idiomas/es/comun.json'),cargarContenidoInicio()]);
+ const piloto=await leerJSON('/datos/contenido-inicial/software-proyecto.es.json'); if(!raw.proyectos.some(p=>p.id===piloto.id)) raw.proyectos.push(piloto);
  const c=validarProyectos(raw);t=textos;montarNavegacion(el('cabecera'),comun.navegacion);montarPie(el('pie'),comun.pie);el('saltar').textContent=t.saltar;
  for(const a of el('cabecera').querySelectorAll('nav a'))if(new URL(a.href).pathname==='/paginas/proyectos/index.html')a.setAttribute('aria-current','page');
  const visible = c.proyectos.filter(p=>p.visible).sort((a,b)=>Number(b.destacado)-Number(a.destacado)||a.orden-b.orden);

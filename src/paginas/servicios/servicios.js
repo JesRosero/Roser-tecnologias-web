@@ -7,9 +7,10 @@ import { RUTAS_SERVICIOS } from '../../configuracion/rutas-servicios.js';
 const el = id => document.getElementById(id);
 function crearTarjeta(servicio, etiqueta) {
   const tarjeta = document.createElement('article'); tarjeta.className = 'servicio-tarjeta';
+  if(servicio.id === 'desarrollo-software') tarjeta.classList.add('servicio-software');
   const visual = document.createElement('div'); visual.className = 'servicio-imagen';
   const imagen = document.createElement('img'); imagen.alt = ''; imagen.width = 1536; imagen.height = 1024; imagen.loading = 'lazy';
-  imagen.addEventListener('error', () => { imagen.hidden = true; }, { once: true }); imagen.src = servicio.imagen; visual.append(imagen);
+  imagen.addEventListener('error', () => { imagen.hidden = true; }, { once: true }); imagen.src = servicio.id === 'desarrollo-software' ? '/assets/imagenes/software/actualizacion-34/tarjeta.webp' : servicio.imagen; visual.append(imagen);
   const cuerpo = document.createElement('div'); cuerpo.className = 'servicio-cuerpo';
   const titulo = document.createElement('h2'); titulo.textContent = servicio.titulo;
   const descripcion = document.createElement('p'); descripcion.textContent = servicio.descripcion;
@@ -28,6 +29,7 @@ try {
   for (const k of ['titulo','subtitulo','introduccion']) el(k).textContent = contenido[k];
   el('hero-servicios').addEventListener('error', () => { el('hero-servicios').hidden = true; }, { once: true });
   el('hero-servicios').src = contenido.imagen;
+  const software=await leerJSON('/datos/contenido-inicial/software-servicio.es.json'); if(!contenido.servicios.some(s=>s.id===software.id))contenido.servicios.push(software);
   el('servicios-grid').replaceChildren(...contenido.servicios.map(s => crearTarjeta(s,textos.conocer)));
   el('contacto-titulo').textContent = contenido.contacto.titulo; el('contacto-texto').textContent = contenido.contacto.texto;
   el('contactar').textContent = textos.contactar;

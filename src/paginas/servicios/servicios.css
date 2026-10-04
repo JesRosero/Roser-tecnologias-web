@@ -106,3 +106,8 @@
     );
   }
 }
+
+/* Tarjeta aprobada de software: imagen integrada, sin modificar las otras. */
+.servicio-software .servicio-imagen { margin: 0; border-radius: 0; aspect-ratio: 1.5; }
+.servicio-software .servicio-cuerpo { padding: 26px 28px 30px; }
+.servicio-software .servicio-imagen img { object-position: right center; }
