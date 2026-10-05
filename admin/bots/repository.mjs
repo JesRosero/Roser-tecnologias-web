@@ -3,6 +3,7 @@ export function createRepository(sdk,db,uid) {
   const {doc,collection,getDocsFromServer,getDocFromServer,runTransaction,serverTimestamp}=sdk;
   const businessRef=id=>doc(db,'businesses',id);
   const productCollection=id=>collection(db,'businesses',id,'products');
+  const promotionCollection=id=>collection(db,'businesses',id,'promotions');
   function conflict(message='Hay cambios más recientes. Recarga y revisa antes de guardar.') {
     const e=new Error(message);e.code='conflict';return e;
   }
@@ -21,6 +22,17 @@ export function createRepository(sdk,db,uid) {
         if(fingerprint(old)!==expected)throw conflict();
         const next={...data,...metadata(old)};
         if(old)tx.update(ref,next);else tx.set(ref,next);
+      });
+    },
+    async loadPromotions(id){const snap=await getDocsFromServer(promotionCollection(id));return snap.docs.map(d=>({id:d.id,...d.data(),data:d.data()}));},
+    newPromotionId(id){return doc(promotionCollection(id)).id;},
+    async savePromotions(id,changes){
+      if(!changes.length)return;
+      const refs=changes.map(c=>doc(promotionCollection(id),c.id));
+      await runTransaction(db,async tx=>{
+        const snapshots=await Promise.all(refs.map(ref=>tx.get(ref)));
+        snapshots.forEach((snap,i)=>{if(fingerprint(snap.exists()?snap.data():null)!==changes[i].expected)throw conflict('La promoción cambió. Recarga y revisa antes de guardar.');});
+        snapshots.forEach((snap,i)=>{const old=snap.exists()?snap.data():null,patch={...changes[i].data,...metadata(old)};if(old)tx.update(refs[i],patch);else tx.set(refs[i],patch);});
       });
     },
     newProductId(id){return doc(productCollection(id)).id;},

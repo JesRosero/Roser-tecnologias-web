@@ -1,31 +1,47 @@
-# Verificación realizada
+# Verificación · Paso 44 · 5 de octubre de 2026
 
-Se utilizaron Firebase Auth y Firestore locales con el proyecto demo-roser-bots, nunca el Firebase real del negocio. El esquema y la interfaz se probaron con SDK Firebase 12.19.0, reglas cargadas desde firestore.rules y DOM simulado mediante jsdom.
+## Ejecutado realmente
 
-Pasaron los casos:
+`npm test` desde herramientas/bots con proyecto demo, Auth y Firestore emulados. Pruebas del modelo, integrador existente y 12 escenarios de integración con DOM simulado (JSDOM).
 
-1. Precio pendiente, cero, decimales, formatos inválidos y cantidad entera/fraccionaria.
-2. Validación de números de WhatsApp, ubicación HTTPS, horarios y rechazo de variables no implementadas.
-3. CSV UTF-8/BOM, Unicode, comillas, separadores, saltos de línea, IDs desconocidos, duplicados, null/cero y protección de fórmulas de Excel.
-4. Huella de concurrencia independiente del orden de claves, sensible a cambios.
-5. Integrador: conserva el administrador anterior, no duplica el enlace y añade MIME .mjs al servidor local.
-6. Reglas: administrador permitido en negocios/productos; anónimos y otros UID rechazados en lectura, escritura y listado.
-7. Reglas: el administrador también es rechazado en orders, users, pedidos anidados y subcolecciones fuera del alcance.
-8. Repositorio: creación/edición, persistencia tras volver a consultar, ID permanente, metadatos, actualización parcial de precio, preservación de campos ajenos y conflicto que aborta todo un grupo.
-9. UI con Auth emulado: login correcto e incorrecto, otro UID denegado, logout que limpia datos privados y generación de solicitud de recuperación en el emulador.
-10. UI: creación desde formulario, precio pendiente/cero desde tabla, edición de producto y negocio, filtros y vista previa textual.
-11. UI: conflicto concurrente muestra error, no anuncia guardado, conserva la edición pendiente y no reemplaza el precio guardado desde otra sesión.
-12. UI: importación revisada, confirmación y persistencia, conservando productos ausentes del CSV.
+- Precios null/cero, formatos numéricos, cantidades y límites decimales.
+- CSV BOM/Unicode/comillas/saltos, importación anterior y nueva, errores, IDs y no eliminación de ausentes.
+- Columna opcional de cargue: conserva valor existente en CSV antiguo; alta false; cambio explícito true/false.
+- Categorías con espacios normalizados y reutilización.
+- Entregas, ejemplos de pago inactivos, marcadores, URLs HTTPS y 16 respuestas literales.
+- Reglas: administrador exclusivo permitido; anónimos y otro UID rechazados en negocios/productos/promociones; otras rutas denegadas. Tipos/precios inválidos de ampliaciones rechazados; promoción incompleta y borrado de promoción denegados.
+- Repositorio: crear/editar/releer desde nueva instancia, conservar ID, revision, timestamps y autores; edición de precio parcial; grupo de transacción sin aplicación parcial por conflicto.
+- Promociones: alta inactiva, editar manteniendo ID, activar, revision, recarga y conflicto.
+- Authentication emulado: login correcto/incorrecto, UID no autorizado oculto, generación de solicitud de recuperación y logout limpiando contenido privado.
+- Interfaz DOM: crear/editar producto, precio null/cero, filtros, CSV con revisión/confirmación, conflicto conserva borrador sin anunciar guardado.
+- Guardados por apartado: horario común, entregas, pagos y respuestas persistentes; sin borrar mapas o campos heredados/interno.
+- Borrador de respuesta pendiente se conserva al guardar entrega; conflicto de servidor rechaza guardado.
+- Pagos: nuevo ID permanente, editar/desactivar/ordenar y persistir. Texto de vista previa y URL de imagen establecidos; evento de carga simulado.
+- Cargue en lote sobre selección, persistencia del booleano.
+- Nuevo negocio: preparar formulario no crea documento; guardar crea; no sobreescribe John's.
+- Integrador anterior sigue siendo idempotente y conserva admin local/MIME/backup.
+- Sintaxis de módulos y ausencia de IDs duplicados en HTML comprobadas.
 
-Además se revisaron sintaxis de módulos, referencias locales del HTML e IDs únicos.
+Todos los datos de prueba se escriben SOLO en el emulador, no en el catálogo real. No es una demostración de conexión Meta.
 
-Limitaciones:
+## Límites y pendientes
 
-- jsdom verifica DOM, formularios y eventos; no es una prueba visual real de Chrome/Safari ni de dimensiones móviles.
-- El correo de recuperación se generó en el emulador; no se comprobó su llegada a un buzón real.
-- La prueba de persistencia volvió a consultar Firestore con otra instancia del repositorio; no se inició sesión desde dos computadoras físicas.
-- No se comprobó la consola real, la región, el appId completo ni las reglas realmente publicadas.
-- No se realizaron envíos de WhatsApp, migración del número, despliegue del bot ni aprobación de Meta.
-- El guardado de importaciones de más de 100 cambios es por grupos; el límite y comportamiento parcial están informados en la UI. No se realizó una prueba masiva de catálogo.
+- No hay credenciales ni acceso de escritura al Firebase real: esta ampliación NO se publicó ni escribió desde este entorno. Publicar reglas y archivos según PUBLICAR.md y probar producción.
+- La versión anterior mostró inicio de sesión real en capturas del usuario. No convertir esa evidencia en una afirmación de que todos los nuevos apartados ya se probaron en producción.
+- DOM simulado, no sesión de Chrome real ni prueba visual de tamaños de pantalla. El CSS conserva estructura responsive y añade adaptación de pestañas/formularios; verificar presentación tras publicar.
+- La vista previa de imagen comprobada en DOM no verifica descargas externas reales. Validar las URLs públicas finales elegidas por el negocio.
+- Recuperación se probó generando código en Auth emulado; no correo de producción.
+- Reglas validan autorización y tipos/límites de ampliaciones. No validan integralmente cada método en el array de pagos ni precisión decimal: modelo y servidor deben validarlos; ESQUEMA.md declara el alcance exacto.
+- Región y appId completo no comprobados en consola. Configuración web existente se conserva; no se inventa sufijo del appId.
+- No se activó Analytics/Blaze/Storage/Functions ni se enviaron mensajes, migró número o modificó Meta.
+- TTL de dos horas, pausa humana, pedidos y comprobantes en WhatsApp pertenecen al servidor y no se implementaron en este panel.
 
-Pruebas reproducibles en tests/ y comandos en PUBLICAR.md. Solo emuladores, sin credenciales reales.
+## Reproducir
+
+```powershell
+cd herramientas/bots
+npm ci
+npm test
+```
+
+Necesita Node y Java para emuladores; puertos Firestore 8188/Auth 9199. Proyecto demo-roser-bots, sin Firebase de producción. SDK del panel ya está empaquetado y no requiere npm para Netlify.

@@ -4,14 +4,67 @@ service cloud.firestore {
     function isRoserAdmin() {
       return request.auth != null && request.auth.uid == 'UNVzgzxtFFPP52WaOImlzrMRhiV2';
     }
+    function money(n) { return n is number && n >= 0 && n <= 1000000000000; }
+    function order(n) { return n is int && n >= 0 && n <= 1000000; }
+    function literal(s, max) { return s is string && s.size() > 0 && s.size() <= max && !s.matches('(?s).*[{}].*'); }
+    function imageUrl(s) { return s is string && s.size() <= 1000 && (s == '' || s.matches('https://[^/@ :?#]+(:[0-9]+)?([/?#][^ ]*)?')); }
+    function response(r, key) { return !(key in r) || literal(r[key], 2000); }
+    function validResponses(r) {
+      return r is map &&
+        response(r, 'welcome') &&
+        response(r, 'outOfHours') &&
+        response(r, 'help') &&
+        response(r, 'paymentMethods') &&
+        response(r, 'deliveryInfo') &&
+        response(r, 'humanHandoff') &&
+        response(r, 'orderReceived') &&
+        response(r, 'orderPendingConfirmation') &&
+        response(r, 'customerNamePrompt') &&
+        response(r, 'productAdded') &&
+        response(r, 'cartHelp') &&
+        response(r, 'receiptReasonPrompt') &&
+        response(r, 'receiptReferencePrompt') &&
+        response(r, 'receiptUploadPrompt') &&
+        response(r, 'receiptReceived') &&
+        response(r, 'noPromotions');
+    }
+    function validDelivery(d) {
+      return d is map && d.pickupEnabled is bool && d.deliveryEnabled is bool
+        && money(d.freightUpTo300KgCOP) && money(d.freightOver300UpTo900KgCOP)
+        && money(d.loadingUnloadingPerTripCOP) && literal(d.conditionsText, 4000);
+    }
+    // Tipos del mapa y límite de lista. El panel y el servidor validan cada método,
+    // unicidad de IDs y precisión decimal; las reglas no recorren listas arbitrarias.
+    function validPayments(p) {
+      return p is map && p.isExample is bool && literal(p.instructionsText, 4000) && imageUrl(p.imageUrl)
+        && p.methods is list && p.methods.size() <= 20;
+    }
+    function validBusinessExtensions(d) {
+      return (!('delivery' in d) || validDelivery(d.delivery))
+        && (!('payments' in d) || validPayments(d.payments))
+        && (!('responses' in d) || validResponses(d.responses));
+    }
+    function validPromotion(d) {
+      return d.schemaVersion == 1 && literal(d.title, 160) && literal(d.description, 4000)
+        && imageUrl(d.imageUrl) && d.active is bool && order(d.sortOrder)
+        && d.revision is int && d.revision > 0 && d.createdAt is timestamp && d.updatedAt is timestamp
+        && d.createdBy is string && d.updatedBy == request.auth.uid;
+    }
     match /businesses/{businessId} {
-      allow read, write: if isRoserAdmin();
+      allow read: if isRoserAdmin();
+      allow create, update: if isRoserAdmin() && validBusinessExtensions(request.resource.data);
+      allow delete: if isRoserAdmin();
       match /products/{productId} {
-        allow read, write: if isRoserAdmin();
+        allow read, delete: if isRoserAdmin();
+        allow create, update: if isRoserAdmin()
+          && (!('loadingUnloadingExtraApplies' in request.resource.data) || request.resource.data.loadingUnloadingExtraApplies is bool);
+      }
+      match /promotions/{promotionId} {
+        allow read: if isRoserAdmin();
+        allow create, update: if isRoserAdmin() && validPromotion(request.resource.data);
+        allow delete: if false;
       }
     }
-    match /{document=**} {
-      allow read, write: if false;
-    }
+    match /{document=**} { allow read, write: if false; }
   }
 }

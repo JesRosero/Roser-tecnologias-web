@@ -1,95 +1,62 @@
-# Instalación · Panel Roser Bots
+# Publicar actualización del panel · Paso 44
 
-## Copiar e integrar
+## Copiar y publicar reglas
 
-1. Descomprimir el paquete sobre la raíz del proyecto de la web. Incluye `admin/bots/` y `herramientas/bots/`. No incluye ni reemplaza tu `admin/index.html` anterior.
-2. En la terminal de VS Code, desde la raíz del proyecto:
+1. Extraer el ZIP en la raíz del proyecto actual `Roser-web-nueva`, conservando las rutas `admin/bots/` y `herramientas/bots/`. Reemplazar los archivos incluidos. No borrar otras carpetas.
+2. El ZIP no reemplaza `firebase-config.mjs`, SDK, `admin/index.html` ni `_redirects`: conserva tu configuración y la corrección de acceso ya publicada.
+3. Abrir Firebase Console → seleccionar `roser-tecnologias-bots` → Firestore Database → base `(default)` → Reglas.
+4. Guardar una copia del texto actual. El archivo `herramientas/bots/firestore.rules` contiene las reglas completas para el alcance informado: UID exclusivo, negocios/productos y nueva subcolección promotions, con validaciones de ampliaciones. Copiar y publicar su contenido. Si tus reglas actuales tienen validaciones adicionales, conservarlas y fusionar las funciones y el bloque promotions; no reemplazarlas por reglas menos estrictas.
+5. No crear colecciones manualmente ni abrir acceso a todos los autenticados. La nueva ruta se crea al guardar la primera promoción.
 
-```bash
-node herramientas/bots/integrar-admin.mjs
-```
+Las reglas son un archivo de referencia hasta que las publiques en consola. Subirlas a Git NO las publica en Firebase. No hace falta Blaze, Functions, Storage, Analytics ni instalar dependencias para alojar el panel.
 
-El integrador añade una entrada “Bots de WhatsApp” a tu administrador conservando su contenido. Si no existe /admin/index.html, crea una entrada mínima. Puede ejecutarse nuevamente sin duplicar el enlace. Guarda una copia del HTML anterior en .roser-local/bots-integracion/ y excluye .roser-local del Git.
-Además añade MIME .mjs al servidor local existente si reconoce su tabla MIME, para que el administrador de escritorio pueda cargar los módulos.
-El editor anterior conserva su comportamiento local; únicamente Bots guarda en Firestore.
+## Git / Netlify
 
-## Configuración y permisos
+Desde la raíz del proyecto, en PowerShell:
 
-- La configuración pública está en `admin/bots/firebase-config.mjs`. Se transcribieron los valores recibidos, sin Analytics ni measurementId.
-- **Verificar appId en Firebase → configuración del proyecto → tus apps → Roser Bots Admin.** El valor recibido `1:98750045174:web` parece incompleto: normalmente tiene un sufijo después de `:web:`. No se inventó ese sufijo. Copiar el valor completo de la consola antes de la comprobación real; el Auth/Firestore emulado se probó por separado. No se necesitan contraseñas ni claves privadas en ese archivo.
-- Mantener correo/contraseña habilitados y comprobar que la cuenta administradora tiene UID UNVzgzxtFFPP52WaOImlzrMRhiV2.
-- Para publicar, el dominio autorizado ya informado es rosertecnologias.com. Si pruebas en localhost o utilizas otro dominio, autorizar ese origen concreto en Firebase Authentication cuando corresponda. No cambiar el número ni el registro de WhatsApp.
-- Las rutas usadas son las que ya autorizaste. No ampliar permisos. El archivo firestore.rules es una referencia exacta del alcance esperado y no se publica automáticamente con el ZIP ni con Git en Netlify.
-- Verificar la región de (default) en la consola; no se ha supuesto una ubicación.
-- No activar Blaze, Storage, Functions ni Analytics. Este panel usa Auth y Firestore, dentro de las cuotas que correspondan al plan actual. Puede mostrar un error si se agota cuota; no cambia de plan automáticamente.
-
-## Subir a Git y Netlify
-
-No añadir node_modules, respaldos locales, contraseñas, secretos de Meta ni cuentas de servicio.
-
-```bash
-git status
-git add admin/bots admin/index.html herramientas/bots .gitignore
-```
-
-Si el integrador informó que añadió MIME al servidor local y ese archivo existe:
-
-```bash
-git add herramientas/servidor-local/iniciar.mjs
-```
-
-Revisar lo preparado y publicar:
-
-```bash
-git diff --cached --stat
-git commit -m "Agregar panel privado de Roser Bots con Firebase"
+```powershell
+git add admin/bots/index.html admin/bots/panel.css admin/bots/model.mjs admin/bots/controller.mjs admin/bots/repository.mjs herramientas/bots LEEME-PASO-44.md
+git commit -m "Ampliar panel de bots con entregas pagos y promociones"
 git push
 ```
 
-Conservar la configuración de despliegue actual de Netlify. El SDK está incluido, por lo que no hace falta un build command nuevo, instalar dependencias en Netlify ni cambiar el directorio de publicación. Los nuevos archivos deben estar dentro de la misma raíz que publica hoy /paginas y /src.
+Esperar que Netlify muestre el nuevo commit como Published. Abrir https://rosertecnologias.com/admin/bots/ y recargar con Ctrl+F5. No cambiar carpeta de publicación ni comando de build: es HTML/CSS/JS estático con SDK existente.
 
-Entrada final: https://rosertecnologias.com/admin/bots/
-Acceso desde el administrador: https://rosertecnologias.com/admin/
-También puede abrirse /admin/bots/index.html.
+La excepción ya corregida de `_redirects` debe mantenerse antes del bloqueo general:
 
-## Primer uso
+```text
+/admin/bots /admin/bots/index.html 200!
+/admin/bots/* /admin/bots/:splat 200!
+/admin /404.html 404!
+/admin/* /404.html 404!
+```
 
-1. Iniciar sesión con tu cuenta administradora existente; no hay registro público.
-2. Seleccionar Ferretería John's, abrir Negocio y respuestas y verificar +573168026222.
-3. Completar dirección, ubicación, horarios y textos. El número interno puede quedar vacío. Revisar las propuestas de pagos/entregas antes de guardar.
-4. Guardar. La escritura crea businesses/ferreteria-johns, con metadatos de servidor.
-5. Crear productos reales o importar la plantilla vacía con sus datos reales. Revisar cambios; los nuevos productos empiezan inactivos en el editor.
-6. Recargar y comprobar la persistencia. Abrir desde otra computadora, iniciar sesión y comprobar los mismos datos.
+No añadir redirección 301 entre /admin/bots y /admin/bots/: Netlify normaliza la barra y puede generar un bucle. El editor anterior continúa siendo local. El panel publicado ya no enlaza a /admin/.
 
-No se incluyeron productos, precios o existencias reales inventados. El panel no hace una carga automática de ejemplos. Los ejemplos de las pruebas se crean exclusivamente en un proyecto de emuladores demo.
+## Configurar John's y verificar producción
 
-## Comprobación en tu proyecto real
+1. Iniciar sesión con tu cuenta autorizada; no crear usuarios públicos.
+2. Elegir Ferretería John's. En «Negocio y horarios» revisar 08:00–17:00 todos los días. Si ya hay horario guardado distinto, utilizar la acción de aplicar horario común y guardar explícitamente. Pulsar «Guardar negocio y horarios», visible arriba y abajo.
+3. «Respuestas»: revisar nuevas propuestas y guardar. Las respuestas previamente almacenadas se conservan; modificar welcome/outOfHours si se necesita el nuevo mensaje de atención automática 24h.
+4. «Entregas y cargue»: revisar 17000/19000/15000 COP y condiciones, guardar. No suman cargos automáticamente.
+5. «Medios de pago»: revisar ejemplos. Mantener isExample hasta reemplazar y verificar con el negocio los datos activos. Puedes dejar ejemplos inactivos; no inventar cuentas.
+6. Productos: marcar MANUALMENTE cargue para ladrillo, farol, arena y mixto tras identificar los artículos. Seleccionar filas para aplicar en lote; guardar precios pendientes antes de actuar sobre esas filas.
+7. Promociones: abrir pestaña, crear una oferta real o una prueba INACTIVA, guardar y editar. Si indica regla pendiente, completar pasos de Firebase.
+8. Recargar y comprobar que se mantienen los datos. Cerrar sesión y entrar desde otro navegador/computadora para confirmar lectura compartida.
+9. Probar importación de CSV antiguo y nuevo con revisión antes de guardar, sin eliminar productos ausentes. Pruebas del catálogo real: mantener ejemplos inactivos e identificados.
+10. Comprobar rechazo de otra cuenta y que no se muestran datos al cerrar sesión. Recuperación de contraseña en producción requiere probar el correo real; no pedir ni compartir contraseña en el chat.
 
-Pendiente por no disponer aquí de tu sesión/contraseña: login y reglas actualmente publicadas, correo real de recuperación, persistencia entre equipos, comprobación visual en navegador de escritorio/móvil y región de Firestore.
-No se accedió ni se escribió a tu Firebase real y no se publicaron cambios en tu Git desde este entorno.
+La URL HTTPS de una imagen debe ser pública y devolver una imagen accesible. Sin subida de archivos ni copia en Firebase Storage. No usar secretos o URL privadas en esos campos.
 
-Tras publicar, comprobar:
+Región y appId completo se comprueban en consola; no se asumen ni se reemplazan en este ZIP. Configurar el panel no despliega ni conecta el bot.
 
-- La pantalla sin sesión no muestra catálogo.
-- Tu UID entra; una cuenta distinta recibe Acceso denegado.
-- Un producto inactivo creado con precio pendiente conserva su ID al editarlo.
-- Precio 0 se distingue de pendiente.
-- Cambiar un precio guarda solo ese precio y los metadatos.
-- Importar CSV muestra revisión, errores y confirmación; un producto ausente permanece.
-- Los cambios reaparecen al recargar y al entrar desde otro equipo.
-- Cerrar sesión elimina los datos de la pantalla.
+## Pruebas locales opcionales
 
-El panel no despliega ni prueba el bot, no migra el número, no confirma pedidos y no envía mensajes de WhatsApp.
+En `herramientas/bots`, con Node y Java 17 o compatible:
 
-## Repetir pruebas
-
-Opcional, solo en computadora de desarrollo. No se necesita para publicar el panel ya empaquetado.
-
-```bash
-cd herramientas/bots
-npm install
+```powershell
+npm ci
 npm test
 ```
 
-Requiere Node 22 y Java 17 para las versiones fijadas del CLI/emulador. Las pruebas usan demo-roser-bots y no requieren Firebase login ni acceso al proyecto real.
-`npm run build` vuelve a empaquetar el SDK local si se necesita. No cambia Firestore, reglas en producción ni facturación.
+Solo usa el proyecto demo y emuladores locales. Netlify no requiere ejecutar esto. Detalle: VERIFICACION.md.
