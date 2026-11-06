@@ -1,3 +1,4 @@
+import { organizarFicha } from '../../componentes/ficha-producto.js';
 import {
   c,
   t,
@@ -285,6 +286,7 @@ export function editarProducto(original, nuevo = false) {
     aviso(t?.ui?.texto057 ?? 'Edición abierta: pulsa Aplicar cambios antes de guardar.');
   });
   form.addEventListener('submit', (e) => e.preventDefault());
+  organizarFicha(form);
 }
 export function productos() {
   encabezado(t?.ui?.texto058 ?? 'Productos', t?.ui?.texto059 ?? 'Añadir producto', () =>

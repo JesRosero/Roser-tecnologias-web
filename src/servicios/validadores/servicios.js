@@ -26,3 +26,8 @@ export function validarContenidoServicios(c) {
     if (!texto(c.contacto?.[k])) throw new Error('Revisa los textos de contacto.');
   return c;
 }
+
+export function validarTarjetaSoftware(c){
+ if(!c||c.id!=='desarrollo-software'||!['titulo','descripcion'].every(k=>typeof c[k]==='string'&&c[k].trim()&&c[k].length<=300)||typeof c.imagen!=='string'||!/^\/assets\/[a-zA-Z0-9/_ .-]+\.webp$/.test(c.imagen)||c.imagen.includes('..'))throw Error('Revisa la tarjeta de desarrollo de software.');
+ return c;
+}

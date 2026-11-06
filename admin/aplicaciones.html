@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="/src/estilos/base.css" />
     <link rel="stylesheet" href="/admin/estilos/inicio.css" />
     <script type="module" src="/admin/modulos/aplicaciones.js"></script>
-  </head>
-  <body>
+  <link rel="stylesheet" href="/admin/estilos/marco.css?v=45"></head>
+  <body class="roser-admin">
     <main class="contenedor admin-contenido">
       <header>
         <p class="modo" data-texto="modo">Edición del proyecto</p>
@@ -26,28 +26,6 @@
         <a href="/admin/index.html">Inicio</a><a href="/admin/servicios.html">Servicios</a
         ><a href="/admin/aplicaciones.html" aria-current="page">Aplicaciones</a>
       </nav>
-      <p>
-        <a href="/admin/detalle-aplicacion.html?aplicacion=3dcost">Editar página de 3DCost →</a>
-      </p>
-      <p>
-        <a href="/admin/detalle-aplicacion.html?aplicacion=construcost"
-          >Editar página de ConstruCost →</a
-        >
-      </p>
-      <div
-        class="enlaces-legales"
-        style="display: flex; gap: 18px; flex-wrap: wrap; margin-block: 24px"
-      >
-        <a href="/admin/documento-legal.html?aplicacion=3dcost&amp;documento=privacidad"
-          >3DCost · Privacidad</a
-        ><a href="/admin/documento-legal.html?aplicacion=3dcost&amp;documento=terminos"
-          >3DCost · Términos</a
-        ><a href="/admin/documento-legal.html?aplicacion=construcost&amp;documento=privacidad"
-          >ConstruCost · Privacidad</a
-        ><a href="/admin/documento-legal.html?aplicacion=construcost&amp;documento=terminos"
-          >ConstruCost · Términos</a
-        >
-      </div>
       <form id="editor">
         <div id="campos"></div>
         <div class="acciones">

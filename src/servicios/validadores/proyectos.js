@@ -14,3 +14,8 @@ export function validarProyectos(c) {
   }
   return c;
 }
+
+export function validarFichaBot(p){
+ if(!p||p.id!=='bot-ferreteria'||p.categoria!=='software')throw Error('Ficha del proyecto de ferretería no compatible.');
+ validarProyectos({version:1,idioma:'es',categorias:[{id:'software',nombre:'Software'}],proyectos:[p],presentacion:{etiqueta:'Proyectos',titulo:'Proyectos',descripcion:'Proyectos',galeriaTitulo:'Proyectos',nota:'',mostrarNota:false},contacto:{titulo:'Contacto',descripcion:'Contacto',boton:'Consultar',mensaje:'Consulta'}});return p;
+}

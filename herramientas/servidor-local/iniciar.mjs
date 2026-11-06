@@ -12,6 +12,7 @@ export async function iniciarServidor(root, puerto = 8088) {
   );
   const repos = new Map();
   for (const r of registro) {
+    const esquema = r.esquema ? JSON.parse(await fs.readFile(path.join(root, r.esquema), 'utf8')) : undefined;
     const modulo =
       r.id === 'catalogo'
         ? 'src/servicios/catalogo/modelo.js'
@@ -24,7 +25,7 @@ export async function iniciarServidor(root, puerto = 8088) {
         root,
         (c) => {
           try {
-            return m[r.validar](c, ...r.args);
+            return m[r.validar](c, ...r.args, esquema);
           } catch (e) {
             throw new ErrorCatalogo(
               e instanceof TypeError ? 'Revisa los campos de esta sección.' : e.message,
@@ -200,7 +201,11 @@ export async function iniciarServidor(root, puerto = 8088) {
           throw new ErrorCatalogo('Ruta no permitida.', 403);
         const tipo = mime[path.extname(real).toLowerCase()];
         if (!tipo) throw new ErrorCatalogo('Archivo no disponible.', 403);
-        const archivo = await fs.readFile(real);
+        let archivo = await fs.readFile(real);
+        const tokenVisual = new URL(req.url, 'http://' + req.headers.host).searchParams.get('__roser_visual');
+        if (tipo.startsWith('text/html') && /^[a-f0-9]{32}$/.test(tokenVisual || '') && !/^\/admin(?:\/|$)/.test(ruta)) {
+          archivo = Buffer.from(archivo.toString('utf8').replace(/<head([^>]*)>/i, '<head$1><script src="/admin/componentes/puente-visual.js"></script>'));
+        }
         res.writeHead(200, {
           'Content-Type': tipo,
           'Cache-Control': 'no-store',

@@ -1,3 +1,5 @@
+import {cargarPaginaSoftware} from './contenido.js';
+await cargarPaginaSoftware();
 import {leerJSON} from '/src/servicios/archivos.js';
 import {cargarContenidoInicio} from '/src/servicios/configuracion-sitio.js';
 import {montarNavegacion} from '/src/componentes/navegacion/navegacion.js';

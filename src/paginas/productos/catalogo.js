@@ -61,6 +61,7 @@ export function montarCatalogo(c, t, telefono) {
         : disponibles.find((p) => p.grupo === d.destino);
     if (!target) continue;
     const a = crear('a', 'tienda-destacado');
+    a.dataset.destacado = d.id;
     a.href =
       d.tipoDestino === 'producto'
         ? rutaFicha(d.destino)

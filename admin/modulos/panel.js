@@ -1,29 +1,16 @@
 import { montarMarco } from '../componentes/marco.js';
-import { api } from '../componentes/api.js';
 montarMarco();
-try {
-  const recursos = await api('recursos');
-  for (const r of recursos) {
-    const box = document.createElement('section');
-    const h = document.createElement('h2');
-    h.textContent = r.titulo;
-    const a = document.createElement('a');
-    a.textContent = 'Editar →';
-    let ruta = r.id + '.html';
-    if (r.id === 'inicio') ruta = 'index.html';
-    if (r.id.startsWith('servicio-')) ruta = 'detalle-servicio.html?servicio=' + r.args[0];
-    if (r.id.startsWith('aplicacion-')) ruta = 'detalle-aplicacion.html?aplicacion=' + r.args[0];
-    if (r.id.startsWith('legal-'))
-      ruta =
-        (r.args[0] === 'roser'
-          ? 'documento-sitio.html?'
-          : 'documento-legal.html?aplicacion=' + r.args[0] + '&') +
-        'documento=' +
-        r.args[1];
-    a.href = '/admin/' + ruta;
-    box.append(h, a);
-    document.getElementById('secciones').append(box);
-  }
-} catch (e) {
-  document.getElementById('estado').textContent = e.message;
+const filas=[
+ ['Contenido del sitio','Inicio y presentación de Roser Tecnologías','/admin/visual.html?pagina=inicio','⌂'],
+ ['Servicios','Ingeniería, fabricación y páginas de servicios','/admin/secciones.html?grupo=servicios','◇'],
+ ['Aplicaciones','3DCost, ConstruCost y sus páginas','/admin/secciones.html?grupo=aplicaciones','▤'],
+ ['Catálogo de productos','Productos, precios, variantes y fotografías','/admin/visual.html?pagina=catalogo','□'],
+ ['Portafolio','Proyectos, galerías y enlaces de video','/admin/visual.html?pagina=proyectos','▱'],
+ ['Documentos','Privacidad y condiciones de la web y las aplicaciones','/admin/secciones.html?grupo=documentos','≡']
+];
+for(const [titulo,descripcion,ruta,icono] of filas){
+ const a=document.createElement('a');a.className='admin-resumen-fila';a.href=ruta;
+ const i=document.createElement('span');i.className='admin-resumen-icono';i.textContent=icono;i.setAttribute('aria-hidden','true');
+ const texto=document.createElement('div');texto.append(Object.assign(document.createElement('strong'),{textContent:titulo}),Object.assign(document.createElement('span'),{textContent:descripcion}));
+ const flecha=document.createElement('span');flecha.textContent='→';flecha.setAttribute('aria-hidden','true');a.append(i,texto,flecha);document.getElementById('secciones').append(a);
 }

@@ -1,63 +1,113 @@
-#marco-admin {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  background: #101e32;
-  color: #fff;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  padding: 12px 22px;
-  border-bottom: 1px solid #267ea0;
+/* Administrador Roser 2. Estilo aislado: no modifica la web pública ni /admin/bots/. */
+body.roser-admin {
+ --color-fondo:#f4f7fb;--color-superficie:#fff;--color-superficie-elevada:#edf4fa;
+ --color-texto:#12253d;--color-texto-secundario:#586b82;--color-acento:#007a96;
+ --color-acento-hover:#00657e;--color-borde:#dbe4ee;--color-foco:#008aa8;
+ color-scheme:light;margin:0;padding:70px 0 0 232px;background:var(--color-fondo);
+ color:var(--color-texto);font:15px/1.55 system-ui,-apple-system,'Segoe UI',sans-serif;
 }
-#marco-admin a {
-  color: #d4e8f5;
-  text-decoration: none;
-  padding: 7px 10px;
-  border-radius: 7px;
+.roser-admin *, .roser-admin *::before,.roser-admin *::after {box-sizing:border-box;}
+#marco-admin {position:fixed;inset:0 auto 0 0;width:232px;z-index:40;display:flex;flex-direction:column;gap:22px;padding:30px 16px 18px;background:#10253d;color:#eaf4ff;border-right:1px solid #193750;overflow-y:auto;}
+#marco-admin .admin-marca {display:flex;flex-direction:column;gap:0;padding:0 14px 25px;color:white;text-decoration:none;border-bottom:1px solid #345065;line-height:1.15;}
+.admin-marca strong {font-size:31px;letter-spacing:.05em;}
+.admin-marca strong::after{content:' /';color:#20d4e5;}
+.admin-marca span {font-size:12px;letter-spacing:.18em;margin-top:6px;}
+#marco-admin nav {display:flex;flex-direction:column;gap:5px;align-items:stretch;}
+#marco-admin nav a {display:flex;gap:12px;align-items:center;color:#c7d8e9;padding:11px 14px;text-decoration:none;border:1px solid transparent;border-radius:8px;font-weight:500;}
+#marco-admin nav a:hover {background:#18364f;color:#fff;}
+#marco-admin nav a[aria-current=page] {background:#145069;color:white;border-color:#24667d;}
+.admin-icono {font-size:21px;width:23px;text-align:center;line-height:1;}
+#marco-admin .admin-lateral-pie {margin-top:auto;border-top:1px solid #345065;padding:17px 12px 0;display:grid;gap:8px;}
+#marco-admin .admin-lateral-pie a {color:#7fe4f0;text-decoration:none;font-size:14px;font-weight:600;}
+#marco-admin small {font-size:11px;color:#b9ccdc;}
+.admin-barra-superior {position:fixed;top:0;right:0;left:232px;z-index:30;height:70px;background:#fffffffa;border-bottom:1px solid #dbe4ee;display:flex;align-items:center;gap:18px;padding:0 36px;}
+.admin-barra-superior>span {font-weight:650;font-size:14px;}
+.admin-barra-superior>a {margin-left:auto;color:#006d87;text-decoration:none;border:1px solid #c4d8e3;padding:8px 13px;border-radius:7px;font-size:13px;}
+.admin-menu-toggle {display:none;}
+.admin-saltar {position:fixed;top:-100px;left:250px;z-index:100;background:white;padding:10px;color:#123;}
+.admin-saltar:focus {top:12px;}
+.roser-admin main,.roser-admin main.contenedor {width:auto;max-width:1280px;margin:0 auto;padding:34px 38px 60px;min-width:0;}
+.roser-admin h1 {font-size:clamp(25px,3vw,34px);line-height:1.2;letter-spacing:-.025em;margin:9px 0 14px;}
+.roser-admin h2 {font-size:21px;line-height:1.3;margin:12px 0;}
+.roser-admin h3 {font-size:17px;}
+.roser-admin p {overflow-wrap:anywhere;}
+.roser-admin a {color:#006b88;text-underline-offset:3px;}
+.roser-admin main>header {background:#fff;color:#12253d;border:1px solid #dbe4ee;border-radius:12px;padding:24px 26px;margin:0 0 24px;}
+.roser-admin main>header p,.roser-admin main>header a {color:#526a80;}
+.roser-admin main>header p:first-child,.roser-admin main>header .modo {color:#00758d;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;}
+.roser-admin main>nav[aria-label='Secciones del panel'] {display:none!important;}
+.admin-volver-grupo {display:inline-block;margin-bottom:17px;font-size:13px;text-decoration:none;}
+.roser-admin input,.roser-admin textarea,.roser-admin select {color:#182e45;background:white;border:1px solid #c6d4e1;border-radius:7px;font:inherit;max-width:100%;width:100%;padding:10px 12px;min-width:0;}
+.roser-admin textarea {resize:vertical;min-height:95px;line-height:1.6;}
+.roser-admin input[type=checkbox],.roser-admin input[type=radio] {width:18px;height:18px;min-height:0;accent-color:#007e99;display:inline-block;vertical-align:middle;}
+.roser-admin input[type=file] {font-size:13px;background:#f7fafc;}
+.roser-admin label {color:#344e68;font-size:13px;}
+.roser-admin button,.roser-admin .archivo {border:1px solid #c6d4e1;border-radius:7px;padding:9px 14px;background:#fff;color:#24415c;font:inherit;font-size:13px;cursor:pointer;}
+.roser-admin button:hover {background:#eaf4f8;border-color:#8dbbc9;}
+.roser-admin button:disabled {opacity:.5;cursor:not-allowed;}
+.roser-admin #guardar,.roser-admin button[type=submit],.roser-admin button[aria-current=page] {background:#007d98;color:#fff;border-color:#007d98;font-weight:650;}
+.roser-admin button:focus-visible,.roser-admin a:focus-visible,.roser-admin input:focus-visible,.roser-admin textarea:focus-visible,.roser-admin select:focus-visible {outline:3px solid #008aa8;outline-offset:3px;}
+.roser-admin fieldset {min-width:0;background:#fff;border:1px solid #dbe4ee;border-radius:10px;padding:20px;margin:0 0 22px;}
+.roser-admin legend {font-size:15px;color:#16334d;padding:0 7px;font-weight:650;}
+.roser-admin .rejilla,.roser-admin .campos-grid,.roser-admin .admin-proyecto-campos {gap:18px;}
+.roser-admin .fila,.roser-admin .panel,.roser-admin .admin-proyecto-row {background:white;border:1px solid #dbe4ee;box-shadow:none;border-radius:10px;padding:16px;}
+.roser-admin .admin-proyecto-row p,.roser-admin .admin-proyectos label,.roser-admin small,.roser-admin .ayuda,.roser-admin .muted {color:#566d83;}
+.roser-admin .lista-productos .fila {grid-template-columns:72px minmax(0,1fr) auto;gap:16px;}
+.roser-admin .lista-productos img {width:72px;height:72px;border-radius:7px;}
+.roser-admin .lista-productos .acciones {gap:7px;}
+.roser-admin .lista-productos h3 {margin:0 0 6px;}
+.roser-admin .peligro {color:#ad2c40;}
+.roser-admin #estado {font-size:14px;min-height:24px;overflow-wrap:anywhere;}
+.roser-admin #estado:not(:empty) {padding:12px 15px;border:1px solid #c4dce5;background:#edf7fa;border-radius:8px;}
+.roser-admin .admin-respaldo,.roser-admin .admin-respaldos,.roser-admin #dialogo-respaldos {color:#172d44;background:#fff;border:1px solid #c4d6e4;border-radius:12px;}
+.roser-admin .admin-respaldo pre {font-size:13px;}
+.admin-eyebrow {font-size:11px;letter-spacing:.16em;color:#00778f;font-weight:750;margin:0 0 12px;}
+.admin-intro {color:#5b7085;max-width:760px;margin-bottom:28px;}
+.admin-resumen-lista {display:grid;gap:0;border:1px solid #dbe4ee;border-radius:12px;background:white;overflow:hidden;}
+.admin-resumen-fila {display:flex;align-items:center;gap:19px;min-height:84px;padding:19px 23px;text-decoration:none!important;border-bottom:1px solid #e4ebf2;color:#19324d!important;}
+.admin-resumen-fila:last-child {border-bottom:0;}
+a.admin-resumen-fila:hover {background:#edf7fa;}
+.admin-resumen-fila>div {flex:1;min-width:0;}
+.admin-resumen-fila strong {display:block;font-size:16px;font-weight:650;}
+.admin-resumen-fila div>span {display:block;font-size:13px;color:#63768b;margin-top:4px;}
+.admin-resumen-fila>span:last-child {font-size:13px;color:#007c97;white-space:nowrap;}
+.admin-resumen-icono {font-size:27px;color:#0d6e86;width:30px;text-align:center;}
+.admin-nota {padding:20px 23px;margin:25px 0;background:#e7f4f8;border:1px solid #c4e4eb;border-radius:10px;color:#284b61;}
+.admin-nota strong {font-size:14px;}
+.admin-nota p {font-size:13px;margin:7px 0 0;max-width:850px;}
+.admin-utilidades {font-size:13px;color:#566d83;margin:25px 0;}
+.admin-utilidades summary {cursor:pointer;}
+.admin-busqueda {display:block;max-width:500px;margin:20px 0;}
+.admin-busqueda input {display:block;margin-top:7px;}
+[hidden] {display:none!important;}
+@media(min-width:1500px){.roser-admin main,.roser-admin main.contenedor {padding:45px 60px 65px;}}
+@media(max-width:1050px){.roser-admin .lista-productos .fila {grid-template-columns:72px minmax(0,1fr);}.roser-admin .lista-productos .acciones {grid-column:1/-1;}.roser-admin main,.roser-admin main.contenedor {padding:25px;}}
+@media(max-width:760px){
+ body.roser-admin {padding:62px 0 0;}
+ #marco-admin {top:62px;width:232px;transform:translateX(-100%);visibility:hidden;}
+ body.admin-menu-abierto #marco-admin {transform:translateX(0);visibility:visible;box-shadow:12px 0 25px #142e4533;}
+ .admin-barra-superior {left:0;height:62px;padding:0 16px;gap:10px;}
+ .admin-barra-superior>span {display:none;}
+ .roser-admin .admin-menu-toggle {display:inline-block;}
+ .roser-admin main,.roser-admin main.contenedor {padding:25px 17px 45px;}
+ .roser-admin .rejilla,.roser-admin .campos-grid,.roser-admin .admin-proyecto-campos {grid-template-columns:1fr;}
+ .roser-admin main>header {padding:20px;}
+ .admin-resumen-fila {padding:17px;gap:12px;}
+ .admin-resumen-fila strong {font-size:15px;}
+ .admin-saltar {left:10px;}
 }
-#marco-admin a:hover,
-#marco-admin a[aria-current] {
-  background: #214765;
-  color: white;
-}
-.admin-panel-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
-}
-.admin-panel-grid section {
-  padding: 20px;
-  border: 1px solid #294764;
-  border-radius: 12px;
-}
-.admin-panel-grid a {
-  display: block;
-  padding: 8px;
-}
-.respaldo-json {
-  max-height: 45vh;
-  overflow: auto;
-  white-space: pre-wrap;
-  font-size: 12px;
-}
-.admin-respaldos {
-  width: min(900px, 94vw);
-  max-height: 90vh;
-  overflow: auto;
-  padding: 24px;
-  border-radius: 12px;
-}
-.admin-respaldos::backdrop {
-  background: #0009;
-}
-.admin-respaldos button {
-  margin: 6px;
-}
-.admin-subir {
-  display: block;
-  margin: 10px 0;
-}
-.admin-subir input {
-  max-width: 100%;
-}
+
+.admin-ficha-pestanas {display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;}
+.roser-admin .admin-ficha-pestanas button[aria-pressed=true] {background:#007d98;color:#fff;border-color:#007d98;}
+.admin-ficha-ayuda {margin:0 0 24px;font-size:13px;}
+.admin-software-apartados {display:flex;gap:7px;flex-wrap:wrap;margin:0 0 22px;}
+.roser-admin .admin-software-apartados button {text-align:left;max-width:100%;white-space:normal;}
+.roser-admin .admin-software-apartados button[aria-pressed=true] {background:#007d98;border-color:#007d98;color:white;}
+.admin-software-campo {display:grid;gap:7px;margin:0 0 23px;}
+.admin-software-campo small {font-size:12px;overflow-wrap:anywhere;}
+.admin-software-imagen {width:260px;max-height:180px;object-fit:contain;border:1px solid #dbe4ee;border-radius:8px;background:#f5f8fb;}
+.roser-admin .admin-software-acciones {position:sticky;bottom:0;z-index:10;background:#f4f7fbef;padding:15px 0;display:flex;gap:10px;border-top:1px solid #dbe4ee;}
+.roser-admin #estado[data-error=true] {color:#9d2137;background:#fff0f1;border-color:#eac7ce;}
+.admin-caso-bot {display:block;margin:0 0 20px;padding:15px;background:#e7f4f8;border:1px solid #c4e4eb;border-radius:8px;font-size:14px;text-decoration:none;}
+.admin-software-selector {display:none;}
+@media(max-width:760px){.admin-software-selector {display:grid;gap:7px;margin:0 0 20px;}.admin-software-apartados {display:none;}}

@@ -10,7 +10,7 @@ function crearTarjeta(servicio, etiqueta) {
   if(servicio.id === 'desarrollo-software') tarjeta.classList.add('servicio-software');
   const visual = document.createElement('div'); visual.className = 'servicio-imagen';
   const imagen = document.createElement('img'); imagen.alt = ''; imagen.width = 1536; imagen.height = 1024; imagen.loading = 'lazy';
-  imagen.addEventListener('error', () => { imagen.hidden = true; }, { once: true }); imagen.src = servicio.id === 'desarrollo-software' ? '/assets/imagenes/software/actualizacion-34/tarjeta.webp' : servicio.imagen; visual.append(imagen);
+  imagen.addEventListener('error', () => { imagen.hidden = true; }, { once: true }); imagen.src = servicio.imagen; visual.append(imagen);
   const cuerpo = document.createElement('div'); cuerpo.className = 'servicio-cuerpo';
   const titulo = document.createElement('h2'); titulo.textContent = servicio.titulo;
   const descripcion = document.createElement('p'); descripcion.textContent = servicio.descripcion;

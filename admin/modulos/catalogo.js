@@ -18,7 +18,7 @@ import {
   marcarGuardado,
   dirty,
 } from './catalogo/editor.js';
-import { productos } from './catalogo/productos.js';
+import { productos, editarProducto } from './catalogo/productos.js';
 import { categorias } from './catalogo/categorias.js';
 import { destacados } from './catalogo/destacados.js';
 import { comercio } from './catalogo/comercio.js';
@@ -55,6 +55,8 @@ try {
   revision = edicion.revision;
   iniciarEditor(edicion.catalogo, textos, render);
   render();
+  const seleccionado = new URLSearchParams(location.search).get('producto');
+  if(seleccionado){const p=edicion.catalogo.productos.find(p=>p.id===seleccionado);if(p)editarProducto(p);}
   el('contenido').addEventListener('input', dirty);
   el('contenido').addEventListener('change', dirty);
   prepararRespaldos();

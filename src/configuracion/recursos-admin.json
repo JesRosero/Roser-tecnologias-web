@@ -190,5 +190,139 @@
     "validar": "validarProyectos",
     "args": [],
     "clave": "roser:proyectos:borrador:es:v1"
+  },
+  {
+    "id": "contenido-software",
+    "titulo": "Desarrollo de software",
+    "archivo": "datos/contenido-inicial/software/software.es.json",
+    "modulo": "software",
+    "validar": "validarPaginaSoftware",
+    "args": [
+      "software"
+    ],
+    "esquema": "src/configuracion/software-admin.json",
+    "editor": "software",
+    "pagina": "software",
+    "grupo": "servicios"
+  },
+  {
+    "id": "contenido-software-apps",
+    "titulo": "Aplicaciones Android e iOS",
+    "archivo": "datos/contenido-inicial/software/software-apps.es.json",
+    "modulo": "software",
+    "validar": "validarPaginaSoftware",
+    "args": [
+      "software-apps"
+    ],
+    "esquema": "src/configuracion/software-admin.json",
+    "editor": "software",
+    "pagina": "software-apps",
+    "grupo": "servicios"
+  },
+  {
+    "id": "contenido-software-web",
+    "titulo": "Desarrollo web",
+    "archivo": "datos/contenido-inicial/software/software-web.es.json",
+    "modulo": "software",
+    "validar": "validarPaginaSoftware",
+    "args": [
+      "software-web"
+    ],
+    "esquema": "src/configuracion/software-admin.json",
+    "editor": "software",
+    "pagina": "software-web",
+    "grupo": "servicios"
+  },
+  {
+    "id": "contenido-software-bots",
+    "titulo": "Bots y automatización",
+    "archivo": "datos/contenido-inicial/software/software-bots.es.json",
+    "modulo": "software",
+    "validar": "validarPaginaSoftware",
+    "args": [
+      "software-bots"
+    ],
+    "esquema": "src/configuracion/software-admin.json",
+    "editor": "software",
+    "pagina": "software-bots",
+    "grupo": "servicios"
+  },
+  {
+    "id": "contenido-proyecto-bot-ferreteria",
+    "titulo": "Proyecto · Bot de Ferretería John’s",
+    "archivo": "datos/contenido-inicial/software/proyecto-bot-ferreteria.es.json",
+    "modulo": "software",
+    "validar": "validarPaginaSoftware",
+    "args": [
+      "proyecto-bot-ferreteria"
+    ],
+    "esquema": "src/configuracion/software-admin.json",
+    "editor": "software",
+    "pagina": "proyecto-bot-ferreteria",
+    "grupo": "proyectos"
+  },
+  {
+    "id": "contenido-bots-privacidad",
+    "titulo": "Roser Bots · Privacidad",
+    "archivo": "datos/contenido-inicial/software/bots-privacidad.es.json",
+    "modulo": "software",
+    "validar": "validarPaginaSoftware",
+    "args": [
+      "bots-privacidad"
+    ],
+    "esquema": "src/configuracion/software-admin.json",
+    "editor": "software",
+    "pagina": "bots-privacidad",
+    "grupo": "documentos"
+  },
+  {
+    "id": "contenido-bots-terminos",
+    "titulo": "Roser Bots · Condiciones",
+    "archivo": "datos/contenido-inicial/software/bots-terminos.es.json",
+    "modulo": "software",
+    "validar": "validarPaginaSoftware",
+    "args": [
+      "bots-terminos"
+    ],
+    "esquema": "src/configuracion/software-admin.json",
+    "editor": "software",
+    "pagina": "bots-terminos",
+    "grupo": "documentos"
+  },
+  {
+    "id": "contenido-bots-eliminacion",
+    "titulo": "Roser Bots · Eliminación de datos",
+    "archivo": "datos/contenido-inicial/software/bots-eliminacion.es.json",
+    "modulo": "software",
+    "validar": "validarPaginaSoftware",
+    "args": [
+      "bots-eliminacion"
+    ],
+    "esquema": "src/configuracion/software-admin.json",
+    "editor": "software",
+    "pagina": "bots-eliminacion",
+    "grupo": "documentos"
+  },
+  {
+    "id": "tarjeta-software",
+    "titulo": "Tarjeta · Desarrollo de software",
+    "archivo": "datos/contenido-inicial/software-servicio.es.json",
+    "modulo": "servicios",
+    "validar": "validarTarjetaSoftware",
+    "args": [],
+    "grupo": "servicios",
+    "editor": "visual-nativo",
+    "rutaPublica": "/paginas/servicios/index.html"
+  },
+  {
+    "id": "tarjeta-bot-ferreteria",
+    "titulo": "Tarjeta · Bot de Ferretería John’s",
+    "archivo": "datos/contenido-inicial/software-proyecto.es.json",
+    "modulo": "proyectos",
+    "validar": "validarFichaBot",
+    "args": [],
+    "grupo": "proyectos",
+    "editor": "visual-nativo",
+    "rutaPublica": "/paginas/proyectos/index.html"
   }
 ]

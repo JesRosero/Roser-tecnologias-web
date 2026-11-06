@@ -188,19 +188,25 @@
   "productos": [
     {
       "id": "bb04",
-      "referencia": "BB04",
-      "nombre": "Caja CCTV · BB04",
+      "referencia": "BBCO04",
+      "nombre": "Baluns Y Borneras Caja Para Cables CCTV Cámaras 4 Canales",
       "grupo": "cctv",
       "subcategoria": "conexiones",
-      "descripcion": "Caja organizadora para alojar baluns y borneras de instalaciones CCTV de cuatro canales.",
+      "descripcion": "Caja organizadora para baluns y borneras CCTV de 4 canales\nRoser Tecnologías | Referencia BBCO04\nCaja diseñada para organizar las conexiones de sistemas de videovigilancia CCTV que llegan a equipos DVR o NVR. Su distribución interior permite separar cables UTP, baluns y borneras en cuatro canales identificados, facilitando las revisiones y el mantenimiento de las conexiones.\nDispone de cuatro entradas para cables UTP, cuatro compartimientos para baluns y cuatro para borneras. Las marcaciones integradas permiten relacionar cada conjunto de conexiones con su canal. Incluye un espacio auxiliar donde puede colocarse una bolsa de sílice desecante o guardarse un repuesto pequeño. La sílice no viene incluida, y la caja por sí sola no garantiza protección frente a la humedad.\nFabricada mediante impresión 3D en PLA+ 2.0 Plus, mide 110 mm de ancho, 100 mm de fondo y 25 mm de alto, con un peso de 62 g. Está disponible en negro y gris; otros colores se fabrican bajo solicitud y según disponibilidad.\nContenido de la compra: una caja organizadora BBCO04 con tapa. No incluye cables, baluns, borneras, sílice ni componentes electrónicos. Confirmar por separado si se suministran los tornillos de cierre.\nLa caja es un accesorio de organización, no un dispositivo electrónico. La compatibilidad física con cada modelo de balun o bornera debe verificarse por sus dimensiones.\nCaracterísticas y ventajas destacadas\n•\tCuatro canales independientes: separación física de las conexiones para facilitar identificación y revisión.\n•\tEntradas UTP identificadas: permiten ordenar la llegada de los cuatro cables.\n•\tCompartimientos dedicados: cuatro posiciones para baluns y cuatro para borneras.\n•\tEspacio auxiliar: admite bolsa de sílice o piezas pequeñas, según necesidad.\n•\tFabricación en PLA+ 2.0 Plus: caja compacta impresa en 3D, con opciones de color.",
       "precio": {
         "modo": "fijo",
-        "valor": 36900
+        "valor": 23741
       },
       "visible": true,
       "destacado": true,
       "imagenes": [
-        "/assets/imagenes/productos/bb04.webp"
+        "/assets/imagenes/admin/imagen-388fdafeae14ec1ad319ddcf8f10549cc17e070b57acb5a1f1975ae7257c77ef.webp",
+        "/assets/imagenes/admin/imagen-2cc45a318635f370cfeedb5d70f937bb91912f5f798c17857b2f8e043d567a7c.webp",
+        "/assets/imagenes/admin/imagen-4e3fd9890028dd15ddfeb59db5c7a566f9a44738fad20be58bd511659cbde7a8.webp",
+        "/assets/imagenes/admin/imagen-562f8d841b1c4ba207ca3ddb49f0f3ca5731676c85a6a95d94646a041a68678c.webp",
+        "/assets/imagenes/admin/imagen-b7f567a49cfc319853d00609a5fe0c4d8ff014126368a8fdd7e7e5e7a4651595.webp",
+        "/assets/imagenes/admin/imagen-d03ba6e3a0e51c79bf37b952956bb0df076ccaf9aa7f9ed9da5f27a5f08e7412.webp",
+        "/assets/imagenes/admin/imagen-fa1c96decf9dc5096cca5b2b8cb222a05a8d4f9c4c061754da40452295302005.webp"
       ],
       "variantes": [
         {
@@ -208,39 +214,93 @@
           "color": "Negro",
           "tamano": "Único",
           "precio": null,
-          "existencias": null,
+          "existencias": 100,
           "disponibilidad": "disponible"
         }
       ],
-      "preparacion": "Por confirmar",
-      "especificaciones": [],
+      "preparacion": "Ninguno",
+      "especificaciones": [
+        {
+          "nombre": "Ancho exterior",
+          "valor": "110 mm"
+        },
+        {
+          "nombre": "Alto exterior",
+          "valor": "25 mm"
+        },
+        {
+          "nombre": "Fondo / profundidad",
+          "valor": "100 mm"
+        },
+        {
+          "nombre": "Peso de la caja o producto",
+          "valor": "62 g"
+        },
+        {
+          "nombre": "Color(es) disponible(s)",
+          "valor": "Negro, gris y otros colores bajo pedido"
+        },
+        {
+          "nombre": "Material de fabricación",
+          "valor": "PLA+ 2.0 Plus"
+        },
+        {
+          "nombre": "Tecnología / proceso",
+          "valor": "Impresión 3D (FDM)"
+        },
+        {
+          "nombre": "Capacidad / configuración",
+          "valor": "8 entradas para cables UTP; 8 espacios para baluns; 8 para borneras; 1 compartimiento auxiliar."
+        },
+        {
+          "nombre": "Compatibilidad",
+          "valor": "Organizador de conexiones para instalaciones CCTV con DVR/NVR. Verificar medidas de cada balun y bornera antes de la compra."
+        },
+        {
+          "nombre": "Sistema de cierre / fijación",
+          "valor": "Cierre mediante tornillos; cantidad y suministro pendientes de confirmar"
+        },
+        {
+          "nombre": "Otros atributos técnicos",
+          "valor": "Marcaciones por canal; tapa desmontable; compartimiento para sílice o pequeños repuestos; retención de cables UTP mediante prensa cables según diseño previo\tdetalle"
+        }
+      ],
       "incluye": [
-        "Caja organizadora de cuatro canales"
+        "1 caja plástica BBCO04 con tapa.",
+        "8 Tonillos.",
+        "No incluye: cables UTP, baluns, borneras, sílice ni accesorios electrónicos."
       ],
       "personalizacion": {
         "activa": false,
-        "texto": false,
+        "texto": true,
         "imagen": false,
         "qr": false,
-        "observaciones": true
+        "observaciones": false,
+        "modalidad": "incluida"
       },
       "notaInterna": "Precio provisional para revisión."
     },
     {
       "id": "bb08",
-      "referencia": "BB08",
-      "nombre": "Caja CCTV · BB08",
+      "referencia": "BBCO08",
+      "nombre": "Baluns Y Borneras Caja Para Cables CCTV Cámaras 8 Canales",
       "grupo": "cctv",
       "subcategoria": "conexiones",
-      "descripcion": "Caja organizadora para alojar baluns y borneras de instalaciones CCTV de ocho canales.",
+      "descripcion": "Caja organizadora para baluns y borneras CCTV de 8 canales\nRoser Tecnologías | Referencia BBCO08\nCaja diseñada para organizar las conexiones de sistemas de videovigilancia CCTV que llegan a equipos DVR o NVR. Su distribución interior permite separar cables UTP, baluns y borneras en ocho canales identificados, facilitando las revisiones y el mantenimiento de las conexiones.\nDispone de ocho entradas para cables UTP, ocho compartimientos para baluns y ocho para borneras. Las marcaciones integradas permiten relacionar cada conjunto de conexiones con su canal. Incluye un espacio auxiliar donde puede colocarse una bolsa de sílice desecante o guardarse un repuesto pequeño. La sílice no viene incluida, y la caja por sí sola no garantiza protección frente a la humedad.\nFabricada mediante impresión 3D en PLA+ 2.0 Plus, mide 215 mm de ancho, 100 mm de fondo y 25 mm de alto, con peso pendiente de medición. Está disponible en negro y gris; otros colores se fabrican bajo solicitud y según disponibilidad.\nContenido de la compra: una caja organizadora BBCO08 con tapa. No incluye cables, baluns, borneras, sílice ni componentes electrónicos. Confirmar por separado si se suministran los tornillos de cierre.\nLa caja es un accesorio de organización, no un dispositivo electrónico. La compatibilidad física con cada modelo de balun o bornera debe verificarse por sus dimensiones.\nCaracterísticas y ventajas destacadas\n•\tOcho canales independientes: separación física de las conexiones para facilitar identificación y revisión.\n•\tEntradas UTP identificadas: permiten ordenar la llegada de los ocho cables.\n•\tCompartimientos dedicados: ocho posiciones para baluns y ocho para borneras.\n•\tEspacio auxiliar: admite bolsa de sílice o piezas pequeñas, según necesidad.\n•\tFabricación en PLA+ 2.0 Plus: caja compacta impresa en 3D, con opciones de color.",
       "precio": {
         "modo": "fijo",
-        "valor": 40000
+        "valor": 36815
       },
       "visible": true,
       "destacado": true,
       "imagenes": [
-        "/assets/imagenes/productos/bb08.webp"
+        "/assets/imagenes/admin/imagen-eb4ba99ad740b0c4e47e306050cba25f470d15b87dcd64bc545c8e42a155291d.webp",
+        "/assets/imagenes/admin/imagen-acfc89158450101f85b319cef7c62bf1d1f168ae4bb36a62093f685a01fe84f8.webp",
+        "/assets/imagenes/admin/imagen-98d0b185853898314963ed2df9e9e2ba9347fd75c7b84cea4c08c0c18ba7322d.webp",
+        "/assets/imagenes/admin/imagen-71ed5888f3e268c3771d78506eb7c6f72d0b27d4f420029741a46b9dfd1668fa.webp",
+        "/assets/imagenes/admin/imagen-7969584c96233dbb6732f205fc764df47fec554d83cff204a12a0305cad7a068.webp",
+        "/assets/imagenes/admin/imagen-d03ba6e3a0e51c79bf37b952956bb0df076ccaf9aa7f9ed9da5f27a5f08e7412.webp",
+        "/assets/imagenes/admin/imagen-b8e37bc24ca3814a13995e12ae2a505cf1d5b35c647ff83b4720a1a60048f80d.webp"
       ],
       "variantes": [
         {
@@ -248,68 +308,153 @@
           "color": "Negro",
           "tamano": "Único",
           "precio": null,
-          "existencias": null,
+          "existencias": 100,
           "disponibilidad": "disponible"
         }
       ],
-      "preparacion": "Por confirmar",
-      "especificaciones": [],
+      "preparacion": "Ninguno",
+      "especificaciones": [
+        {
+          "nombre": "Ancho exterior",
+          "valor": "215 mm"
+        },
+        {
+          "nombre": "Alto exterior",
+          "valor": "25 mm"
+        },
+        {
+          "nombre": "Fondo / profundidad",
+          "valor": "100 mm"
+        },
+        {
+          "nombre": "Peso de la caja o producto",
+          "valor": "118 g"
+        },
+        {
+          "nombre": "Color(es) disponible(s)",
+          "valor": "Negro, gris y otros colores bajo pedido"
+        },
+        {
+          "nombre": "Material de fabricación",
+          "valor": "PLA+ 2.0 Plus"
+        },
+        {
+          "nombre": "Tecnología / proceso",
+          "valor": "Impresión 3D (FDM)"
+        },
+        {
+          "nombre": "Capacidad / configuración",
+          "valor": "8 entradas para cables UTP; 8 espacios para baluns; 8 para borneras; 1 compartimiento auxiliar."
+        },
+        {
+          "nombre": "Compatibilidad",
+          "valor": "Organizador de conexiones para instalaciones CCTV con DVR/NVR. Verificar medidas de cada balun y bornera antes de la compra."
+        },
+        {
+          "nombre": "Sistema de cierre / fijación",
+          "valor": "Cierre mediante tornillos; cantidad y suministro pendientes de confirmar"
+        },
+        {
+          "nombre": "Otros atributos técnicos",
+          "valor": "Marcaciones por canal; tapa desmontable; compartimiento para sílice o pequeños repuestos; retención de cables UTP mediante prensa cables según diseño previo\tdetalle"
+        }
+      ],
       "incluye": [
-        "Caja organizadora de ocho canales"
+        "1 caja plástica BBCO08 con tapa. 8 Tornillos.",
+        "No incluye: cables UTP, baluns, borneras, sílice ni accesorios electrónicos."
       ],
       "personalizacion": {
         "activa": false,
         "texto": false,
         "imagen": false,
         "qr": false,
-        "observaciones": true
+        "observaciones": false,
+        "modalidad": "incluida"
       },
       "notaInterna": "Precio provisional para revisión."
     },
     {
       "id": "caja-9mm",
-      "referencia": "CM09",
-      "nombre": "Caja para munición de 9 mm",
+      "referencia": "MC9M50",
+      "nombre": "Municiones 9mm Caja Para 50 Cartuchos 9x19 Apilable",
       "grupo": "organizacion",
       "subcategoria": "cajas",
-      "descripcion": "Caja de almacenamiento para munición de 9 mm, acompañada de una bolsita de gel de sílice para humedad.",
+      "descripcion": "Caja organizadora apilable para 50 cartuchos 9 × 19 mm\nRoser Tecnologías | Referencia MC9M50\nCaja organizadora diseñada para alojar individualmente hasta 50 cartuchos de munición de dimensión 9 × 19 mm. Su distribución interna mantiene cada cartucho en una posición definida y facilita el conteo y la identificación visual del contenido.\nIncorpora un cierre delantero y un compartimiento independiente en el lateral derecho, provisto de tapa extraíble. Este espacio permite colocar sílice desecante —no incluida— u otros elementos pequeños compatibles con su volumen. El compartimiento no implica por sí solo que la caja sea hermética ni garantiza condiciones de humedad específicas.\nEl diseño dispone de cuatro patas inferiores y cuatro hendiduras superiores correspondientes, que permiten apilar varias cajas del mismo modelo. Dimensiones exteriores: 130 mm de ancho, 55,6 mm de fondo y 35 mm de alto. Peso: 87 g. Color estándar: negro; se ofrecen otros colores y personalizaciones bajo solicitud.\nContenido de la compra: 1 caja organizadora MC9M50 con su tapa principal y la tapa extraíble del compartimiento lateral. No incluye cartuchos, munición, sílice ni otros elementos utilizados para ilustrar su capacidad.\nUso previsto: organización física de cartuchos 9 × 19 mm. No se ha acreditado resistencia al agua, hermeticidad, protección contra golpes ni capacidad de conservación de la munición. Verificar las condiciones de almacenamiento y seguridad aplicables antes del uso.\nCaracterísticas y ventajas destacadas\n•\tCapacidad para 50 cartuchos: alojamientos individuales para ordenar y contar el contenido.\n•\tConfiguración apilable: cuatro patas inferiores encajan con cuatro hendiduras superiores de otra caja del mismo modelo.\n•\tCompartimiento lateral derecho: espacio separado con tapa extraíble para sílice u objetos pequeños.\n•\tCierre delantero: sistema de apertura y cierre integrado al diseño de la caja.\n•\tOpciones personalizadas: color negro estándar y posibilidad de otros colores o acabados solicitados.",
       "precio": {
         "modo": "fijo",
-        "valor": 39900
+        "valor": 34183
       },
       "visible": true,
       "destacado": false,
       "imagenes": [
-        "/assets/imagenes/productos/caja-9mm.webp"
+        "/assets/imagenes/admin/imagen-9815b56e4bc6dcd2b57d36206b8c94c159769a4f59b2b3fa17554309c9ffe83c.webp",
+        "/assets/imagenes/admin/imagen-87e080ad03318977696c76e5ea99f2c12c8dedd3038b5e53e445023a934b928d.webp",
+        "/assets/imagenes/admin/imagen-0d5a5717105b3ef5fc02a70fc72e0cc0c376c2abdae5e567350fc402df82b201.webp",
+        "/assets/imagenes/admin/imagen-e7a41ccb049d59f8399c67f7d27c093f7221ea0c273397cad9dd265d3e810fb3.webp",
+        "/assets/imagenes/admin/imagen-c4fc59eb929550b910264cee74d2128b5324276f3b8000ff5a9c4ee0ff2d427a.webp",
+        "/assets/imagenes/admin/imagen-e098a7ec701b5dd1edc463e98be0df36771c3928f3c34af2c7342329602ba637.webp",
+        "/assets/imagenes/admin/imagen-c8ee7707ea21a87fce8a4901286634d8579fee18b32bf9b8a81de565890e009d.webp"
       ],
       "variantes": [
         {
           "id": "base",
-          "color": "Por confirmar",
+          "color": "Negro",
           "tamano": "Único",
           "precio": null,
-          "existencias": null,
-          "disponibilidad": "consultar"
+          "existencias": 97,
+          "disponibilidad": "disponible"
         }
       ],
-      "preparacion": "Por confirmar",
+      "preparacion": "Ninguno",
       "especificaciones": [
         {
-          "nombre": "Frente",
-          "valor": "3,5 cm"
+          "nombre": "Ancho exterior",
+          "valor": "130 mm"
         },
         {
-          "nombre": "Largo",
-          "valor": "10 cm"
+          "nombre": "Alto exterior",
+          "valor": "35 mm"
         },
         {
-          "nombre": "Alto",
-          "valor": "5 cm"
+          "nombre": "Fondo / profundidad",
+          "valor": "55,6 mm"
+        },
+        {
+          "nombre": "Peso de la caja o producto",
+          "valor": "87 g"
+        },
+        {
+          "nombre": "Color(es) disponible(s)",
+          "valor": "Negro; otros colores bajo solicitud"
+        },
+        {
+          "nombre": "Material de fabricación",
+          "valor": "PLA+ 2.0 Plus"
+        },
+        {
+          "nombre": "Tecnología / proceso",
+          "valor": "Impresión 3D (FDM)"
+        },
+        {
+          "nombre": "Capacidad / configuración",
+          "valor": "50 alojamientos para cartuchos 9 × 19 mm; 1 compartimiento lateral derecho con tapa extraíble."
+        },
+        {
+          "nombre": "Compatibilidad",
+          "valor": "Cartuchos de dimensión 9 × 19 mm. Otros tipos/calibres no verificados."
+        },
+        {
+          "nombre": "Sistema de cierre / fijación",
+          "valor": "Cierre delantero de la caja; tapa extraíble del compartimiento auxiliar."
+        },
+        {
+          "nombre": "Otros atributos técnicos",
+          "valor": "Apilable: cuatro patas inferiores y cuatro hendiduras superiores; personalización de color y diseño bajo pedido."
         }
       ],
       "incluye": [
-        "Caja",
-        "Bolsita de gel de sílice"
+        "1 caja plástica MC9M50 con tapa principal y tapa extraíble del compartimiento auxiliar.",
+        "No incluye: cartuchos, munición de ningún tipo, sílice ni otros accesorios exhibidos en las fotografías."
       ],
       "personalizacion": {
         "activa": true,
@@ -332,7 +477,7 @@
         "modo": "fijo",
         "valor": 69900
       },
-      "visible": true,
+      "visible": false,
       "destacado": false,
       "imagenes": [
         "/assets/imagenes/productos/caja-silice.webp"
@@ -387,7 +532,7 @@
         "modo": "fijo",
         "valor": 89900
       },
-      "visible": true,
+      "visible": false,
       "destacado": true,
       "imagenes": [
         "/assets/imagenes/productos/soporte-qr.webp"
@@ -444,7 +589,7 @@
         "modo": "fijo",
         "valor": 349900
       },
-      "visible": true,
+      "visible": false,
       "destacado": false,
       "imagenes": [
         "/assets/imagenes/productos/kit-k1se.webp"
@@ -492,7 +637,7 @@
         "modo": "fijo",
         "valor": 59900
       },
-      "visible": true,
+      "visible": false,
       "destacado": false,
       "imagenes": [
         "/assets/imagenes/productos/caja-usb.webp"
@@ -546,7 +691,7 @@
         "modo": "fijo",
         "valor": 39900
       },
-      "visible": true,
+      "visible": false,
       "destacado": false,
       "imagenes": [
         "/assets/imagenes/productos/estuche-gafas.webp"
@@ -586,7 +731,7 @@
         "modo": "consultar",
         "valor": null
       },
-      "visible": true,
+      "visible": false,
       "destacado": false,
       "imagenes": [
         "/assets/imagenes/productos/gabinete-filamento.webp"
@@ -637,7 +782,7 @@
         "modo": "fijo",
         "valor": 24900
       },
-      "visible": true,
+      "visible": false,
       "destacado": false,
       "imagenes": [
         "/assets/imagenes/productos/soporte-celular.webp"
@@ -663,6 +808,99 @@
         "imagen": false,
         "qr": false,
         "observaciones": true
+      },
+      "notaInterna": "Precio provisional para revisión."
+    },
+    {
+      "id": "producto-d0668be4",
+      "referencia": "CP1215",
+      "nombre": "Pipetas CO2 12g Caja Organizadora Para 15 Unidades Apilable",
+      "grupo": "organizacion",
+      "subcategoria": "cajas",
+      "descripcion": "Pipetas CO2 12g Caja Organizadora Para 15 Unidades Apilable\nRoser Tecnologías | Referencia CP1215\nCaja diseñada para ordenar y almacenar hasta 15 pipetas de CO₂ de 12 gramos. Los alojamientos individuales separan las unidades y permiten observar y contar el contenido con facilidad.\nCuenta con un compartimiento lateral independiente con tapa extraíble para colocar sílice desecante, no incluida. El diseño permite almacenar varias cajas apiladas. La presencia de sílice puede ayudar a absorber humedad dentro del espacio disponible, pero la caja no está certificada como hermética ni garantiza una humedad interna determinada.\nDimensiones exteriores: 120 mm de ancho, 59 mm de fondo y 87 mm de alto. Peso del producto: 160 g. El tipo específico de material y los colores disponibles están pendientes de confirmación.\nContenido de la compra: una caja organizadora CP1215 con tapa principal y tapa del compartimiento auxiliar. No incluye pipetas/cartuchos de CO₂, sílice ni otros accesorios de las imágenes.\nUso destinado a la organización física de pipetas de CO₂ de 12 g. No se atribuyen al producto propiedades certificadas de impermeabilidad, control ambiental o resistencia al calor. Los cartuchos presurizados deben conservarse siguiendo las indicaciones de seguridad de su fabricante.\nCaracterísticas y ventajas destacadas\n•\tCapacidad para 15 pipetas: espacios individuales para alojar unidades de CO₂ de 12 g.\n•\tEstructura apilable: permite colocar varias cajas del mismo modelo una sobre otra.\n•\tCompartimiento auxiliar independiente: reserva un espacio lateral para sílice o pequeños accesorios compatibles.\n•\tAcceso al espacio auxiliar: tapa extraíble que permite consultar o sustituir el contenido.\n•\tDiseño compacto: 120 × 59 × 87 mm, con peso declarado de 160 g.",
+      "precio": {
+        "modo": "fijo",
+        "valor": 44359
+      },
+      "visible": true,
+      "destacado": false,
+      "imagenes": [
+        "/assets/imagenes/admin/imagen-68cd9b0897dd4b236475f631487c77e683186c65d1403edbfbe7cd02019c150b.webp",
+        "/assets/imagenes/admin/imagen-a50880b9a3f83980c7dc0c105af1a55799b50deedd010ade8f0efe3761c592d9.webp",
+        "/assets/imagenes/admin/imagen-7730fa637bffaa6bc71479005e3491da97b859112091ef5d97d9f276137b0caa.webp",
+        "/assets/imagenes/admin/imagen-9832bf2db37a70ed1f7d11f4abf83b81bd1db9b4adf94e609df3fefeb1faa04a.webp",
+        "/assets/imagenes/admin/imagen-8aa6accf7813643cdcc7fba76cd2ce6f4554e606101bdfd16b03e2f26e285ed0.webp",
+        "/assets/imagenes/admin/imagen-caf1e6c20641e0903d19f00565209889e472e83eaec19f6f48d6fe219c85616f.webp",
+        "/assets/imagenes/admin/imagen-3715c45936ba3564f4e6675be88ea0b5e606352160323ce81200d6e4d987266f.webp"
+      ],
+      "variantes": [
+        {
+          "id": "base",
+          "color": "Negro",
+          "tamano": "Único",
+          "precio": null,
+          "existencias": 100,
+          "disponibilidad": "disponible"
+        }
+      ],
+      "preparacion": "Ninguno",
+      "especificaciones": [
+        {
+          "nombre": "Ancho exterior",
+          "valor": "120 mm"
+        },
+        {
+          "nombre": "Alto exterior",
+          "valor": "87 mm"
+        },
+        {
+          "nombre": "Fondo / profundidad",
+          "valor": "59 mm"
+        },
+        {
+          "nombre": "Peso de la caja o producto",
+          "valor": "160 g"
+        },
+        {
+          "nombre": "Color(es) disponible(s)",
+          "valor": "Negro; otros colores bajo solicitud"
+        },
+        {
+          "nombre": "Material de fabricación",
+          "valor": "PLA+ 2.0 Plus"
+        },
+        {
+          "nombre": "Tecnología / proceso",
+          "valor": "Impresión 3D (FDM)"
+        },
+        {
+          "nombre": "Capacidad / configuración",
+          "valor": "15 alojamientos para pipetas de CO₂ de 12 g; 1 compartimiento auxiliar para sílice"
+        },
+        {
+          "nombre": "Compatibilidad",
+          "valor": "Diseñada para pipetas/cartuchos de CO₂ de 12 g."
+        },
+        {
+          "nombre": "Sistema de cierre / fijación",
+          "valor": "Cierre delantero de la caja; tapa extraíble del compartimiento auxiliar."
+        },
+        {
+          "nombre": "Otros atributos técnicos",
+          "valor": "Apilable: cuatro patas inferiores y cuatro hendiduras superiores; personalización de color y diseño bajo pedido."
+        }
+      ],
+      "incluye": [
+        "1 caja organizadora CP1215 con tapa principal y tapa del compartimiento auxiliar.",
+        "No incluye: pipetas o cartuchos de CO₂, sílice desecante ni accesorios de las fotografías."
+      ],
+      "personalizacion": {
+        "activa": true,
+        "texto": true,
+        "imagen": true,
+        "qr": true,
+        "observaciones": true,
+        "modalidad": "cotizar"
       },
       "notaInterna": "Precio provisional para revisión."
     }
