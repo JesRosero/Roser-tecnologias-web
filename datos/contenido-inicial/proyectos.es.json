@@ -576,7 +576,7 @@
       "destacado": false,
       "orden": 8,
       "formato": "normal",
-      "imagen": "/assets/imagenes/proyectos/bb04.webp",
+      "imagen": "/assets/imagenes/admin/imagen-2cc45a318635f370cfeedb5d70f937bb91912f5f798c17857b2f8e043d567a7c.webp",
       "alternativo": "Boceto ilustrativo: Caja CCTV · BB04",
       "alcance": "Diseño, desarrollo y presentación de la solución.",
       "enfoque": "Funcionalidad, integración y fabricación a medida.",
@@ -607,13 +607,13 @@
         {
           "titulo": "El diseño",
           "texto": "Modelar el conjunto, ajustar su geometría y preparar una primera versión para revisar la función.",
-          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "imagen": "/assets/imagenes/admin/imagen-d4898bc8a10753f87dbbf8ddb8ff6fffc6a3b80386113661dfbc82c15a8e600a.webp",
           "visible": true
         },
         {
           "titulo": "La propuesta",
           "texto": "Una solución personalizable cuya forma y acabado pueden adaptarse al proyecto.",
-          "imagen": "/assets/imagenes/proyectos/bb04.webp",
+          "imagen": "/assets/imagenes/admin/imagen-b7f567a49cfc319853d00609a5fe0c4d8ff014126368a8fdd7e7e5e7a4651595.webp",
           "visible": true
         }
       ],
@@ -642,7 +642,7 @@
       "destacado": false,
       "orden": 9,
       "formato": "normal",
-      "imagen": "/assets/imagenes/proyectos/bb08.webp",
+      "imagen": "/assets/imagenes/admin/imagen-eb4ba99ad740b0c4e47e306050cba25f470d15b87dcd64bc545c8e42a155291d.webp",
       "alternativo": "Boceto ilustrativo: Caja CCTV · BB08",
       "alcance": "Diseño, desarrollo y presentación de la solución.",
       "enfoque": "Funcionalidad, integración y fabricación a medida.",
@@ -673,13 +673,13 @@
         {
           "titulo": "El diseño",
           "texto": "Modelar el conjunto, ajustar su geometría y preparar una primera versión para revisar la función.",
-          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "imagen": "/assets/imagenes/admin/imagen-3c5817a7d0771709a4ca2fb657cf7d3ae6b7e617d51879d1940699032202d939.webp",
           "visible": true
         },
         {
           "titulo": "La propuesta",
           "texto": "Una solución personalizable cuya forma y acabado pueden adaptarse al proyecto.",
-          "imagen": "/assets/imagenes/proyectos/bb08.webp",
+          "imagen": "/assets/imagenes/admin/imagen-7969584c96233dbb6732f205fc764df47fec554d83cff204a12a0305cad7a068.webp",
           "visible": true
         }
       ],
@@ -708,7 +708,7 @@
       "destacado": false,
       "orden": 10,
       "formato": "ancho",
-      "imagen": "/assets/imagenes/proyectos/caja-9mm.webp",
+      "imagen": "/assets/imagenes/admin/imagen-9815b56e4bc6dcd2b57d36206b8c94c159769a4f59b2b3fa17554309c9ffe83c.webp",
       "alternativo": "Boceto ilustrativo: Caja para munición de 9 mm",
       "alcance": "Diseño, desarrollo y presentación de la solución.",
       "enfoque": "Funcionalidad, integración y fabricación a medida.",
@@ -739,13 +739,13 @@
         {
           "titulo": "El diseño",
           "texto": "Modelar el conjunto, ajustar su geometría y preparar una primera versión para revisar la función.",
-          "imagen": "/assets/imagenes/proyectos/proceso-diseno.webp",
+          "imagen": "/assets/imagenes/admin/imagen-a330b5449af2d4de41a2f48b872c95dc9769439d351022caa1a51cc1a43b9eb7.webp",
           "visible": true
         },
         {
           "titulo": "La propuesta",
           "texto": "Una solución personalizable cuya forma y acabado pueden adaptarse al proyecto.",
-          "imagen": "/assets/imagenes/proyectos/caja-9mm.webp",
+          "imagen": "/assets/imagenes/admin/imagen-c4fc59eb929550b910264cee74d2128b5324276f3b8000ff5a9c4ee0ff2d427a.webp",
           "visible": true
         }
       ],
